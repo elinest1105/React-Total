@@ -1,8 +1,20 @@
-# Вопросы по React для подготовки с собеседованию. Версия 1
+# Вопросы по React для подготовки к собеседованию. Версия 1
 
 <a name="top"></a>
 
 [Перейти к вопросам](#questions)
+
+[Учебные проекты на React](https://github.com/harryheman/React-Projects)
+
+[Сайты на React](https://github.com/harryheman/React-Sites)
+
+<details>
+<summary>Статьи</summary>
+</details>
+<details>
+<summary>Переводы</summary>
+<a href="https://habr.com/ru/post/539346/">Почему Context не является инструментом для «управления состоянием»</a>
+</details>
 
 ### **Список** вопросов
 
