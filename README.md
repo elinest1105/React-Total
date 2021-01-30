@@ -8,14 +8,6 @@
 
 [Сайты на React](https://github.com/harryheman/React-Sites)
 
-<details>
-<summary>Статьи</summary>
-</details>
-<details>
-<summary>Переводы</summary>
-<a href="https://habr.com/ru/post/539346/">Почему Context не является инструментом для «управления состоянием»</a>
-</details>
-
 ### **Список** вопросов
 
 | №. | Вопрос |
