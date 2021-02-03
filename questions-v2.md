@@ -10275,7 +10275,7 @@ import { sendMsg } from './actions';
 import MessageSender from './MessageSender';
 
 const mapDispatchToProps = {
- sendMsg
+  sendMsg
 };
 
 export default connect(null, mapDispatchToProps)(MessageSender);
@@ -10297,15 +10297,15 @@ import { connect } from 'react-redux';
 import * as actions from './actions';
 
 class MsgSenderPage extends React.Component {
- constructor(props) {
- super(props);
- const { dispatch } = props;
- this.boundedActions = bindActionCreators(actions, dispatch);
- }
+  constructor(props) {
+    super(props);
+    const { dispatch } = props;
+    this.boundedActions = bindActionCreators(actions, dispatch);
+  }
 
- render() {
- return <MsgSending {...this.boundedActions} />;
- }
+  render() {
+    return <MsgSending {...this.boundedActions} />;
+  }
 }
 
 export default connect()(MsgSenderPage);
