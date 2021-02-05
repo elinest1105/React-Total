@@ -2,20 +2,20 @@
 
 ## Ресурс для изучения React.js и связанных с ним технологий полностью на русском языке :ru:
 
-- [Вопросы для подготовки к собеседованию. Версия 1](questions-v1.md) :page_with_curl:
-- [Вопросы для подготовки к собеседованию. Версия 2](questions-v2.md) :page_with_curl:
-- [Шпаргалки по React, Jest, Redux и лучшие практики по использованию React](cheatsheets-bestpractices.md) :memo:
+- :page_with_curl: [Вопросы для подготовки к собеседованию. Версия 1](questions-v1.md)
+- :page_with_curl: [Вопросы для подготовки к собеседованию. Версия 2](questions-v2.md)
+- :memo: [Шпаргалки по React, Jest, Redux и лучшие практики по использованию React](cheatsheets-bestpractices.md)
 
 ---
 
-- [Шпаргалка по Markdown](markdown.md) :memo:
+- :memo: [Шпаргалка по Markdown](markdown.md)
 
 ---
 
 ## Публикации
 
-- [Почему контекст не является инструментом для «управления состоянием»](https://habr.com/ru/post/539346/) :link:
-- [React за 60 секунд: валидация формы](https://habr.com/ru/post/540462/) :link:
+- :link: [Почему контекст не является инструментом для «управления состоянием»](https://habr.com/ru/post/539346/)
+- :link: [React за 60 секунд: валидация формы](https://habr.com/ru/post/540462/)
 
 ---
 
