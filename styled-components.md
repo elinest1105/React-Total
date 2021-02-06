@@ -1,5 +1,7 @@
 # Styled components cheatsheet :metal:
 
+[На главную](README.md)
+
 ### Демо
 
 :link: [CodeSandbox](https://codesandbox.io/s/styled-components-cheatsheet-zmqph)
