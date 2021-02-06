@@ -1,4 +1,4 @@
-# Markdown cheatsheet
+# Markdown cheatsheet :metal:
 
 Во многих случах можно использовать обычный HTML, "парсеры" неплохо справляются с его преобразованием в MD
 

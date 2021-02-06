@@ -5,6 +5,7 @@
 - :page_with_curl: [Вопросы для подготовки к собеседованию. Версия 1](questions-v1.md)
 - :page_with_curl: [Вопросы для подготовки к собеседованию. Версия 2](questions-v2.md)
 - :memo: [Шпаргалки по React, Jest, Redux и лучшие практики по использованию React](cheatsheets-bestpractices.md)
+- :memo: [Шпагралка по Styled Components (стилизованным компонентам)](styled-components.md)
 
 ---
 
@@ -21,7 +22,7 @@
 
 ## Источники
 
-### Официальная документация
+### Официальная ресурсы
 
 - [React](https://ru.reactjs.org/)
 - [React Router](https://reactrouter.com/)
@@ -30,6 +31,10 @@
 - [React Native](https://reactnative.dev/)
 - [Gatsby](https://www.gatsbyjs.com/)
 - [Next](https://nextjs.org/)
+
+### Библиотеки
+
+- [Styled Components](https://styled-components.com/)
 
 ### Другое
 
