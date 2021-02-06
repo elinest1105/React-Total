@@ -5,6 +5,7 @@
 - :page_with_curl: [Вопросы для подготовки к собеседованию. Версия 1](questions-v1.md)
 - :page_with_curl: [Вопросы для подготовки к собеседованию. Версия 2](questions-v2.md)
 - :memo: [Шпаргалки по React, Jest, Redux и лучшие практики по использованию React](cheatsheets-bestpractices.md)
+- :memo: [Шпаргалки по Create React App](create-react-app.md)
 - :memo: [Шпагралка по Styled Components (стилизованным компонентам)](styled-components.md)
 
 ---
