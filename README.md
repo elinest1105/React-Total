@@ -11,7 +11,7 @@
 
 ---
 
-- :memo: [Шпаргалка по Markdown](markdown.md)
+- :memo: [Шпаргалка по Markdown](./cheatsheets/markdown.md)
 
 ---
 
