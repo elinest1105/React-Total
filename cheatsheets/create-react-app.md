@@ -1,6 +1,6 @@
 # Create react app cheatsheet :metal:
 
-[На главную](README.md)
+[На главную](../README.md)
 
 ## Описание
 
