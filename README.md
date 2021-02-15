@@ -20,7 +20,7 @@
 - :link: [Кому с Redux жить хорошо](https://habr.com/ru/company/manychat/blog/541794/)
 - :link: [React: лучшие практики](https://habr.com/ru/post/541320/)
 - :link: [React за 60 секунд: валидация формы](https://habr.com/ru/post/540462/)
-- - :link: [Почему контекст не является "инструментом для управления состоянием"](https://habr.com/ru/post/539346/)
+- :link: [Почему контекст не является "инструментом для управления состоянием"](https://habr.com/ru/post/539346/)
 
 ---
 
