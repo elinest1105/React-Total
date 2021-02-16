@@ -15,12 +15,37 @@ npm i styled-components
 ## Импорт
 
 ```js
-import styled, { keyframes } from 'styled-components'
+import styled, { createGlobalStyle, keyframes } from 'styled-components'
+// styled - стилизация компонента
+// createGlobalStyle - глобальные стили
+// keyframes - анимация
 ```
 
 ## Использование
 
-### Базовое
+### Глобальные стили
+
+```js
+const GlobalStyle = createGlobalStyle`
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: radial-gradient(yellow, orange);
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+`
+```
+
+### Стилизация компонента
 
 ```js
 const StyledComponent = styled.tagName`
@@ -71,7 +96,7 @@ const Button = styled.button`
 `
 ```
 
-### Расширение с помощью пропов
+### Расширение стилей компонента с помощью пропов
 
 ```js
 const StyledComponent = styled.tagName`
@@ -86,7 +111,7 @@ const Button = styled.button`
 `
 ```
 
-### Расширение базового компонента
+### Расширение стилей базового компонента
 
 ```js
 const StyledComponent = styled(BaseStyledComponent)`
@@ -100,7 +125,7 @@ const SuccessButton = styled(Button)`
 `
 ```
 
-### Оборачивание компонента
+### Изменение пропов компонента
 
 ```js
 const StyledComponent = (props) => (
@@ -113,7 +138,7 @@ const ReversedButton = (props) => (
 )
 ```
 
-### Работа с атрибутами
+### Работа с атрибутами компонента
 
 ```js
 const StyledComponent = styled.tagName.attrs((props) => ({
@@ -142,7 +167,7 @@ const Input = styled.input.attrs((props) => ({
 `
 ```
 
-### Перезапись атрибутов
+### Перезапись атрибутов компонента
 
 ```js
 const StyledComponent = styled(BaseStyledComponent).attrs({
@@ -194,8 +219,25 @@ const FadeButton = styled(Button)`
 Обратите внимание на атрибут "as" компонента "Button". Он позволяет изменять HTML-тег, сохраняя стилизацию.
 
 ```js
+import styled, { createGlobalStyle, keyframes } from 'styled-components'
 
-import styled, { keyframes } from 'styled-components'
+const GlobalStyle = createGlobalStyle`
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: radial-gradient(yellow, orange);
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+`
 
 const Button = styled.button`
   margin: 0.5em;
@@ -271,6 +313,7 @@ const FadeButton = styled(Button)`
 export default function App() {
   return (
     <>
+      <GlobalStyle />
       <Button>base</Button>
       <br />
       <Button primary>primary</Button>
