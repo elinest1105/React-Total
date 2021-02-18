@@ -618,7 +618,7 @@ const reducer = (state, action) => {
 }
 
 const BasicReducer = () => {
-  const [state, dispath] = useReducer(reducer, initialState)
+  const [state, dispatch] = useReducer(reducer, initialState)
 
   const [color, setColor] = useState('#f0f0f0')
 
@@ -637,10 +637,10 @@ const BasicReducer = () => {
           width: state.width
         }}
       ></div>
-      <button onClick={() => dispath('plus')}>
+      <button onClick={() => dispatch('plus')}>
         Увеличить ширину контейнера.
       </button>
-      <button onClick={() => dispath('minus')}>
+      <button onClick={() => dispatch('minus')}>
         Уменьшить ширину контейнера.
       </button>
     </>
@@ -670,7 +670,7 @@ const reducer = (state, action) => {
 }
 
 const LazyState = () => {
-  const [state, dispath] = useReducer(reducer, initialState, initializeState)
+  const [state, dispatch] = useReducer(reducer, initialState, initializeState)
 
   const [color, setColor] = useState('#f0f0f0')
 
@@ -689,10 +689,10 @@ const LazyState = () => {
           width: state.width
         }}
       ></div>
-      <button onClick={() => dispath('plus')}>
+      <button onClick={() => dispatch('plus')}>
         Увеличить ширину контейнера.
       </button>
-      <button onClick={() => dispath('minus')}>
+      <button onClick={() => dispatch('minus')}>
         Уменьшить ширину контейнера.
       </button>
     </>
