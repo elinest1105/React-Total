@@ -768,9 +768,9 @@ import { createContext } from 'react'
 
 import { reducer, initialState } from './TodoReducer.js'
 
-const TodoContext = createContext()
+export const TodoContext = createContext()
 
-const TodoProvider = ({ children }) => {
+export const TodoProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState)
 
   return (
