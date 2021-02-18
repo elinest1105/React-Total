@@ -766,7 +766,7 @@ export const reducer = (state, action) => {
 // TodoContext.js
 import { createContext } from 'react'
 
-import { reducer, initialState } from './TodoReducer.js'
+import { reducer, initialState } from './TodoReducer'
 
 export const TodoContext = createContext()
 
