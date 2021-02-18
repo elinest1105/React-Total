@@ -477,7 +477,7 @@ const ChangeTheme = () => {
 
 ```jsx
 // TodoContext.js
-import { createContext } from 'react'
+import { createContext, useState } from 'react'
 
 export const TodoContext = createContext()
 
@@ -515,7 +515,7 @@ render(
 
 ```jsx
 // Form.js
-import { useState } from 'react'
+import { useState, useContext } from 'react'
 import { TodoContext } from './TodoContext'
 
 export const Form = () => {
