@@ -127,7 +127,7 @@ const Profile = () => {
           type='text'
           value={firstName}
           onChange={handleChange}
-          name='fistName'
+          name='firstName'
         /> <br />
         <input
           type='text'
