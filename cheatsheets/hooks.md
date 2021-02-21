@@ -127,7 +127,7 @@ const Profile = () => {
           type='text'
           value={firstName}
           onChange={handleChange}
-          name='fistName'
+          name='firstName'
         /> <br />
         <input
           type='text'
@@ -477,7 +477,7 @@ const ChangeTheme = () => {
 
 ```jsx
 // TodoContext.js
-import { createContext } from 'react'
+import { createContext, useState } from 'react'
 
 export const TodoContext = createContext()
 
@@ -515,7 +515,7 @@ render(
 
 ```jsx
 // Form.js
-import { useState } from 'react'
+import { useState, useContext } from 'react'
 import { TodoContext } from './TodoContext'
 
 export const Form = () => {
@@ -618,7 +618,7 @@ const reducer = (state, action) => {
 }
 
 const BasicReducer = () => {
-  const [state, dispath] = useReducer(reducer, initialState)
+  const [state, dispatch] = useReducer(reducer, initialState)
 
   const [color, setColor] = useState('#f0f0f0')
 
@@ -637,10 +637,10 @@ const BasicReducer = () => {
           width: state.width
         }}
       ></div>
-      <button onClick={() => dispath('plus')}>
+      <button onClick={() => dispatch('plus')}>
         Увеличить ширину контейнера.
       </button>
-      <button onClick={() => dispath('minus')}>
+      <button onClick={() => dispatch('minus')}>
         Уменьшить ширину контейнера.
       </button>
     </>
@@ -670,7 +670,7 @@ const reducer = (state, action) => {
 }
 
 const LazyState = () => {
-  const [state, dispath] = useReducer(reducer, initialState, initializeState)
+  const [state, dispatch] = useReducer(reducer, initialState, initializeState)
 
   const [color, setColor] = useState('#f0f0f0')
 
@@ -689,10 +689,10 @@ const LazyState = () => {
           width: state.width
         }}
       ></div>
-      <button onClick={() => dispath('plus')}>
+      <button onClick={() => dispatch('plus')}>
         Увеличить ширину контейнера.
       </button>
-      <button onClick={() => dispath('minus')}>
+      <button onClick={() => dispatch('minus')}>
         Уменьшить ширину контейнера.
       </button>
     </>
@@ -766,11 +766,11 @@ export const reducer = (state, action) => {
 // TodoContext.js
 import { createContext } from 'react'
 
-import { reducer, initialState } from './TodoReducer.js'
+import { reducer, initialState } from './TodoReducer'
 
-const TodoContext = createContext()
+export const TodoContext = createContext()
 
-const TodoProvider = ({ children }) => {
+export const TodoProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState)
 
   return (
