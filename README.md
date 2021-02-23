@@ -11,6 +11,7 @@
 
 ---
 
+- :memo: [Руководство по работе с библиотекой "Socket.IO" и примеры ее использования](./cheatsheets/socket/README.md)
 - :memo: [Шпаргалка по Markdown](./cheatsheets/markdown.md)
 
 ---
