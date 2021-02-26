@@ -398,7 +398,7 @@ module: {
 
 - <a href="https://webpack.js.org/loaders/style-loader/">`style-loader`</a> - применение сгенерированных  `css-loader` стилей к DOM
 - <a href="https://webpack.js.org/loaders/css-loader/">`css-loader`</a> - преобразование CSS, включая `@import` и `url()`
-- - <a href="https://webpack.js.org/loaders/sass-loader/">`sass-loader`</a>
+- <a href="https://webpack.js.org/loaders/sass-loader/">`sass-loader`</a>
 - <a href="https://webpack.js.org/loaders/less-loader/">`less-loader`</a>
 
 ### Транспиляция
