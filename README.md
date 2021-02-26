@@ -11,6 +11,7 @@
 
 ---
 
+- :memo: [Шпагралка по Webpack и пример конфигурации для JS/React/TS проектов](./cheatsheets/webpack.md)
 - :page_with_curl: [Руководство по работе с библиотекой "Socket.IO" и примеры ее использования](./cheatsheets/socket/README.md)
 - :memo: [Шпаргалка по Markdown](./cheatsheets/markdown.md)
 
@@ -18,6 +19,7 @@
 
 ## Публикации
 
+- :link: [Разрабатываем чат на React с использованием Socket.IO](https://habr.com/ru/post/544046/)
 - :link: [5 подходов к стилизации React-компонентов на примере одного приложения](https://habr.com/ru/post/542630/)
 - :link: [Кому с Redux жить хорошо](https://habr.com/ru/company/manychat/blog/541794/)
 - :link: [React: лучшие практики](https://habr.com/ru/post/541320/)
