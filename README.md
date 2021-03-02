@@ -2,11 +2,15 @@
 
 ## Ресурс для изучения React.js и связанных с ним технологий на русском языке :ru:
 
-- :page_with_curl: [Вопросы для подготовки к собеседованию. Версия 1](questions-v1.md)
+> Последнее обновление: 02.03.2021 - добавил подробное руководство по React Router
+
+- :page_with_curl: [Вопросы для подготовки к собеседованию. Версия 1](questions.md)
 - :page_with_curl: [Вопросы для подготовки к собеседованию. Версия 2](questions-v2.md)
 - :memo: [Шпаргалки по React, Jest, Redux и лучшие практики по использованию React](cheatsheets-bestpractices.md)
+---
 - :memo: [Шпагралка по хукам](./cheatsheets/hooks.md)
 - :memo: [Шпаргалка по Create React App](./cheatsheets/create-react-app.md)
+- :page_with_curl: [Руководство по React Router](./cheatsheets/react-router.md)
 - :memo: [Шпагралка по Styled Components (стилизованным компонентам)](./cheatsheets/styled-components.md)
 
 ---
@@ -40,9 +44,14 @@
 - [Gatsby](https://www.gatsbyjs.com/)
 - [Next](https://nextjs.org/)
 
+---
+
+- [Webpack](https://webpack.js.org/)
+
 ### Библиотеки
 
 - [Styled Components](https://styled-components.com/)
+- [Socket.IO](https://socket.io/)
 
 ### Другое
 
