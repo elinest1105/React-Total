@@ -2,22 +2,25 @@
 
 ## Ресурс для изучения React.js и связанных с ним технологий на русском языке :ru:
 
-> Последнее обновление: 02.03.2021 - добавил подробное руководство по React Router
+> Последнее обновление: 06.03.2021 - добавил подробное руководство по Redux Toolkit
 
 - :page_with_curl: [Вопросы для подготовки к собеседованию. Версия 1](questions.md)
 - :page_with_curl: [Вопросы для подготовки к собеседованию. Версия 2](questions-v2.md)
-- :memo: [Шпаргалки по React, Jest, Redux и лучшие практики по использованию React](cheatsheets-bestpractices.md)
----
-- :memo: [Шпагралка по хукам](./cheatsheets/hooks.md)
-- :memo: [Шпаргалка по Create React App](./cheatsheets/create-react-app.md)
-- :page_with_curl: [Руководство по React Router](./cheatsheets/react-router.md)
-- :memo: [Шпагралка по Styled Components (стилизованным компонентам)](./cheatsheets/styled-components.md)
+- :memo: [Шпаргалки по React, Jest, Redux и лучшие практики по использованию React](./md/cheatsheets-bestpractices.md)
 
 ---
 
-- :memo: [Шпагралка по Webpack и пример конфигурации для JS/React/TS проектов](./cheatsheets/webpack.md)
-- :page_with_curl: [Руководство по работе с библиотекой "Socket.IO" и примеры ее использования](./cheatsheets/socket/README.md)
-- :memo: [Шпаргалка по Markdown](./cheatsheets/markdown.md)
+- :memo: [Шпагралка по хукам](./md/hooks.md)
+- :memo: [Шпаргалка по Create React App](./md/create-react-app.md)
+- :page_with_curl: [Руководство по Redux Toolkit (набор инстурментов для облегчения работы с Redux)](./md/redux-toolkit.md)
+- :page_with_curl: [Руководство по React Router (библиотека для работы с маршрутизацией-навигацией)](./md/react-router.md)
+- :memo: [Шпагралка по Styled Components (стилизованные компоненты)](./md/styled-components.md)
+
+---
+
+- :memo: [Шпагралка по Webpack и пример конфигурации для JS/React/TS проектов](./md/webpack.md)
+- :page_with_curl: [Руководство по работе с библиотекой "Socket.IO" и примеры ее использования](./md/socket/README.md)
+- :memo: [Шпаргалка по Markdown](./md/markdown.md)
 
 ---
 
