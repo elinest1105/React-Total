@@ -12,7 +12,7 @@
 
 - :memo: [Шпагралка по хукам](./md/hooks.md)
 - :memo: [Шпаргалка по Create React App](./md/create-react-app.md)
-- :page_with_curl: [Руководство по Redux Toolkit (набор инстурментов для облегчения работы с Redux)](./md/redux-toolkit.md)
+- :page_with_curl: [Руководство по Redux Toolkit (набор инструментов для облегчения работы с Redux)](./md/redux-toolkit.md)
 - :page_with_curl: [Руководство по React Router (библиотека для работы с маршрутизацией-навигацией)](./md/react-router.md)
 - :memo: [Шпагралка по Styled Components (стилизованные компоненты)](./md/styled-components.md)
 
