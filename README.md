@@ -20,6 +20,7 @@
 
 - :memo: [Шпагралка по Webpack и пример конфигурации для JS/React/TS проектов](./md/webpack.md)
 - :page_with_curl: [Руководство по работе с библиотекой "Socket.IO" и примеры ее использования](./md/socket/README.md)
+- :memo: [Шпаргалка по работе с библиотекой JSON Server и пример ее использования](./md/json-server/README.md)
 - :memo: [Шпаргалка по Markdown](./md/markdown.md)
 
 ---
