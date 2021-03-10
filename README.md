@@ -4,8 +4,8 @@
 
 > Последнее обновление: 06.03.2021 - добавил подробное руководство по Redux Toolkit
 
-- :page_with_curl: [Вопросы для подготовки к собеседованию. Версия 1](questions.md)
-- :page_with_curl: [Вопросы для подготовки к собеседованию. Версия 2](questions-v2.md)
+- :page_with_curl: [Вопросы для подготовки к собеседованию. Версия 1](./md/questions.md)
+- :page_with_curl: [Вопросы для подготовки к собеседованию. Версия 2](./md/questions-v2.md)
 - :memo: [Шпаргалки по React, Jest, Redux и лучшие практики по использованию React](./md/cheatsheets-bestpractices.md)
 
 ---
