@@ -2,7 +2,7 @@
 
 ## Ресурс для изучения React.js и связанных с ним технологий на русском языке :ru:
 
-> Последнее обновление: 06.03.2021 - добавил подробное руководство по Redux Toolkit
+> Последнее обновление: 11.03.2021 - добавил подробное руководство по Recoil
 
 - :page_with_curl: [Вопросы для подготовки к собеседованию. Версия 1](./md/questions.md)
 - :page_with_curl: [Вопросы для подготовки к собеседованию. Версия 2](./md/questions-v2.md)
@@ -12,15 +12,16 @@
 
 - :memo: [Шпагралка по хукам](./md/hooks.md)
 - :memo: [Шпаргалка по Create React App](./md/create-react-app.md)
-- :page_with_curl: [Руководство по Redux Toolkit (набор инструментов для облегчения работы с Redux)](./md/redux-toolkit.md)
-- :page_with_curl: [Руководство по React Router (библиотека для работы с маршрутизацией-навигацией)](./md/react-router.md)
-- :memo: [Шпагралка по Styled Components (стилизованные компоненты)](./md/styled-components.md)
+- :page_with_curl: [Руководство по Redux Toolkit](./md/redux-toolkit.md)
+- :page_with_curl: [Руководство по React Router](./md/react-router.md)
+- :page_with_curl: [Руководство по Recoil](./md/recoil.md)
+- :memo: [Шпагралка по Styled Components](./md/styled-components.md)
 
 ---
 
 - :memo: [Шпагралка по Webpack и пример конфигурации для JS/React/TS проектов](./md/webpack.md)
-- :page_with_curl: [Руководство по работе с библиотекой "Socket.IO" и примеры ее использования](./md/socket/README.md)
-- :memo: [Шпаргалка по работе с библиотекой JSON Server и пример ее использования](./md/json-server/README.md)
+- :page_with_curl: [Руководство по работе с библиотекой `Socket.IO` и примеры ее использования](./md/socket/README.md)
+- :memo: [Шпаргалка по работе с библиотекой `JSON Server` и пример ее использования](./md/json-server/README.md)
 - :memo: [Шпаргалка по Markdown](./md/markdown.md)
 
 ---
@@ -43,6 +44,7 @@
 - [React](https://ru.reactjs.org/)
 - [React Router](https://reactrouter.com/)
 - [Redux](https://redux.js.org/)
+- [Recoil](https://recoiljs.org/)
 - [Create React App](https://create-react-app.dev/)
 - [React Native](https://reactnative.dev/)
 - [Gatsby](https://www.gatsbyjs.com/)
