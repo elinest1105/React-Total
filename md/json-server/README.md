@@ -1,8 +1,10 @@
-# JSON Server cheatsheet :metal:
+# `JSON Server` Cheatsheet :metal:
 
 [На главную](../../README.md)
 
-<a href="https://github.com/typicode/json-server">`json-server`</a> - это библиотека, позволяющая "получить полный фейковый REST API без предварительной настройки менее чем за 30 секунд (серьезно)". Библиотека реализована с помощью <a href="https://github.com/typicode/lowdb">`lowdb`</a> и <a href="https://expressjs.com/">`express`</a>. Также имеется возможность создания полноценного сервера. Наиболее известным примером использования библиотеки является <a href="https://jsonplaceholder.typicode.com/">`JSON Placeholder`</a>.
+> <a href="https://github.com/typicode/json-server">`json-server`</a> - это библиотека, позволяющая "получить полный фейковый REST API без предварительной настройки менее чем за 30 секунд (серьезно)". Библиотека реализована с помощью <a href="https://github.com/typicode/lowdb">`lowdb`</a> и <a href="https://expressjs.com/">`express`</a>. Также имеется возможность создания полноценного сервера. Наиболее известным примером использования библиотеки является <a href="https://jsonplaceholder.typicode.com/">`JSON Placeholder`</a>.
+
+## Оглавление
 
 - [Установка](#install)
 - [Использование](#usage)
@@ -25,7 +27,7 @@ npm i -g json-server
 json-server -w db.json
 ```
 
-После этого сервер будет доступен по адресу `http://localhost:3000`. Данные из БД можно получить по соответствующему ключу, например: `http://localhost:3000/todos`. Поддерживаются HTTP-запросы GET, POST, PUT, PATCH и DELETE.
+После этого сервер будет доступен по адресу `http://localhost:3000`. Данные из БД можно получить по соответствующему ключу, например: `http://localhost:3000/todos`. Поддерживаются HTTP-запросы `GET`, `POST`, `PUT`, `PATCH` и `DELETE`.
 
 ### CLI
 
@@ -81,44 +83,45 @@ json-server -w db.json
 Возможности сервера:
 
 ```js
-// адрес сервера
+// Адрес нашего сервера
 const SERVER_URL = 'http://localhost:3000/todos'
 
-// основная функция для получения всех задач
-// принимает строку запроса и адрес сервера
+// Основная функция для получения всех задач.
+// Она принимает строку запроса и адрес сервера
 async function getTodos(query, endpoint = SERVER_URL) {
   try {
+    // Определяем наличие строки запроса
     query ? (query = `?${query}`) : (query = '')
+
     const response = await fetch(`${endpoint}${query}`)
-    if (response.ok) {
-      const json = await response.json()
-      // выводим результат в консоль
-      console.log(json)
-      return json
-    }
-    throw new Error(response.statusText)
+
+    if (!response.ok) throw new Error(response.statusText)
+
+    const json = await response.json()
+    console.log(json)
+    return json
   } catch (err) {
     console.error(err.message || err)
   }
 }
 getTodos()
 
-// получение задачи по ключу
+// Получение задачи по ключу
 const getTodoByKey = (key, val) => getTodos(`${key}=${val}`)
 
-// по `id`
+// По `id`
 const getTodoById = (id) => getTodoByKey('id', id)
 getTodoById('2')
 
-// по имени автора
+// По имени автора
 const getTodoByAuthorName = (name) => getTodoByKey('meta.author', name)
 getTodoByAuthorName('John')
 
-// получение активных задач
+// Получение активных задач
 const getActiveTodos = () => getTodoByKey('complete', false)
 getActiveTodos()
 
-// более сложный пример
+// Более сложный пример -
 // получение задач по массиву `id`
 const getTodosByIds = (ids) => {
   let query = `id=${ids.splice(0, 1)}`
@@ -129,7 +132,7 @@ const getTodosByIds = (ids) => {
 }
 getTodosByIds([2, 4])
 
-// получение нечетных задач
+// Получение нечетных задач
 const getOddTodos = async () => {
   const todos = await getTodos()
   const oddIds = todos.reduce((arr, { id }) => {
@@ -183,7 +186,7 @@ getTodosBySearch('eat') // Eat & Repeat - включают 'eat'
 
 Дополнительно:
 
-```
+```js
 /* Отношения */
 // _embed - дочерние ресурсы
 GET /posts?_embed=comments
@@ -248,7 +251,7 @@ module.exports = (_, res, next) => {
 
 Запускаем сервер: `json-server db.json -m hello.js`.
 
-### Использование JSON Server в качестве модуля
+### Использование `JSON Server` в качестве модуля
 
 Пример добавления кастомных маршрутов:
 
@@ -262,7 +265,7 @@ const middlewares = jsonServer.defaults()
 // Добавляем дефолтных посредников (logger, static, cors и no-cache)
 server.use(middlewares)
 
-// Добавляем кастомные маршруты перед роутером JSON Server
+// Добавляем кастомные маршруты перед роутером `JSON Server`
 server.get('/echo', (req, res) => {
   res.jsonp(req.query)
 })
@@ -273,7 +276,7 @@ server.use((req, _, next) => {
   if (req.method === 'POST') {
     req.body.createdAt = Date.now()
   }
-  // Передаем управление роутеру JSON Server
+  // Передаем управление роутеру `JSON Server`
   next()
 })
 
@@ -294,12 +297,12 @@ server.listen(3000, () => {
 ### Создание проекта и установка зависимостей
 
 ```bash
-# создание директории
+# Создание директории
 mkdir json-server-todo
 cd json-server-todo
-# инициализация проекта
+# Инициализация проекта
 yarn init -yp
-# установка зависимостей
+# Установка зависимостей
 yarn add json-server open-cli concurrently
 ```
 
@@ -365,18 +368,18 @@ yarn add json-server open-cli concurrently
 
 ```html
 <body>
-  <!-- заголовок -->
+  <!-- Заголовок -->
   <h1>JSON Server Todo</h1>
-  <!-- форма для добавления задачи в список -->
+  <!-- Форма для добавления задачи в список -->
   <form>
-    <!-- поле для текста задачи -->
+    <!-- Поле для текста новой задачи -->
     <input type="text" />
-    <!-- кнопка для отправки -->
+    <!-- Кнопка для отправки формы -->
     <button>Add</button>
   </form>
-  <!-- список задач -->
+  <!-- Список задач -->
   <ul></ul>
-  <!-- наличие атрибута "type" со значением "module" является обязательным -->
+  <!-- Наличие атрибута "type" со значением "module" является обязательным -->
   <script src="script.js" type="module"></script>
 </body>
 ```
@@ -384,8 +387,8 @@ yarn add json-server open-cli concurrently
 `modules/constants.js` - константы:
 
 ```js
-// адрес сервера
-// http://localhost:3000 можно опустить, поскольку мы указали
+// Адрес сервера
+// http://localhost:3000 можно опустить, поскольку мы определили
 // директорию со статическими файлами в `package.json` как "/"
 export const SERVER_URL = '/todos'
 
@@ -394,19 +397,19 @@ export const POST = 'POST'
 export const DELETE = 'DELETE'
 export const PUT = 'PUT'
 
-// операции
+// Операции
 export const UPDATE = 'UPDATE'
 export const REMOVE = 'REMOVE'
 ```
 
-`modules/helpers.js` - "глобальные"/общие утилиты:
+`modules/helpers.js` - глобальные/общие утилиты:
 
 ```js
-// вспомогательная функция для получения элементов по селектору
+// Вспомогательная функция для получения элементов по селектору
 export const getEl = (selector, all = false, el = document) =>
   all ? [...el.querySelectorAll(selector)] : el.querySelector(selector)
 
-// вспомогательная функция для генерации уникального `id`
+// Вспомогательная функция для генерации уникального `id`
 export const uuid = (n) =>
   ([1e7] + -1e3 + -4e3 + -8e3 + -1e11)
     .replace(/[018]/g, (c) =>
@@ -482,15 +485,15 @@ export const api = async (method, payload, endpoint = SERVER_URL) => {
 ```js
 // api
 import { api } from './modules/api.js'
-// константы - методы & операции
+// Константы - методы & операции
 import { POST, DELETE, PUT, UPDATE, REMOVE } from './modules/constants.js'
-// "глобальные" утилиты
+// "Глобальные" утилиты
 import { getEl, uuid } from './modules/helpers.js'
 
-// состояние
+// Состояние
 let todos = []
 
-// локальная утилита
+// Локальная утилита
 const getTodoById = (id) => todos.find((todo) => todo.id === id)
 
 // DOM-элементы
@@ -498,10 +501,10 @@ const formEl = getEl('form')
 const textInput = getEl('input')
 const listEl = getEl('ul')
 
-// функции
-// добавляем задачу в DOM
+// Функции
+// Добавляем задачу в DOM
 const addTodo = (todo, replace = false) => {
-  // шаблон задачи
+  // Шаблон задачи
   const itemTemplate = `
     <li
       data-id="${todo.id}"
@@ -522,14 +525,14 @@ const addTodo = (todo, replace = false) => {
     </li>
   `
 
-  // для обновленной задачи
+  // Для обновленной задачи
   if (replace) return itemTemplate
 
-  // для новой задачи
+  // Для новой задачи
   listEl.insertAdjacentHTML('beforeend', itemTemplate)
 }
 
-// получаем задачи с сервера
+// Получаем задачи от сервера
 async function getTodos() {
   listEl.innerHTML = ''
 
@@ -541,7 +544,7 @@ async function getTodos() {
 }
 getTodos()
 
-// инициализация флажков & кнопок
+// Инициализация флажков & кнопок
 function initButtons() {
   const checkboxInputs = getEl('[type="checkbox"]', true, listEl)
   const removeButtons = getEl('[data-btn="remove"]', true, listEl)
@@ -553,7 +556,7 @@ function initButtons() {
   removeButtons.forEach((btn) => (btn.onclick = (e) => handleClick(e, REMOVE)))
 }
 
-// обновляем | удаляем задачу
+// Обновляем | удаляем задачу
 const handleClick = async (e, action) => {
   const itemEl = e.target.parentElement
   const { id } = itemEl.dataset
@@ -566,10 +569,10 @@ const handleClick = async (e, action) => {
 
       await api(PUT, { id, body: todo })
 
-      // замена вместо добавления
+      // Замена вместо добавления
       itemEl.outerHTML = addTodo(todo, true)
 
-      // кнопки обновленной задачи необходимо заново инициализировать
+      // Кнопки обновленной задачи необходимо снова инициализировать
       initButtons()
       break
     }
@@ -583,7 +586,7 @@ const handleClick = async (e, action) => {
   }
 }
 
-// добавляем задачу
+// Добавляем задачу
 formEl.onsubmit = async (e) => {
   e.preventDefault()
 
@@ -598,10 +601,12 @@ formEl.onsubmit = async (e) => {
 
     await api(POST, { body: newTodo })
 
-    // необходимо обновить массив с задачами
+    // Необходимо обновить массив с задачами
     getTodos()
 
     textInput.value = ''
   }
 }
 ```
+
+Пожалуй, это все, что нам нужно знать о `json-server`.
