@@ -1,15 +1,15 @@
-# Webpack 5 config cheatsheet :metal:
+# `Webpack 5` Config Cheatsheet :metal:
 
 [На главную](../README.md)
 
-## Пример конфигурации для JS/React/TS проектов
+## Пример конфигурации Webpack для JS/React/TS проектов
 
-- [Исходный код на GitHub](https://github.com/harryheman/Webpack5-Max)
-- [Демо на CodeSandbox](https://codesandbox.io/s/webpack5-max-jsreactts-j2o2u)
+- [Код](https://github.com/harryheman/Webpack5-Max)
+- [Песочница](https://codesandbox.io/s/webpack5-max-j2o2u)
 
 ## Описание
 
-<a href="https://webpack.js.org/">`Webpack`</a> - лучший на сегодняшний день сборщик модулей ("бандлер", bundler), если не по скорости, то по возможностям тонкой настройки процесса сборки.
+> #### <a href="https://webpack.js.org/">`Webpack`</a> - лучший на сегодняшний день сборщик модулей ("бандлер", bundler), если не по скорости, то по возможностям тонкой настройки процесса сборки.
 
 Файл с настройками, обычно, носит название "webpack.config.js" и экспортируется в виде CommonJS-модуля:
 

@@ -1,10 +1,10 @@
-# Create react app cheatsheet :metal:
+# `Create React App` Cheatsheet :metal:
 
 [На главную](../README.md)
 
 ## Описание
 
-Create react app (CRA) - это интерфейс командной строки (command line interface, CLI), позволяющий создавать предварительно настроенные React-проекты. Предварительная настройка включает в себя, но не исчерпывается, настройкой Webpack и Babel.
+> #### `Create React App` (CRA) - это интерфейс командной строки (command line interface, CLI), позволяющий создавать предварительно настроенные React-проекты. Предварительная настройка включает в себя, но не исчерпывается, настройкой Webpack и Babel.
 
 ## Создание и запуск проекта
 

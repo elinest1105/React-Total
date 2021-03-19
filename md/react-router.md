@@ -1,11 +1,11 @@
-# React Router (Web) guide :metal:
+# `React Router DOM` Guide :metal:
 
 [На главную](../README.md)
 
-## Переработанные и дополненные примеры с официального сайта
+### Примеры
 
-- [Код на GitHub](https://github.com/harryheman/React-Projects/tree/main/client/react-router-examples)
-- [Демо на CodeSandbox](https://codesandbox.io/s/react-router-examples-uctt5)
+- :link: [Код](https://github.com/harryheman/React-Projects/tree/main/client/react-router-examples)
+- :link: [Песочница](https://codesandbox.io/s/react-router-examples-uctt5)
 
 ## Оглавление
 
@@ -180,6 +180,10 @@ function Topic() {
 }
 ```
 
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
+
 ## <a name="main"></a> Основные компоненты
 
 В `React Router` существует 3 категории компонентов:
@@ -299,6 +303,10 @@ ReactDOM.render(
 <Redirect to="/login">
 ```
 
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
+
 ## <a name="api"></a> API
 
 ### <a name="hooks"></a> Хуки
@@ -358,6 +366,10 @@ function HomeButton() {
 - `goBack()`: func - эквивалент go(-1)
 - `goForward()`: func - эквивалент go(1)
 - `block(prompt)`: func - запрещает переход на другую страницу
+
+<div align="right">
+  <b><a href="#hooks">↥ Наверх</a></b>
+</div>
 
 #### <a name="uselocation"></a> `useLocation`
 
@@ -454,6 +466,10 @@ history.replace(location)
 
 Это предотвратит использование ими актуальной локации из состоянии роутера. Это может быть полезным для анимации и отложенной навигации, а также для замены локации, в которой рендерится компонент.
 
+<div align="right">
+  <b><a href="#hooks">↥ Наверх</a></b>
+</div>
+
 #### <a name="useparams"></a> `useParams`
 
 Данный хук возвращает объект с параметрами URL в формате `ключ: значение`. Используется для доступа к `match.params` текущего `<Route>`:
@@ -487,6 +503,10 @@ ReactDOM.render(
   node
 )
 ```
+
+<div align="right">
+  <b><a href="#hooks">↥ Наверх</a></b>
+</div>
 
 #### <a name="useroutematch"></a> `useRouteMatch`
 
@@ -633,6 +653,10 @@ matchPath("/users/2", {
 ```
 
 В противном случае, возвращается `null`.
+
+<div align="right">
+  <b><a href="#hooks">↥ Наверх</a></b>
+</div>
 
 ### <a name="router"></a> `<Router>`
 
@@ -820,6 +844,10 @@ if (context.status === "404") {
 
 - `children`: node - дочерние элементы
 
+<div align="right">
+  <b><a href="#api">↥ Наверх</a></b>
+</div>
+
 ### <a name="link"></a> `<Link>`
 
 - [&lt;NavLink>](#nav)
@@ -935,6 +963,10 @@ const FancyLink = React.forwardRef((props, ref) => (
 - `location`: object - используется для сравнения с другой локацией
 - `aria-current`: string - значение атрибута `aria-current` активной ссылки. Возможные значения: `page` (значение по умолчанию), `step`, `location`, `date`, `time`, `true`, `false`.
 
+<div align="right">
+  <b><a href="#api">↥ Наверх</a></b>
+</div>
+
 ### <a name="switch"></a> `<Switch>`
 
 Рендерит первый дочерний `<Route>` или `<Redirect>` при совпадении с текущей локацией (URL).
@@ -1013,6 +1045,10 @@ let routes = (
   </Switch>
 )
 ```
+
+<div align="right">
+  <b><a href="#api">↥ Наверх</a></b>
+</div>
 
 ### <a name="route"></a> `<Route>`
 
@@ -1216,6 +1252,10 @@ ReactDOM.render(
 - `location`: object - используется для поиска совпадения с указанной локацией вместо текущей
 - `sensitive`: bool - если `true`, при поиске совпадения учитывается регистр
 
+<div align="right">
+  <b><a href="#api">↥ Наверх</a></b>
+</div>
+
 ###  <a name="redirect"></a> `<Redirect>`
 
 Рендеринг `<Redirect>` приводит к перемещению в новую локацию. Новая локация перезаписывает текущую в стеке истории, как при серверном перенаправлении (HTTP 3xx).
@@ -1267,6 +1307,10 @@ ReactDOM.render(
 - `strict`: bool - учет замыкающего слэша, аналог `Route.strict`. Может использоваться только совместно с `from`
 - `sensitive`: bool - учет регистра, аналог `Route.sensitive`
 
+<div align="right">
+  <b><a href="#api">↥ Наверх</a></b>
+</div>
+
 ### <a name="prompt"></a> `<Prompt>`
 
 Используется для обращения к пользователю перед переключением страницы. Это может быть полезным для предотвращения преждевременного или случайного переключения страницы пользователем (например, при наполовину заполненной форме).
@@ -1299,6 +1343,10 @@ ReactDOM.render(
 
 - `when`: bool - вместо условного рендеринга `<Prompt>`, можно рендерить его всегда, передавая `when={true}` или `when={false}` для контроля навигации
 
+<div align="right">
+  <b><a href="#api">↥ Наверх</a></b>
+</div>
+
 ### <a name="generate"></a> generatePath
 
 Функция `generatePath` может вызываться для генерации URL для маршрутов. В ней используется библиотека `path-to-regexp`.
@@ -1324,6 +1372,10 @@ generatePath("/user/:id/:entity(posts|comments)", {
 generatePath("/user/:id/:entity(posts|comments)", { id: 1 })
 // TypeError: Expected "entity" to be defined (Ожидалось, что "entity" будет определено)
 ```
+
+<div align="right">
+  <b><a href="#api">↥ Наверх</a></b>
+</div>
 
 ### <a name="with"></a> withRouter
 
@@ -1383,6 +1435,10 @@ class Container extends React.Component {
   }
 }
 ```
+
+<div align="right">
+  <b><a href="#api">↥ Наверх</a></b>
+</div>
 
 ## <a name="server"></a> Рендеринг на стороне сервера
 
@@ -1614,6 +1670,10 @@ Promise.all(promises).then(data => {
 
 Наконец, клиент должен каким-либо способом получить данные.
 
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
+
 ## <a name="split"></a> Разделение кода (code splitting)
 
 Одной из замечательных возможностей веба является то, что нам не нужно заставлять пользователей загружать все приложение целиком. Вы можете думать о разделении кода как о постепенной загрузке приложения. Для реализации этого мы будем использовать <a href="https://webpack.js.org/">`webpack`</a>, <a href="https://babeljs.io/docs/en/babel-plugin-syntax-dynamic-import/">`@babel-plugin-syntax-dynamic-import`</a> и <a href="https://github.com/gregberge/loadable-components">`loadable-components`</a>.
@@ -1639,6 +1699,10 @@ export const LoadableComponent = loadable(() => import("./Dashboard.js"), {
 ```
 
 Это все, что нужно сделать. Просто используйте данный компонент в своем приложении. `fallback` - это компонент-заместитель на время загрузки настоящего компонента. `loadable-components` также может использоваться при рендеринге на стороне сервера.
+
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
 
 ## <a name="scroll"></a> Восстановление прокрутки
 
@@ -1694,3 +1758,7 @@ const LongContent = () => (
   </div>
 )
 ```
+
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>

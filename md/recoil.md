@@ -1,4 +1,4 @@
-# Recoil guide :metal:
+# `Recoil` Guide :metal:
 
 [На главную](../README.md)
 
@@ -104,6 +104,10 @@ function FontButton() {
 ```
 
 Нажатие на кнопку теперь приводит к следующему: во-первых, увеличивается размер шрифта кнопки, во-вторых, обновляется подпись, отражающая текущий размер шрифта.
+
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
 
 ## <a name="start"></a> Начало работы
 
@@ -216,6 +220,10 @@ function CharacterCount() {
   return <>Количество символов: {count}</>
 }
 ```
+
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
 
 ## <a name="tutorial"></a> Туториал
 
@@ -488,6 +496,10 @@ function TodoLIstStats() {
 
 Таким образом, мы легко и просто реализовали список задач, отвечающий всем заявленным требованиям.
 
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
+
 ## <a name="async"></a> Асинхронное получение данных
 
 - [Синхронный пример](#sync_example)
@@ -536,6 +548,10 @@ function MyApp() {
 }
 ```
 
+<div align="right">
+  <b><a href="#async">↥ Наверх</a></b>
+</div>
+
 ### <a name="async_example"></a> Асинхронный пример
 
 Если имя пользователя хранится в БД, нам требуется строка запроса (query). Все, что нам нужно сделать, это вернуть промис или воспользоваться асинхронной функцией. При изменении любой зависимости селектор будет вычислен повторно и выполнит новый запрос. Результаты кэшируются, поэтому запрос будет выполнен только один раз для каждого случая.
@@ -573,6 +589,10 @@ function MyApp() {
 }
 ```
 
+<div align="right">
+  <b><a href="#async">↥ Наверх</a></b>
+</div>
+
 ### <a name="error"></a> Обработка ошибок
 
 Но что если запрос завершился ошибкой? Селекторы могут выбрасывать исключения, которые будут переданы дальше при попытке компонента использовать это значение. Такие исключения могут быть обработаны с помощью `ErrorBoundary` (предохранителя). Например:
@@ -609,6 +629,10 @@ function MyApp() {
 }
 ```
 
+<div align="right">
+  <b><a href="#async">↥ Наверх</a></b>
+</div>
+
 ### <a name="params"></a> Запросы с параметрами
 
 Порой может потребоваться отправить запрос с дополнительными параметрами, не зависящими от производного состояния. Например, может потребоваться отправить запрос на основе пропов компонента. Это можно сделать с помощью утилиты `selectorFamily()`:
@@ -644,6 +668,10 @@ function MyApp() {
   )
 }
 ```
+
+<div align="right">
+  <b><a href="#async">↥ Наверх</a></b>
+</div>
 
 ### <a name="graph"></a> Граф потока данных
 
@@ -712,6 +740,10 @@ function MyApp() {
 }
 ```
 
+<div align="right">
+  <b><a href="#async">↥ Наверх</a></b>
+</div>
+
 ### <a name="concurrent"></a> Параллельные запросы
 
 В приведенном примере `friendsInfoQuery` использует запрос для получения информации о каждом друге. Это происходит в цикле. Если поисковая таблица небольшая, тогда все в порядке. Если вычисления являются дорогими, тогда можно использовать утилиту `waitForAll()` для одновременного выполнения запросов. Данная вспомогательная функция принимает массив и именованый объект зависимостей:
@@ -746,6 +778,10 @@ const friendsInfoQuery = selector({
 })
 ```
 
+<div align="right">
+  <b><a href="#async">↥ Наверх</a></b>
+</div>
+
 ### <a name="pre"></a> Предварительные запросы
 
 В целях повышения производительности можно выполнять запросы перед рендерингом. Изменим приведенный выше пример для получения информации о следующем пользователе сразу после нажатия пользователем соответствующей кнопки:
@@ -775,6 +811,10 @@ function CurrentUserInfo() {
 }
 ```
 
+<div align="right">
+  <b><a href="#async">↥ Наверх</a></b>
+</div>
+
 ### <a name="default"></a> Запрос дефолтных значений атома
 
 Обычно, атомы используются для хранения локального обновляемого состояния. Однако, для запроса дефолтных значений атома можно использовать селектор:
@@ -788,6 +828,10 @@ const currentUserIDState = atom({
   }),
 })
 ```
+
+<div align="right">
+  <b><a href="#async">↥ Наверх</a></b>
+</div>
 
 ### <a name="suspense"></a> Асинхронные запросы без `React Suspense`
 
@@ -806,6 +850,10 @@ function UserInfo({userID}) {
   }
 }
 ```
+
+<div align="right">
+  <b><a href="#async">↥ Наверх</a></b>
+</div>
 
 ### <a name="refresh"></a> Обновление запроса
 
@@ -885,6 +933,10 @@ function RefreshUserInfo({userID}) {
 
 Одним из недостатков данного подхода является то, что в настоящее время атомы не поддерживают получение промиса в качестве нового значения, поэтому отсутствует возможность использовать `Suspense` в ожидании разрешения запроса.
 
+<div align="right">
+  <b><a href="#async">↥ Наверх</a></b>
+</div>
+
 ## <a name="effect"></a> Атомарные эффекты (Atom Effects)
 
 - [Примеры](#effect_example)
@@ -953,6 +1005,10 @@ function MyApp(): {
 #### Сравнение со снимками (snapshots)
 
 API хуков снимка (shapshot hooks) также позволяет следить за изменениями состояния атома, а проп `initializeState` в `RecoilRoot` позволяет устанавливать начальное значение атома при первоначальном рендеринге. Тем не менее, данный API следит за всеми изменениями состояния и может быть неудобным для управления динамическими атомами или их семьями. Атомарные эффекты позволяют определять эффекты каждого атома раздельно, независимо комбинируя разные стратегии.
+
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
 
 ### <a name="effect_example"></a> Примеры
 
@@ -1092,6 +1148,10 @@ const currentUserIDState = atom({
 })
 ```
 
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
+
 ## <a name="api"></a> Основные части API
 
 - [RecoilRoot](#api_root)
@@ -1106,6 +1166,10 @@ const currentUserIDState = atom({
 - [useRecoilValueLoadable](#use_recoil_value_loadable)
 - [isRecoilValue](#is_recoil_value)
 - [useRecoilCallback](#use_recoil_callback)
+
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
 
 ### `RecoilRoot` <a name="api_root"></a>
 
@@ -1130,6 +1194,10 @@ function AppRoot() {
   )
 }
 ```
+
+<div align="right">
+  <b><a href="#api">↥ Наверх</a></b>
+</div>
 
 ### Atom <a name="api_atom"></a>
 
@@ -1185,6 +1253,10 @@ function Counter() {
   )
 }
 ```
+
+<div align="right">
+  <b><a href="#api">↥ Наверх</a></b>
+</div>
 
 ### Selector <a name="api_selector"></a>
 
@@ -1359,6 +1431,10 @@ function ResultsSection() {
 }
 ```
 
+<div align="right">
+  <b><a href="#api">↥ Наверх</a></b>
+</div>
+
 ###  class Loadable <a name="loadable"></a>
 
 Объект `Loadable` представляет текущее состояние атома или селектора. Это состояние может быть доступным значением, состоянием ошибки или стадией разрешения асинхронной операции. Интерфейс `Loadable`:
@@ -1390,6 +1466,10 @@ function UserInfo({userID}) {
   }
 }
 ```
+
+<div align="right">
+  <b><a href="#api">↥ Наверх</a></b>
+</div>
 
 ### `useRecoilState()` <a name="use_recoil_state"></a>
 
@@ -1446,6 +1526,10 @@ function TempCelsius() {
 }
 ```
 
+<div align="right">
+  <b><a href="#api">↥ Наверх</a></b>
+</div>
+
 ### `useRecoilValue()` <a name="use_recoil_value"></a>
 
 Возвращает значение переданного состояния.
@@ -1489,6 +1573,10 @@ function NameDisplay() {
 }
 ```
 
+<div align="right">
+  <b><a href="#api">↥ Наверх</a></b>
+</div>
+
 ### `useSetRecoilState()` <a name="use_set_recoil_state"></a>
 
 Возвращает сеттер для обновления значения доступного для записи состояния.
@@ -1529,6 +1617,10 @@ function Form() {
 }
 ```
 
+<div align="right">
+  <b><a href="#api">↥ Наверх</a></b>
+</div>
+
 ### `useResetRecoilState()` <a name="use_reset_recoil_state"></a>
 
 Возвращает функцию, сбрасывающую значение переданного состояния к дефолтному значению.
@@ -1552,6 +1644,10 @@ const TodoResetButton = () => {
   return <button onClick={resetList}>Выполнить сброс</button>
 }
 ```
+
+<div align="right">
+  <b><a href="#api">↥ Наверх</a></b>
+</div>
 
 ### `useRecoilStateLoadable()` <a name="use_recoil_state_loadable"></a>
 
@@ -1582,6 +1678,10 @@ function UserInfo({ userID }) {
 }
 ```
 
+<div align="right">
+  <b><a href="#api">↥ Наверх</a></b>
+</div>
+
 ### `useRecoilValueLoadable()` <a name="use_recoil_value_loadable"></a>
 
 Данный хук предназначен только для чтения значений асинхронных селекторов. Он неявно подписывает компонент на указанное состояние.
@@ -1609,6 +1709,10 @@ function UserInfo({userID}) {
   }
 }
 ```
+
+<div align="right">
+  <b><a href="#api">↥ Наверх</a></b>
+</div>
 
 ### `isRecoilValue()` <a name="is_recoil_value"></a>
 
@@ -1639,6 +1743,10 @@ isRecoilValue(strCounter) // true
 isRecoilValue(5) // false
 isRecoilValue({}) // false
 ```
+
+<div align="right">
+  <b><a href="#api">↥ Наверх</a></b>
+</div>
 
 ### `useRecoilCallback()` <a name="use_recoil_callback"></a>
 
@@ -1690,6 +1798,10 @@ function CartInfoDebug() {
 }
 ```
 
+<div align="right">
+  <b><a href="#api">↥ Наверх</a></b>
+</div>
+
 ## <a name="utils"></a> Утилиты
 
 - [atomFamily](#atom_family)
@@ -1698,6 +1810,10 @@ function CartInfoDebug() {
 - [waitForAll](#wait_for_all)
 - [waitForNone](#wait_for_none)
 - [Snapshot](#snapshot)
+
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
 
 ### `atomFamily()` <a name="atom_family"></a>
 
@@ -1766,6 +1882,10 @@ const myAtomFamily = atomFamily({
 #### Подписки
 
 Одно из преимуществ использования данного паттерна состоит в возможности создания атома для каждого элемента вместо хранения одного атома с состоянием всех элементов. Это позволяет управлять индивидуальными подписками, когда повторно рендерится только компонент, подписанный на конкретный атом.
+
+<div align="right">
+  <b><a href="#utils">↥ Наверх</a></b>
+</div>
 
 ### `selectorFamily()` <a name="selector_family"></a>
 
@@ -1882,6 +2002,10 @@ const Component2 = () => {
 }
 ```
 
+<div align="right">
+  <b><a href="#utils">↥ Наверх</a></b>
+</div>
+
 ### `noWait()` <a name="no_wait"></a>
 
 Помощник селектора, возвращающий `Loadable` для текущего состояния, предоставленного атомом или селектором.
@@ -1904,6 +2028,10 @@ const myQuery = selector({
   }
 })
 ```
+
+<div align="right">
+  <b><a href="#utils">↥ Наверх</a></b>
+</div>
 
 ### `waitForAll()` <a name="wait_for_all"></a>
 
@@ -1963,6 +2091,10 @@ const customerInfoQuery = selectorFamily({
 })
 ```
 
+<div align="right">
+  <b><a href="#utils">↥ Наверх</a></b>
+</div>
+
 ### `waitForNone()` <a name="wait_for_none"></a>
 
 Помощник, возвращающий набор `Loadable` для текущего состояния запрошенных зависимостей.
@@ -1997,6 +2129,10 @@ function MyChart({ layerQueries }) {
   )
 }
 ```
+
+<div align="right">
+  <b><a href="#utils">↥ Наверх</a></b>
+</div>
 
 ### class Snapshot <a name="snapshot"></a>
 

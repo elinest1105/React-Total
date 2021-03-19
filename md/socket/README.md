@@ -1,4 +1,4 @@
-# Socket.io guide & examples :metal:
+# `Socket.io` Guide & Examples :metal:
 
 [На главную](../../README.md)
 
@@ -13,7 +13,7 @@
 
 ## <a name="desc"></a> Описание
 
-Socket.io - это библиотека для создания приложений, работающих в реальном времени, имеющих двунаправленный поток данных и основанных на событиях. Она состоит из:
+> #### `Socket.io` - это библиотека для создания приложений, работающих в реальном времени, имеющих двунаправленный поток данных и основанных на событиях. Она состоит из:
 
 - сервера на Node.js
 - клиентской библиотеки для браузера (которая также может использоваться на сервере)
@@ -80,31 +80,31 @@ httpServer.listen(3000, () => {
 
   <script src="/socket.io/socket.io.js"></script>
   <script>
-      const $events = document.getElementById('events')
+    const $events = document.getElementById('events')
 
-      const newItem = (content) => {
-        const item = document.createElement('li')
-        item.innerText = content
-        return item
-      }
+    const newItem = (content) => {
+      const item = document.createElement('li')
+      item.innerText = content
+      return item
+    }
 
-      const socket = io()
+    const socket = io()
 
-      socket.on('connect', () => {
-        $events.appendChild(newItem('Подключение установлено'))
-      })
+    socket.on('connect', () => {
+      $events.appendChild(newItem('Подключение установлено'))
+    })
 
-      // получаем данные от сервера
-      socket.on('hello', (counter) => {
-        $events.appendChild(newItem(`Привет - ${counter}`))
-      })
+    // получаем данные от сервера
+    socket.on('hello', (counter) => {
+      $events.appendChild(newItem(`Привет - ${counter}`))
+    })
 
-      // отправляем данные на сервер
-      let counter = 0
-      setInterval(() => {
-        ++counter
-        socket.emit('hi', { counter })
-      }, 1000)
+    // отправляем данные на сервер
+    let counter = 0
+    setInterval(() => {
+      ++counter
+      socket.emit('hi', { counter })
+    }, 1000)
   </script>
 </body>
 ```
@@ -113,6 +113,10 @@ httpServer.listen(3000, () => {
 node index.js
 # открываем localhost:3000
 ```
+
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
 
 ## <a name="server"></a> Сервер
 
@@ -355,8 +359,8 @@ const socket = io('http://api.example.com', {
 
 Рекомендуемая структура на примере списка задач.
 
-- [Код](./code/todo)
-- [Демо](https://codesandbox.io/s/socket-todo-93xdu)
+- :link: [Код](./code/todo)
+- :link: [Песочница](https://codesandbox.io/s/socket-todo-93xdu)
 
 ```bash
 mkdir socket-todo
@@ -545,6 +549,10 @@ yarn start
 # открываем localhost:3000
 ```
 
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
+
 ## <a name="client"></a> Клиент
 
 - В процессе установки socket.io (`yarn add socket.io`) формируется клиентский "бандл":
@@ -694,6 +702,10 @@ socket.on('connect', () => {
   socket.sendBuffer = []
 })
 ```
+
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
 
 ## <a name="events"></a> События
 
@@ -1058,6 +1070,10 @@ io.on('connection', socket => {
 - `newListener`
 - `removeListener`
 
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
+
 ## <a name="advanced"></a> Продвинутые возможности
 
 ### Пространства имен (namespaces)
@@ -1218,8 +1234,8 @@ parentNsp.emit('hello')
 
 ## <a name="js"></a> Пример реализации чата на ванильном JavaScript
 
-- [Код](./code/chat)
-- [Демо](https://codesandbox.io/s/socket-chat-bd0sd)
+- :link: [Код](./code/chat)
+- :link: [Песочница](https://codesandbox.io/s/socket-chat-bd0sd)
 
 ```bash
 mkdir socket-chat
@@ -1732,7 +1748,15 @@ yarn start
 # открываем localhost:3000
 ```
 
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
+
 ## <a name="react"></a> Пример реализации чата на React
 
-- [Код](https://github.com/harryheman/React-Projects/tree/main/server/react-chat)
-- [Демо](https://codesandbox.io/s/react-chat-g6wje)
+- :link: [Код](https://github.com/harryheman/React-Projects/tree/main/server/react-chat)
+- :link: [Песочница](https://codesandbox.io/s/react-chat-g6wje)
+
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>

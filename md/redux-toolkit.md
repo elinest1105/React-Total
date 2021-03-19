@@ -1,4 +1,4 @@
-# Redux Toolkit guide :metal:
+# `Redux Toolkit` Guide :metal:
 
 [На главную](../README.md)
 
@@ -9,7 +9,7 @@
 - [Руководство по использованию](#guide)
 - [Основные части API](#api)
 
-`Redux Toolkit` - это пакет, облегчающий работу с `Redux`. Он был разработан для решения трех главных проблем:
+> #### `Redux Toolkit` - это пакет, облегчающий работу с `Redux`. Он был разработан для решения трех главных проблем:
 
 - Слишком сложная настройка хранилища (store)
 - Для того, чтобы заставить `Redux` делать что-то полезное, приходится использовать дополнительные пакеты
@@ -44,6 +44,10 @@ yarn add @reduxjs/toolkit
 npm i @reduxjs/toolkit
 ```
 
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
+
 ## <a name="include"></a> Состав пакета
 
 `Redux Toolkit` включает в себя следующие API:
@@ -56,6 +60,10 @@ npm i @reduxjs/toolkit
 - `createEntityAdapter()`: генерирует набор переиспользуемых редукторов и селекторов для управления нормализованными данными в хранилище
 - утилита `createSelector()` из библиотеки `Reselect`
 
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
+
 # <a name="guide"></a> Руководство по использованию
 
 - [Настройка хранилища](#storesetup)
@@ -64,6 +72,10 @@ npm i @reduxjs/toolkit
 - [Создание частей состояния](#stateslices)
 - [Асинхронная логика и получение данных](#async)
 - [Управление нормализованными данными](#normalize)
+
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
 
 ## <a name="storesetup"></a> Настройка хранилища (store setup)
 
@@ -178,6 +190,10 @@ export default function configureAppStore(preloadedState) {
 }
 ```
 
+<div align="right">
+  <b><a href="#guide">↥ Наверх</a></b>
+</div>
+
 ## <a name="createreducers"></a> Создание редукторов
 
 Редукторы - это самая важная часть `Redux`. Как правило, редуктор отвечает за:
@@ -281,6 +297,10 @@ updateValue(state, action) {
 - "Мутирующий" код правильно работает только внутри `createReducer()`
 - `Immer` не позволяет смешивать "мутирование" черновика (`draft`) состояния и возвращение нового состояния
 
+<div align="right">
+  <b><a href="#guide">↥ Наверх</a></b>
+</div>
+
 ## <a name="actioncreators"></a> Определение создателей операции (action creators)
 
 `Redux` рекомендует использовать "создателей операции" для инкапсуляции процесса создания объектов операции. Это не является обязательным.
@@ -362,6 +382,10 @@ const reducer = (state = {}, action) => {
 ```
 
 При использовании `Redux Toolkit` с `TypeScript`, принимайте во внимание, что компилятор `TypeScript` может не осуществлять неявного преобразования в строку, когда создатель используется как ключ объекта. В этом случае также может потребоваться прямое указание типа создателя (`actionCreator as string`) или использование поля `type` в качестве ключа объекта.
+
+<div align="right">
+  <b><a href="#guide">↥ Наверх</a></b>
+</div>
 
 ## <a name="stateslices"></a> Создание частей состояния (slices of state)
 
@@ -532,6 +556,10 @@ export const { createPost, updatePost, deletePost } = actions
 export default reducer
 ```
 
+<div align="right">
+  <b><a href="#guide">↥ Наверх</a></b>
+</div>
+
 ## <a name="async"></a> Асинхронная логика и получение данных
 
 ### Использование посредника для работы с асинхронным кодом
@@ -686,6 +714,10 @@ ThunkAPI {
   signal: AbortSignal
 }
 ```
+
+<div align="right">
+  <b><a href="#guide">↥ Наверх</a></b>
+</div>
 
 ## <a name="normalize"></a> Управление нормализованными данными
 
@@ -997,6 +1029,10 @@ export const usersAdapter = createEntityAdapter({
 })
 ```
 
+<div align="right">
+  <b><a href="#guide">↥ Наверх</a></b>
+</div>
+
 # <a name="api"></a> Основные части API
 
 - Настройка хранилища
@@ -1008,6 +1044,10 @@ export const usersAdapter = createEntityAdapter({
   - [`createSlice()`](#createslice)
 - [`createAsyncThunk()`](#createasync)
 - [`createEntityAdapter()`](#createentity)
+
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
 
 ## Настройка хранилища
 
@@ -1124,6 +1164,10 @@ const store = configureStore({
 */
 ```
 
+<div align="right">
+  <b><a href="#api">↥ Наверх</a></b>
+</div>
+
 ## <a name="getdefault"></a> `getDefaultMiddleware()`
 
 Возвращает список дефолтных посредников.
@@ -1207,6 +1251,10 @@ const store = configureStore({
     })
 })
 ```
+
+<div align="right">
+  <b><a href="#api">↥ Наверх</a></b>
+</div>
 
 # Редукторы и операции
 
@@ -1563,6 +1611,10 @@ const slice = createSlice({
 })
 ```
 
+<div align="right">
+  <b><a href="#api">↥ Наверх</a></b>
+</div>
+
 ## <a name="createaction"></a> `createAction()`
 
 Вспомогательная функция для определения типа и создателя операции.
@@ -1664,6 +1716,10 @@ const counterReducer = createReducer(0, (builder) => {
 #### actionCreator.match
 
 Каждый создатель, сгенерированный с помощью `createAction()`, имеет метод `match(action)`, который может использоваться для определения того, что переданная операция имеет такой же тип, что и операция, возвращаемая создателем.
+
+<div align="right">
+  <b><a href="#api">↥ Наверх</a></b>
+</div>
 
 ## <a name="createslice"></a> `createSlice()`
 
@@ -1898,6 +1954,10 @@ console.log(`${decrement}`)
 store.dispatch(setUserName('John'))
 // -> { counter: 6, user: { name: 'John', age: 22} }
 ```
+
+<div align="right">
+  <b><a href="#api">↥ Наверх</a></b>
+</div>
 
 ## <a name="createasync"></a> `createAsyncThunk()`
 
@@ -2347,6 +2407,10 @@ const UsersComponent = (props) => {
 }
 ```
 
+<div align="right">
+  <b><a href="#api">↥ Наверх</a></b>
+</div>
+
 ## <a name="createentity"></a> `createEntityAdapter()`
 
 ### Обзор
@@ -2611,3 +2675,7 @@ console.log(booksSelectors.selectAll(store.getState()))
 // Все сущности в отсортированном порядке
 // [{id: "c", title: "Book 2"}, {id: "b", title: "Book 3"}]
 ```
+
+<div align="right">
+  <b><a href="#api">↥ Наверх</a></b>
+</div>

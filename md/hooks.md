@@ -1,4 +1,4 @@
-# Hooks cheatsheet :metal:
+# `Hooks` Cheatsheet :metal:
 
 [На главную](../README.md)
 
@@ -144,6 +144,10 @@ const Profile = () => {
   )
 }
 ```
+
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
 
 ## <a name="useEffect"></a> useEffect
 
@@ -376,6 +380,9 @@ const UserList = () => {
   )
 }
 ```
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
 
 ## <a name="useLayoutEffect"></a> useLayoutEffect
 
@@ -410,6 +417,10 @@ const LayoutEffect = () => {
   )
 }
 ```
+
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
 
 ## <a name="useContext"></a> useContext
 
@@ -574,6 +585,10 @@ export const List = () => {
 }
 ```
 
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
+
 ## <a name="useReducer"></a> useReducer
 
 Хук `useReducer()`, как и хук `useState()`, предназначен для управления состоянием. Он используется при наличии сложной логики управления состоянием или когда следующее состояние зависит от предыдущего. `useReducer()` принимает редуктор (*reducer*), обновляющий состояние на основе типа (*type*) и, опционально, полезной нагрузки (*payload*) переданной операции (*action*).
@@ -734,6 +749,10 @@ const NewState = () => {
 }
 ```
 
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
+
 ### useReducer + useContext
 
 ```jsx
@@ -867,6 +886,10 @@ export const List = () => {
   )
 }
 ```
+
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
 
 ## <a name="useCallback"></a> useCallback
 
@@ -1012,6 +1035,10 @@ const CoordsCallback = () => {
 }
 ```
 
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
+
 ## <a name="useMemo"></a> useMemo
 
 Хук `useMemo()` является альтернативой хука `useCallback()`, но принимает любые значения, а не только функции. Данный хук имеет следующую сигнатуру:
@@ -1152,6 +1179,10 @@ const WordsMemo = () => {
 }
 ```
 
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
+
 ## <a name="useRef"></a> useRef
 
 Хук `useRef()` возвращает объект, свойство `current` которого содержит ссылку на узел DOM. Данный хук также может использоваться для сохранения любого мутирующего значения.
@@ -1266,3 +1297,7 @@ const ProfileRef = () => {
   )
 }
 ```
+
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>

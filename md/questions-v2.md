@@ -4,9 +4,9 @@
 
 ## Оглавление
 
-* *[Вопросы по React, React Router и другим библиотекам для React-приложений](#react)*
-* *[Вопросы по тестированию React-приложений](#testing)*
-* *[Вопросы по Redux](#redux)*
+- [Вопросы по React, React Router и другим библиотекам для React-приложений](#react)
+- [Вопросы по тестированию React-приложений](#testing)
+- [Вопросы по Redux](#redux)
 
 # <a name="rect"></a> React, React Router, библиотеки для React-приложений
 

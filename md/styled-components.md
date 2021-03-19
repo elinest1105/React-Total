@@ -1,4 +1,4 @@
-# Styled components cheatsheet :metal:
+# `Styled Components` Cheatsheet :metal:
 
 [На главную](../README.md)
 

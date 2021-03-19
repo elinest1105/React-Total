@@ -2,7 +2,7 @@
 
 ## Ресурс для изучения React.js и связанных с ним технологий на русском языке :ru:
 
-> Последнее обновление: 18.03.2021 - добавил шпагралку по `Axios`
+> Последнее обновление: 19.03.2021 - добавил руководство по `React Query`
 
 - :page_with_curl: [Вопросы для подготовки к собеседованию. Версия 1](./md/questions.md)
 - :page_with_curl: [Вопросы для подготовки к собеседованию. Версия 2](./md/questions-v2.md)
@@ -15,6 +15,7 @@
 - :page_with_curl: [Руководство по `Redux Toolkit`](./md/redux-toolkit.md)
 - :page_with_curl: [Руководство по `React Router`](./md/react-router.md)
 - :page_with_curl: [Руководство по `Recoil`](./md/recoil.md)
+- :page_with_curl: [Руководство по `React Query`](./md/react-query.md)
 - :memo: [Шпагралка по `Styled Components`](./md/styled-components.md)
 
 ---
@@ -32,7 +33,7 @@
 - :link: [React: основные подходы к управлению состоянием](https://habr.com/ru/post/546632/)
 - :link: [Разрабатываем чат на React с использованием Socket.IO](https://habr.com/ru/post/544046/)
 - :link: [5 подходов к стилизации React-компонентов на примере одного приложения](https://habr.com/ru/post/542630/)
-- :link: [React: лучшие практики](https://habr.com/ru/post/541320/)
+- :link: [React: лучшие практики (перевод)](https://habr.com/ru/post/541320/)
 - :link: [React за 60 секунд: валидация формы](https://habr.com/ru/post/540462/)
 - :link: [Почему контекст не является "инструментом для управления состоянием" (перевод)](https://habr.com/ru/post/539346/)
 
@@ -45,7 +46,9 @@
 - [React](https://ru.reactjs.org/)
 - [React Router](https://reactrouter.com/)
 - [Redux](https://redux.js.org/)
+- [Redux Toolkit](https://redux-toolkit.js.org/)
 - [Recoil](https://recoiljs.org/)
+- [React Query](https://react-query.tanstack.com/)
 - [Create React App](https://create-react-app.dev/)
 - [React Native](https://reactnative.dev/)
 - [Gatsby](https://www.gatsbyjs.com/)

@@ -1,4 +1,4 @@
-# Markdown cheatsheet :metal:
+# `Markdown` Cheatsheet :metal:
 
 [На главную](../README.md)
 

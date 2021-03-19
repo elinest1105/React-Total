@@ -2,7 +2,7 @@
 
 [На главную](../../README.md)
 
-> <a href="https://github.com/typicode/json-server">`json-server`</a> - это библиотека, позволяющая "получить полный фейковый REST API без предварительной настройки менее чем за 30 секунд (серьезно)". Библиотека реализована с помощью <a href="https://github.com/typicode/lowdb">`lowdb`</a> и <a href="https://expressjs.com/">`express`</a>. Также имеется возможность создания полноценного сервера. Наиболее известным примером использования библиотеки является <a href="https://jsonplaceholder.typicode.com/">`JSON Placeholder`</a>.
+> #### <a href="https://github.com/typicode/json-server">`json-server`</a> - это библиотека, позволяющая "получить полный фейковый REST API без предварительной настройки менее чем за 30 секунд (серьезно)". Библиотека реализована с помощью <a href="https://github.com/typicode/lowdb">`lowdb`</a> и <a href="https://expressjs.com/">`express`</a>. Также имеется возможность создания полноценного сервера. Наиболее известным примером использования библиотеки является <a href="https://jsonplaceholder.typicode.com/">`JSON Placeholder`</a>.
 
 ## Оглавление
 
@@ -37,6 +37,10 @@ json-server -w db.json
 - `--middlewares, -m` - путь к файлу с посредниками
 - `--static, -s` - путь к директории со статическими файлами
 - `--delay, -d` - добавление задержки к ответу в мс
+
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
 
 ## <a name="install"></a> Использование
 
@@ -203,6 +207,10 @@ GET /db
 GET /
 ```
 
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
+
 ## <a name="additional"></a> Дополнительный функционал
 
 ### Динамическая генерация БД
@@ -289,10 +297,14 @@ server.listen(3000, () => {
 
 Запускаем сервер: `node server.js`.
 
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
+
 ## <a name="example"></a> Пример
 
-- [Код](./todo)
-- [Песочница](https://codesandbox.io/s/json-server-todo-d5rn3)
+- :link: [Код](./todo)
+- :link: [Песочница](https://codesandbox.io/s/json-server-todo-d5rn3)
 
 ### Создание проекта и установка зависимостей
 
@@ -608,5 +620,9 @@ formEl.onsubmit = async (e) => {
   }
 }
 ```
+
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
 
 Пожалуй, это все, что нам нужно знать о `json-server`.
