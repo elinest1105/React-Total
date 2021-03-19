@@ -30,7 +30,7 @@
 
 ### Проекты
 
-- :link: [React Social App]()
+- :link: [React Social App](https://github.com/harryheman/React-Social-App)
 
 ## Публикации
 
