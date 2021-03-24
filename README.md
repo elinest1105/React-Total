@@ -33,7 +33,7 @@
 
 - :link: [React Chat App](https://github.com/harryheman/React-Projects/tree/main/server/react-chat)
 - :link: [React Social App](https://github.com/harryheman/React-Social-App)
-- :link: [Другие проекты](https://github.com/harryheman/React-Projects)
+- :link: [React Budget App](https://github.com/harryheman/React-Projects/tree/main/client/budget-app)
 
 ---
 
@@ -69,6 +69,7 @@
 - [React Loader Spinner](https://www.npmjs.com/package/react-loader-spinner)
 - [React Burger Menu](https://www.npmjs.com/package/react-burger-menu)
 - [React Timeago - форматирование даты и времени](https://www.npmjs.com/package/react-timeago)
+- [React Beautiful DnD - перетаскивание компонентов](https://github.com/vtereshyn/react-beautiful-dnd-ru)
 
 ---
 
