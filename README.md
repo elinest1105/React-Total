@@ -20,10 +20,11 @@
 
 ---
 
-- :memo: [Шпагралка по `Webpack` и пример конфигурации для JS/React/TS проектов](./md/webpack.md)
-- :page_with_curl: [Руководство по работе с библиотекой `Socket.IO` и примеры ее использования](./md/socket/README.md)
-- :memo: [Шпаргалка по работе с библиотекой `JSON Server` и пример ее использования](./md/json-server/README.md)
+- :page_with_curl: [Руководство `Socket.IO`](./md/socket/README.md)
+- :memo: [Шпагралка по `Webpack`](./md/webpack.md)
 - :memo: [Шпаргалка по `Axios`](./md/axios.md)
+- :memo: [Шпаргалка по `JSON Server`](./md/json-server/README.md)
+- :memo: [Шпаргалка по `JSON Web Token`](./md/jsonwebtoken.md)
 - :memo: [Шпаргалка по `Markdown`](./md/markdown.md)
 
 ---
@@ -41,9 +42,7 @@
 
 ---
 
-## Источники
-
-### Официальная ресурсы
+## Источники и полезные ссылки
 
 - [React](https://ru.reactjs.org/)
 - [React Router](https://reactrouter.com/)
@@ -59,18 +58,38 @@
 ---
 
 - [Webpack](https://webpack.js.org/)
+- [Socket.IO](https://socket.io/)
 
 ### Библиотеки
 
 - [Styled Components](https://styled-components.com/)
-- [Socket.IO](https://socket.io/)
-- [JSON Server](https://github.com/typicode/json-server)
-- [Axios](https://github.com/axios/axios)
+- [React Bootstrap](https://react-bootstrap.github.io/)
+- [Классы Bootstrap 4](https://www.w3schools.com/bootstrap4/bootstrap_ref_all_classes.asp)
+- [Semantic UI React](https://react.semantic-ui.com/)
+- [React Hook Form - валидация форм](https://react-hook-form.com/ru/)
+- [React Snap - предварительный рендеринг страниц для SPA](https://github.com/stereobooster/react-snap)
+- [React Icons - самая большая коллекция компонентов-иконок](https://react-icons.github.io/react-icons/)
+- [React Search Input](https://www.npmjs.com/package/react-search-input)
+- [Emoji Mart - компонент с эмоджи](https://github.com/missive/emoji-mart)
+- [React Loader Spinner](https://www.npmjs.com/package/react-loader-spinner)
+- [React Burger Menu](https://www.npmjs.com/package/react-burger-menu)
+- [React Timeago - форматирование даты и времени](https://www.npmjs.com/package/react-timeago)
+
+---
+
+- [Axios - библиотека для выполнения HTTP-запросов](https://github.com/axios/axios)
+- [JSON Server - библиотека для создания fake REST API](https://github.com/typicode/json-server)
+- [JSON Web Token - библиотека для создания и подтверждения токенов](https://github.com/auth0/node-jsonwebtoken)
+- [Supervisor - утилита для запуска сервера для разработки](https://www.npmjs.com/package/supervisor)
+- [Nanoid - утилита для генерации идентификаторов](https://www.npmjs.com/package/nanoid)
+- [Concurrently - утилита для одновременного выполнения нескольких команд в `package.json`](https://www.npmjs.com/package/concurrently)
 
 ### Другое
 
 - [Источник вопросов по React. Версия 1](https://github.com/sudheerj/reactjs-interview-questions)
 - [Источник вопросов по React. Версия 2, а также шпаргалок по React, Jest, Redux и лучших практик](https://github.com/learning-zone/react-interview-questions)
+- [Awesome React Hooks - самая большая коллекция кастомных хуков](https://github.com/rehooks/awesome-react-hooks)
+- [Regex101 - песочница для регулярных выражений](https://regex101.com/)
 
 ---
 
