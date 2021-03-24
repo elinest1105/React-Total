@@ -29,16 +29,11 @@
 
 ---
 
-### Проекты
+## Проекты
 
+- :link: [React Chat App](https://github.com/harryheman/React-Projects/tree/main/server/react-chat)
 - :link: [React Social App](https://github.com/harryheman/React-Social-App)
-
-## Публикации
-
-- :link: [React: основные подходы к управлению состоянием](https://habr.com/ru/post/546632/)
-- :link: [Разрабатываем чат на React с использованием Socket.IO](https://habr.com/ru/post/544046/)
-- :link: [5 подходов к стилизации React-компонентов на примере одного приложения](https://habr.com/ru/post/542630/)
-- :link: [React за 60 секунд: валидация формы](https://habr.com/ru/post/540462/)
+- :link: [Другие проекты](https://github.com/harryheman/React-Projects)
 
 ---
 
