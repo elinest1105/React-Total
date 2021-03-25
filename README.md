@@ -20,7 +20,7 @@
 
 ---
 
-- :page_with_curl: [Руководство `Mongoose`](./md/socket/README.md)
+- :page_with_curl: [Руководство `Mongoose`](./md/mongoose.md)
 - :page_with_curl: [Руководство `Socket.IO`](./md/socket/README.md)
 - :memo: [Шпагралка по `Webpack`](./md/webpack.md)
 - :memo: [Шпаргалка по `Axios`](./md/axios.md)
