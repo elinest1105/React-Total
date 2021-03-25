@@ -2,7 +2,7 @@
 
 ## Ресурс для изучения React.js и связанных с ним технологий на русском языке :ru:
 
-> Последнее обновление: 19.03.2021 - добавил руководство по `React Query` и проект `React Social App`
+> Последнее обновление: 25.03.2021 - добавил руководство по `Mongoose`
 
 - :page_with_curl: [Вопросы для подготовки к собеседованию. Версия 1](./md/questions.md)
 - :page_with_curl: [Вопросы для подготовки к собеседованию. Версия 2](./md/questions-v2.md)
@@ -20,6 +20,7 @@
 
 ---
 
+- :page_with_curl: [Руководство `Mongoose`](./md/socket/README.md)
 - :page_with_curl: [Руководство `Socket.IO`](./md/socket/README.md)
 - :memo: [Шпагралка по `Webpack`](./md/webpack.md)
 - :memo: [Шпаргалка по `Axios`](./md/axios.md)
