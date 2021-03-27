@@ -6,7 +6,7 @@
 
 - :page_with_curl: [Вопросы для подготовки к собеседованию. Версия 1](./md/questions.md)
 - :page_with_curl: [Вопросы для подготовки к собеседованию. Версия 2](./md/questions-v2.md)
-- :memo: [Шпаргалки по React, Jest, Redux и лучшие практики по использованию React](./md/cheatsheets-bestpractices.md)
+- :memo: [Шпаргалки по React, Jest, Redux и лучшие практики по React](./md/cheatsheets-bestpractices.md)
 
 ---
 
@@ -20,8 +20,8 @@
 
 ---
 
-- :page_with_curl: [Руководство `Mongoose`](./md/mongoose.md)
-- :page_with_curl: [Руководство `Socket.IO`](./md/socket/README.md)
+- :page_with_curl: [Руководство по `Mongoose`](./md/mongoose.md)
+- :page_with_curl: [Руководство по `Socket.IO`](./md/socket/README.md)
 - :memo: [Шпагралка по `Webpack`](./md/webpack.md)
 - :memo: [Шпаргалка по `Axios`](./md/axios.md)
 - :memo: [Шпаргалка по `JSON Server`](./md/json-server/README.md)
@@ -32,9 +32,9 @@
 
 ## Проекты
 
-- :link: [React Chat App](https://github.com/harryheman/React-Projects/tree/main/server/react-chat)
 - :link: [React Social App](https://github.com/harryheman/React-Social-App)
-- :link: [React Budget App](https://github.com/harryheman/React-Projects/tree/main/client/budget-app)
+- :link: [React Chat App](https://github.com/harryheman/React-Projects/react-chat)
+- :link: [React Budget App](https://github.com/harryheman/React-Projects/budget-app)
 
 ---
 
@@ -71,6 +71,7 @@
 - [React Burger Menu](https://www.npmjs.com/package/react-burger-menu)
 - [React Timeago - форматирование даты и времени](https://www.npmjs.com/package/react-timeago)
 - [React Beautiful DnD - перетаскивание компонентов](https://github.com/vtereshyn/react-beautiful-dnd-ru)
+- [React Copy To Clipboard](https://www.npmjs.com/package/react-copy-to-clipboard)
 
 ---
 
@@ -86,7 +87,6 @@
 - [Источник вопросов по React. Версия 1](https://github.com/sudheerj/reactjs-interview-questions)
 - [Источник вопросов по React. Версия 2, а также шпаргалок по React, Jest, Redux и лучших практик](https://github.com/learning-zone/react-interview-questions)
 - [Awesome React Hooks - самая большая коллекция кастомных хуков](https://github.com/rehooks/awesome-react-hooks)
-- [Regex101 - песочница для регулярных выражений](https://regex101.com/)
 
 ---
 
