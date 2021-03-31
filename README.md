@@ -10,19 +10,19 @@
 
 ---
 
-- :memo: [Шпагралка по хукам](./md/hooks.md)
+- :memo: [Шпаргалка по хукам](./md/hooks.md)
 - :memo: [Шпаргалка по `Create React App`](./md/create-react-app.md)
 - :page_with_curl: [Руководство по `Redux Toolkit`](./md/redux-toolkit.md)
 - :page_with_curl: [Руководство по `React Router`](./md/react-router.md)
 - :page_with_curl: [Руководство по `Recoil`](./md/recoil.md)
 - :page_with_curl: [Руководство по `React Query`](./md/react-query.md)
-- :memo: [Шпагралка по `Styled Components`](./md/styled-components.md)
+- :memo: [Шпаргалка по `Styled Components`](./md/styled-components.md)
 
 ---
 
 - :page_with_curl: [Руководство по `Mongoose`](./md/mongoose.md)
 - :page_with_curl: [Руководство по `Socket.IO`](./md/socket/README.md)
-- :memo: [Шпагралка по `Webpack`](./md/webpack.md)
+- :memo: [Шпаргалка по `Webpack`](./md/webpack.md)
 - :memo: [Шпаргалка по `Axios`](./md/axios.md)
 - :memo: [Шпаргалка по `JSON Server`](./md/json-server/README.md)
 - :memo: [Шпаргалка по `JSON Web Token`](./md/jsonwebtoken.md)
