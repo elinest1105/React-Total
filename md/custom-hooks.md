@@ -400,8 +400,9 @@ import { useLayoutEffect } from 'react'
 import { useStyle } from './useStyle'
 
 export function useDisableScroll() {
+  const [, setOverflow] = useStyle('overflow')
+
   useLayoutEffect(() => {
-    const [, setOverflow] = useStyle('overflow')
     setOverflow('hidden')
 
     return () => {
@@ -584,11 +585,11 @@ export const useRouter = () => {
 ```js
 import { useState, useEffect } from 'react'
 
-export const useStyle = (prop, $ = document.body) => {
+export function useStyle(prop, $ = document.body) {
   const [value, setValue] = useState(getComputedStyle($).getPropertyValue(prop))
 
   useEffect(() => {
-    $.style.setProperty(prop, style)
+    $.style.setProperty(prop, value)
   }, [value])
 
   return [value, setValue]
