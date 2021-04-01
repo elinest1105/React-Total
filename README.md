@@ -2,7 +2,7 @@
 
 ## Ресурс для изучения React.js и связанных с ним технологий на русском языке :ru:
 
-> Последнее обновление: 01.04.2021 - добавил руководство по `React Spring`
+> Последнее обновление: 01.04.2021 - добавил руководство по `React Spring`, добавил раздел, посвященный пользовательским (кастомным) хукам
 
 - :page_with_curl: [Вопросы для подготовки к собеседованию. Версия 1](./md/questions.md)
 - :page_with_curl: [Вопросы для подготовки к собеседованию. Версия 2](./md/questions-v2.md)
@@ -39,6 +39,27 @@
 
 ---
 
+## Пользовательские (кастомные) хуки
+
+- [Парочка примеров](./md/custom-hooks/md)
+- [Awesome React Hooks](https://github.com/rehooks/awesome-react-hooks)
+- [React Use](https://github.com/streamich/react-use)
+- [@react-hook](https://www.npmjs.com/search?q=%40react-hook)
+- [Beautiful React Hooks](https://github.com/beautifulinteractions/beautiful-react-hooks)
+
+## Пользовательские (кастомные) компоненты
+
+- [Парочка примеров](./md/custom-components.md) (в разработке)
+- [React Icons - большая коллекция компонентов-иконок](https://react-icons.github.io/react-icons/)
+- [React Search Input - оптимизированный инпут для поиска](https://www.npmjs.com/package/react-search-input)
+- [Emoji Mart - компонент с эмоджи](https://github.com/missive/emoji-mart)
+- [React Loader Spinner - кастомизируемый индикатор загрузки](https://www.npmjs.com/package/react-loader-spinner)
+- [React Burger Menu](https://www.npmjs.com/package/react-burger-menu)
+- [React Timeago - форматирование даты и времени, в том числе, на русском языке](https://www.npmjs.com/package/react-timeago)
+- [React Beautiful DnD - перетаскивание и бросание](https://github.com/vtereshyn/react-beautiful-dnd-ru)
+- [React Copy To Clipboard - компонент для копирования текста в буфер обмена](https://www.npmjs.com/package/react-copy-to-clipboard)
+- [React Error Boundary - кастомизируемый предохранитель](https://www.npmjs.com/package/react-error-boundary)
+
 ## Источники и полезные ссылки
 
 - [React](https://ru.reactjs.org/)
@@ -68,14 +89,6 @@
 - [Semantic UI React](https://react.semantic-ui.com/)
 - [React Hook Form - валидация форм](https://react-hook-form.com/ru/)
 - [React Snap - предварительный рендеринг страниц для SPA](https://github.com/stereobooster/react-snap)
-- [React Icons - самая большая коллекция компонентов-иконок](https://react-icons.github.io/react-icons/)
-- [React Search Input](https://www.npmjs.com/package/react-search-input)
-- [Emoji Mart - компонент с эмоджи](https://github.com/missive/emoji-mart)
-- [React Loader Spinner](https://www.npmjs.com/package/react-loader-spinner)
-- [React Burger Menu](https://www.npmjs.com/package/react-burger-menu)
-- [React Timeago - форматирование даты и времени](https://www.npmjs.com/package/react-timeago)
-- [React Beautiful DnD - перетаскивание компонентов](https://github.com/vtereshyn/react-beautiful-dnd-ru)
-- [React Copy To Clipboard](https://www.npmjs.com/package/react-copy-to-clipboard)
 
 ---
 
@@ -94,7 +107,6 @@
 
 - [Источник вопросов по React. Версия 1](https://github.com/sudheerj/reactjs-interview-questions)
 - [Источник вопросов по React. Версия 2, а также шпаргалок по React, Jest, Redux и лучших практик](https://github.com/learning-zone/react-interview-questions)
-- [Awesome React Hooks - самая большая коллекция кастомных хуков](https://github.com/rehooks/awesome-react-hooks)
 
 ---
 
