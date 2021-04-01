@@ -2,7 +2,7 @@
 
 ## Ресурс для изучения React.js и связанных с ним технологий на русском языке :ru:
 
-> Последнее обновление: 25.03.2021 - добавил руководство по `Mongoose`
+> Последнее обновление: 01.04.2021 - добавил руководство по `React Spring`
 
 - :page_with_curl: [Вопросы для подготовки к собеседованию. Версия 1](./md/questions.md)
 - :page_with_curl: [Вопросы для подготовки к собеседованию. Версия 2](./md/questions-v2.md)
@@ -16,6 +16,7 @@
 - :page_with_curl: [Руководство по `React Router`](./md/react-router.md)
 - :page_with_curl: [Руководство по `Recoil`](./md/recoil.md)
 - :page_with_curl: [Руководство по `React Query`](./md/react-query.md)
+- :page_with_curl: [Руководство по `React Spring`](./md/react-spring.md)
 - :memo: [Шпаргалка по `Styled Components`](./md/styled-components.md)
 
 ---
@@ -46,21 +47,24 @@
 - [Redux Toolkit](https://redux-toolkit.js.org/)
 - [Recoil](https://recoiljs.org/)
 - [React Query](https://react-query.tanstack.com/)
-- [Create React App](https://create-react-app.dev/)
+- [React Spring](https://www.react-spring.io/)
 - [React Native](https://reactnative.dev/)
 - [Gatsby](https://www.gatsbyjs.com/)
 - [Next](https://nextjs.org/)
+- [Create React App](https://create-react-app.dev/)
+- [Styled Components](https://styled-components.com/)
 
 ---
 
+- [Mongoose](https://mongoosejs.com/)
 - [Webpack](https://webpack.js.org/)
 - [Socket.IO](https://socket.io/)
 
 ### Библиотеки
 
-- [Styled Components](https://styled-components.com/)
+- [Material UI](https://material-ui.com/ru/)
 - [React Bootstrap](https://react-bootstrap.github.io/)
-- [Классы Bootstrap 4](https://www.w3schools.com/bootstrap4/bootstrap_ref_all_classes.asp)
+- [Все классы Bootstrap 4](https://www.w3schools.com/bootstrap4/bootstrap_ref_all_classes.asp)
 - [Semantic UI React](https://react.semantic-ui.com/)
 - [React Hook Form - валидация форм](https://react-hook-form.com/ru/)
 - [React Snap - предварительный рендеринг страниц для SPA](https://github.com/stereobooster/react-snap)
@@ -78,6 +82,10 @@
 - [Axios - библиотека для выполнения HTTP-запросов](https://github.com/axios/axios)
 - [JSON Server - библиотека для создания fake REST API](https://github.com/typicode/json-server)
 - [JSON Web Token - библиотека для создания и подтверждения токенов](https://github.com/auth0/node-jsonwebtoken)
+- [Express Validator](https://express-validator.github.io/docs/)
+- [Validator.js](https://github.com/validatorjs/validator.js)
+- [Express Session](https://www.npmjs.com/package/express-session)
+- [Connect Mongo](https://www.npmjs.com/package/connect-mongo)
 - [Supervisor - утилита для запуска сервера для разработки](https://www.npmjs.com/package/supervisor)
 - [Nanoid - утилита для генерации идентификаторов](https://www.npmjs.com/package/nanoid)
 - [Concurrently - утилита для одновременного выполнения нескольких команд в `package.json`](https://www.npmjs.com/package/concurrently)
