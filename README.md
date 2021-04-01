@@ -41,7 +41,7 @@
 
 ## Пользовательские (кастомные) хуки
 
-- [Парочка примеров](./md/custom-hooks/md)
+- [Парочка примеров](./md/custom-hooks.md)
 - [Awesome React Hooks](https://github.com/rehooks/awesome-react-hooks)
 - [React Use](https://github.com/streamich/react-use)
 - [@react-hook](https://www.npmjs.com/search?q=%40react-hook)
