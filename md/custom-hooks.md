@@ -73,6 +73,10 @@ export const useBeforeUnload = (value) => {
 }
 ```
 
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
+
 ## useClick <a name="use_click"></a>
 
 Данные хуки позволяют запускать колбеки при клике внутри или снаружи целевого элемента
@@ -184,6 +188,10 @@ export function App() {
 }
 ```
 
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
+
 ## useEventListener <a name="use_eventlistener"></a>
 
 Данный хук позволяет регистрировать обработчик событий на целевом элементе
@@ -234,6 +242,10 @@ export function App() {
 }
 ```
 
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
+
 ## useFetch <a name="use_fetch"></a>
 
 Хук для выполнения кэшируемых HTTP-запросов с помощью `Fetch API`
@@ -275,6 +287,10 @@ export function useFetch(url, options) {
 }
 ```
 
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
+
 ## useHover <a name="use_hover"></a>
 
 Хук для обработки наведения курсора на целевой элемент
@@ -313,6 +329,10 @@ export function App() {
   return <div ref={hoverRef}>{isHovered ? '😊' : '☹️'}</div>
 }
 ```
+
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
 
 ## useKeyPress <a name="use_keypress"></a>
 
@@ -367,6 +387,10 @@ function App() {
 }
 ```
 
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
+
 ## useLocalStorage <a name="use_localstorage"></a>
 
 Хук для получения и записи значений в локальное хранилище
@@ -390,6 +414,10 @@ export function useLocalStorage(key, initialValue) {
 }
 ```
 
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
+
 ## useDisableScroll <a name="use_disablescroll"></a>
 
 Хук для отключения прокрутки страницы, например, при вызове модального окна
@@ -411,6 +439,10 @@ export function useDisableScroll() {
   }, [])
 }
 ```
+
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
 
 ## useOnline <a name="use_online"></a>
 
@@ -444,6 +476,10 @@ export const useOnline = () => {
 }
 ```
 
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
+
 ## useOnScreen <a name="use_onscreen"></a>
 
 Хук для определения отображения элемента на экране
@@ -471,6 +507,10 @@ export const useOnScreen = (ref, margin = '0px') => {
   return isIntersecting
 }
 ```
+
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
 
 ## usePortal <a name="use_portal"></a>
 
@@ -524,6 +564,10 @@ export function usePortal(id) {
 }
 ```
 
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
+
 ## usePrevious <a name="use_previous"></a>
 
 Хук для сохранения значения из предыдущего рендеринга
@@ -539,6 +583,10 @@ export const usePrevious = (val) => {
   return ref.current
 }
 ```
+
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
 
 ## useRouter <a name="use_router"></a>
 
@@ -577,6 +625,10 @@ export const useRouter = () => {
   )
 }
 ```
+
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
 
 ## useStyle <a name="use_style"></a>
 
@@ -628,6 +680,10 @@ export function App() {
 }
 ```
 
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
+
 ## useTheme <a name="use_theme"></a>
 
 Хук для установки темы оформления страницы
@@ -643,6 +699,10 @@ export function useTheme(theme) {
   }, [theme])
 }
 ```
+
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
 
 ## useTimer <a name="use_timer"></a>
 
@@ -691,6 +751,10 @@ export function useInterval(cb, ms) {
   }, [ms])
 }
 ```
+
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
 
 ## useWindowSize <a name="use_windowsize"></a>
 
@@ -751,3 +815,7 @@ export function App() {
   )
 }
 ```
+
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>

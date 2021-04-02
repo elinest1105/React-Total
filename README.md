@@ -2,7 +2,7 @@
 
 ## Ресурс для изучения React.js и связанных с ним технологий на русском языке :ru:
 
-> Последнее обновление: 01.04.2021 - добавил руководство по `React Spring`, добавил раздел, посвященный пользовательским (кастомным) хукам
+> Последнее обновление: 02.04.2021 - добавил выдержки из определений типов для React (TypeScript)
 
 - :page_with_curl: [Вопросы для подготовки к собеседованию. Версия 1](./md/questions.md)
 - :page_with_curl: [Вопросы для подготовки к собеседованию. Версия 2](./md/questions-v2.md)
@@ -18,6 +18,7 @@
 - :page_with_curl: [Руководство по `React Query`](./md/react-query.md)
 - :page_with_curl: [Руководство по `React Spring`](./md/react-spring.md)
 - :memo: [Шпаргалка по `Styled Components`](./md/styled-components.md)
+- :memo: [Выдержки из определений типов для React](./md/react-types.md)
 
 ---
 
