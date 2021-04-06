@@ -2363,7 +2363,6 @@ MySchema.post('save', (doc, next) => {
 - [Model](#api_model)
 - [Document](#api_document)
 - [Query](#api_query)
-- [Query](#api_query)
 
 ### Mongoose <a name="api_mongoose"></a>
 

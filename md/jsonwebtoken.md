@@ -4,6 +4,8 @@
 
 > #### JSON Web Token - это библиотека для создания (генерации) и подтверждения токенов, используемых для аутентификации пользователей в приложении. Реализация <a href="https://jwt.io/">JSON Web Tokens</a>
 
+[Спецификация](https://tools.ietf.org/html/rfc7519)
+
 ## Оглавление
 
 - [Установка](#install)
@@ -47,6 +49,9 @@ jwt.sign({
 - `secretOrPrivateKey` - строка, буфер или объект, содержащие секрет для алгоритмов HMAC или зашифрованный с помощью схемы PEM приватный ключ для RSA и ECDSA
 
 ### Настройки
+
+- [Registered claim names](https://tools.ietf.org/html/rfc7519#section-4.1)
+- [Creating and Validating JWTs](https://tools.ietf.org/html/rfc7519#section-7)
 
 - `algorithm` (по умолчанию `HS256`)
 - `expiresIn` - время, в течение которого токен считается действительным: 100 - 100 с, '100' - 100 мс, '1h' - 1 час, '2d' - 2 дня
