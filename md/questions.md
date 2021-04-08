@@ -4,6 +4,8 @@
 
 [На главную](../README.md)
 
+[Источник](https://github.com/sudheerj/reactjs-interview-questions)
+
 ## Список вопросов
 
 [Перейти к вопросам](#questions)

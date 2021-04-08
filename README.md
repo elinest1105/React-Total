@@ -8,6 +8,7 @@
 - :page_with_curl: [Вопросы для подготовки к собеседованию. Версия 2](./md/questions-v2.md)
 - :memo: [Шпаргалки по React, Jest, Redux и лучшие практики по React](./md/cheatsheets-bestpractices.md)
 - :memo: [Шпаргалка React + TypeScript](./md/react-typescript.md)
+- :memo: [Выдержки из определений типов для React (TypeScript)](./md/react-types.md)
 
 ---
 
@@ -19,7 +20,6 @@
 - :page_with_curl: [Руководство по `React Query`](./md/react-query.md)
 - :page_with_curl: [Руководство по `React Spring`](./md/react-spring.md)
 - :memo: [Шпаргалка по `Styled Components`](./md/styled-components.md)
-- :memo: [Выдержки из определений типов для React (TypeScript)](./md/react-types.md)
 
 ---
 
@@ -37,6 +37,9 @@
 
 - :link: [Пример использования Apollo Server, Apollo Client, Graphql и React для создания блога](https://github.com/harryheman/Apollo-Graphql-React-Social-App)
 - :link: [Пример использования Socket.io и React для создания чата](https://github.com/harryheman/Socket.io-React-Chat-App)
+- :link: [Пример приложения для контроля расходов](https://github.com/harryheman/React-Projects/tree/main/budget-app)
+- :link: [Пример использования `React Beautiful DnD` для перетаскивания и бросания компонентов](https://github.com/harryheman/React-Projects/tree/main/react-drag-drop)
+- :link: [Эксперименты с конкурентным режимом](https://github.com/harryheman/React-Projects/tree/main/react-next)
 
 ---
 
@@ -51,14 +54,11 @@
 ## Пользовательские (кастомные) компоненты
 
 - [Curated List of React Components & Libraries - большая коллекция компонентов и библиотек для React](https://github.com/brillout/awesome-react-components)
-
----
-
 - [React Icons - компоненты-иконки](https://react-icons.github.io/react-icons/)
 - [React Search Input - инпут для поиска](https://www.npmjs.com/package/react-search-input)
 - [Emoji Mart - компонент с эмоджи](https://github.com/missive/emoji-mart)
 - [React Loader Spinner - индикатор загрузки](https://www.npmjs.com/package/react-loader-spinner)
-- [React Burger Menu](https://www.npmjs.com/package/react-burger-menu)
+- [React Burger Menu - панель навигации](https://www.npmjs.com/package/react-burger-menu)
 - [React Timeago - компонент для форматирования даты и времени с поддержкой русского языка](https://www.npmjs.com/package/react-timeago)
 - [React Beautiful DnD - компоненты для реализации перетаскивания и бросания](https://github.com/vtereshyn/react-beautiful-dnd-ru)
 - [React Copy To Clipboard - компонент для копирования текста в буфер обмена](https://www.npmjs.com/package/react-copy-to-clipboard)
@@ -68,14 +68,14 @@
 
 - [Material UI](https://material-ui.com/ru/)
 - [React Bootstrap](https://react-bootstrap.github.io/)
-- [Все классы Bootstrap 4](https://www.w3schools.com/bootstrap4/bootstrap_ref_all_classes.asp)
-- [Цветовая схема Bootstrap](https://colorswall.com/palette/3/)
 - [Semantic UI React](https://react.semantic-ui.com/)
 - [React Hook Form - валидация форм](https://react-hook-form.com/ru/)
 - [React Leaflet - карта](https://react-leaflet.js.org/)
 - [React Snap - предварительный рендеринг страниц для SPA](https://github.com/stereobooster/react-snap)
 
 ## Источники и полезные ссылки
+
+### Экосистема React
 
 - [React](https://ru.reactjs.org/)
 - [React Native](https://reactnative.dev/)
@@ -90,14 +90,14 @@
 - [Styled Components](https://styled-components.com/)
 - [React Spring](https://www.react-spring.io/)
 
----
+### Другое
 
 - [Express](https://expressjs.com/)
 - [Mongoose](https://mongoosejs.com/)
 - [Mongo Atlas/Cloud](https://www.mongodb.com/cloud/atlas)
 - [Postman](https://www.postman.com/)
-- [Webpack](https://webpack.js.org/)
 - [Socket.IO](https://socket.io/)
+- [Webpack](https://webpack.js.org/)
 - [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/basic-types.html)
 - [Рекомендуемый tsconfig.json](https://www.npmjs.com/package/@tsconfig/recommended)
 
@@ -107,28 +107,25 @@
 - [Axios - выполнение HTTP-запросов](https://github.com/axios/axios)
 - [JSON Server - создание fake REST API](https://github.com/typicode/json-server)
 - [JSON Web Token - создание и подтверждение токенов](https://github.com/auth0/node-jsonwebtoken)
-- [Express Validator](https://express-validator.github.io/docs/)
-- [Validator.js](https://github.com/validatorjs/validator.js)
-- [Express Session](https://www.npmjs.com/package/express-session)
-- [Connect Mongo](https://www.npmjs.com/package/connect-mongo)
+- [Express Validator - валидация входящих данных](https://express-validator.github.io/docs/)
+- [Validator.js - библиотека, лежащая в основе `express-validator`](https://github.com/validatorjs/validator.js)
+- [Express Session - библиотека для реализации сессий с помощью `Express`](https://www.npmjs.com/package/express-session)
+- [Connect Mongo - библиотека для хранения сессий в `MongoDB`](https://www.npmjs.com/package/connect-mongo)
 - [Supervisor - утилита для запуска сервера для разработки](https://www.npmjs.com/package/supervisor)
-- [Nanoid - генерация идентификаторов](https://www.npmjs.com/package/nanoid)
+- [Nodemon - альтернатива `supervisor`](https://www.npmjs.com/package/nodemon)
+- [Nanoid - генерация уникальных идентификаторов](https://www.npmjs.com/package/nanoid)
 - [Concurrently - одновременное выполнения нескольких команд в `package.json`](https://www.npmjs.com/package/concurrently)
+- [Npm Run All - альтернатива `concurrently`](https://www.npmjs.com/package/npm-run-all)
 - [base64url - кодирование/декодирование строки в base64](https://www.npmjs.com/package/base64url)
-
-### Другое
-
-- [Источник вопросов по React. Версия 1](https://github.com/sudheerj/reactjs-interview-questions)
-- [Источник вопросов по React. Версия 2, а также шпаргалок по React, Jest, Redux и лучших практик](https://github.com/learning-zone/react-interview-questions)
 
 ---
 
 ## Участие
 
-Буду признателен за помощь в обнаружении ошибок, опечаток и неточностей :wink:
+Буду признателен за помощь в обнаружении ошибок, опечаток и неточностей, а также за любой вклад в развитие проекта :wink:
 
 ---
 
 ## Лицензия
 
-Материалы находятся в свободном доступе. Это означает, что вы можете их использовать по своему усмотрению. Будет круто, если при этом вы будете ссылаться на данный репозиторий :thumbsup:
+Материалы находятся в свободном доступе. Это означает, что вы можете их использовать как угодно. Будет круто, если при этом вы будете ссылаться на данный репозиторий :thumbsup:

@@ -2,6 +2,8 @@
 
 [На главную](../README.md)
 
+[Источник](https://github.com/learning-zone/react-interview-questions)
+
 ## Оглавление
 
 - [Шпаргалка по React](#react)

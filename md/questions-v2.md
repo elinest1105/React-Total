@@ -2,6 +2,8 @@
 
 [На главную](../README.md)
 
+[Источник](https://github.com/learning-zone/react-interview-questions)
+
 ## Оглавление
 
 - [Вопросы по React, React Router и другим библиотекам для React-приложений](#react)
