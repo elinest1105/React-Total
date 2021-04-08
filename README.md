@@ -35,8 +35,8 @@
 
 ## Проекты
 
-- :link: [React Social App](https://github.com/harryheman/React-Social-App)
-- :link: [React Chat App](https://github.com/harryheman/React-Projects/react-chat)
+- :link: [Пример использования Apollo Server, Apollo Client, Graphql и React для создания блога](https://github.com/harryheman/Apollo-Graphql-React-Social-App)
+- :link: [Пример использования Socket.io и React для создания чата](https://github.com/harryheman/Socket.io-React-Chat-App)
 
 ---
 
