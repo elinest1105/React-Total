@@ -716,7 +716,7 @@ export function useTimeout(cb, ms) {
 
   useEffect(() => {
     cbRef.current = cb
-  }, cb)
+  }, [cb])
 
   useEffect(() => {
     function tick() {
@@ -736,7 +736,7 @@ export function useInterval(cb, ms) {
 
   useEffect(() => {
     cbRef.current = cb
-  }, cb)
+  }, [cb])
 
   useEffect(() => {
     function tick() {
