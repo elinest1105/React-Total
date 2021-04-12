@@ -117,6 +117,10 @@ const getUserInfo = async () => {
   data: {
     firstName: 'John'
   },
+  // Параметры строки запроса
+  params: {
+    id: '123'
+  },
   withCredentials: false, // default
   responseType: 'json', // default
   responseEncoding: 'utf8', // default

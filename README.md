@@ -2,7 +2,7 @@
 
 ## Ресурс для изучения React.js и связанных с ним технологий на русском языке :ru:
 
-> Последнее обновление: 06.04.2021 - добавил шпаргалку `React + TypeScript`
+> Последнее обновление: 12.04.2021 - добавил шпаргалку по `Express API`
 
 - :page_with_curl: [Вопросы для подготовки к собеседованию. Версия 1](./md/questions.md)
 - :page_with_curl: [Вопросы для подготовки к собеседованию. Версия 2](./md/questions-v2.md)
@@ -23,6 +23,7 @@
 
 ---
 
+- :memo: [Шпаргалка по `Express API`](./md/express-api.md)
 - :page_with_curl: [Руководство по `Mongoose`](./md/mongoose.md)
 - :page_with_curl: [Руководство по `Socket.IO`](./md/socket/README.md)
 - :memo: [Шпаргалка по `Webpack`](./md/webpack.md)
@@ -37,7 +38,6 @@
 
 - :link: [Пример использования Apollo Server, Apollo Client, Graphql и React для создания блога](https://github.com/harryheman/Apollo-Graphql-React-Social-App)
 - :link: [Пример использования Socket.io и React для создания чата](https://github.com/harryheman/Socket.io-React-Chat-App)
-- :link: [Пример приложения для контроля расходов](https://github.com/harryheman/React-Projects/tree/main/budget-app)
 - :link: [Пример использования `React Beautiful DnD` для перетаскивания и бросания компонентов](https://github.com/harryheman/React-Projects/tree/main/react-drag-drop)
 - :link: [Эксперименты с конкурентным режимом](https://github.com/harryheman/React-Projects/tree/main/react-next)
 
