@@ -39,7 +39,7 @@
 - :link: [Пример использования Apollo Server, Apollo Client, Graphql и React для создания блога](https://github.com/harryheman/Apollo-Graphql-React-Social-App)
 - :link: [Пример использования Socket.io и React для создания чата](https://github.com/harryheman/Socket.io-React-Chat-App)
 - :link: [Пример использования `React Beautiful DnD` для перетаскивания и бросания компонентов](https://github.com/harryheman/React-Projects/tree/main/react-drag-drop)
-- :link: [Эксперименты с конкурентным режимом](https://github.com/harryheman/React-Projects/tree/main/react-next)
+- :link: [Простое приложение для контроля расходов](https://github.com/harryheman/React-Projects/tree/main/budget-app)
 
 ---
 
