@@ -31,6 +31,7 @@
 - :memo: [Шпаргалка по `JSON Server`](./md/json-server/README.md)
 - :memo: [Шпаргалка по `JSON Web Token`](./md/jsonwebtoken.md)
 - :memo: [Шпаргалка по `Markdown`](./md/markdown.md)
+- :memo: [Шпаргалка по `Google Spreadsheet`](./md/google-spreadsheet.md)
 
 ---
 
@@ -54,6 +55,7 @@
 
 ## Пользовательские (кастомные) компоненты
 
+- [Примеры](./md/custom-components.md)
 - [Curated List of React Components & Libraries - большая коллекция компонентов и библиотек для React](https://github.com/brillout/awesome-react-components)
 - [React Icons - компоненты-иконки](https://react-icons.github.io/react-icons/)
 - [React Search Input - инпут для поиска](https://www.npmjs.com/package/react-search-input)
@@ -64,6 +66,8 @@
 - [React Beautiful DnD - компоненты для реализации перетаскивания и бросания](https://github.com/vtereshyn/react-beautiful-dnd-ru)
 - [React Copy To Clipboard - компонент для копирования текста в буфер обмена](https://www.npmjs.com/package/react-copy-to-clipboard)
 - [React Error Boundary - предохранитель](https://www.npmjs.com/package/react-error-boundary)
+- [React FilePond](https://github.com/pqina/react-filepond)
+- [React Google Recaptcha](https://www.npmjs.com/package/react-google-recaptcha)
 
 ---
 
@@ -71,6 +75,7 @@
 - [React Bootstrap](https://react-bootstrap.github.io/)
 - [Semantic UI React](https://react.semantic-ui.com/)
 - [React Hook Form - валидация форм](https://react-hook-form.com/ru/)
+- [Formik](https://formik.org/)
 - [React Leaflet - карта](https://react-leaflet.js.org/)
 - [React Snap - предварительный рендеринг страниц для SPA](https://github.com/stereobooster/react-snap)
 
@@ -101,6 +106,9 @@
 - [Webpack](https://webpack.js.org/)
 - [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/basic-types.html)
 - [Рекомендуемый tsconfig.json](https://www.npmjs.com/package/@tsconfig/recommended)
+- [Google SpreadSheet](https://theoephraim.github.io/node-google-spreadsheet/#/)
+- [Nodemailer](https://nodemailer.com/)
+- [Mailtrap](https://mailtrap.io/)
 
 ---
 
@@ -118,6 +126,7 @@
 - [Concurrently - одновременное выполнения нескольких команд в `package.json`](https://www.npmjs.com/package/concurrently)
 - [Npm Run All - альтернатива `concurrently`](https://www.npmjs.com/package/npm-run-all)
 - [base64url - кодирование/декодирование строки в base64](https://www.npmjs.com/package/base64url)
+- [Multer - обработка `multipart/form-data`](https://github.com/expressjs/multer/blob/master/doc/README-ru.md)
 
 ---
 

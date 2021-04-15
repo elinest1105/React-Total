@@ -2,7 +2,7 @@
 
 [На главную](../README.md)
 
-> #### Несколько примеров кастомных хуков
+> #### Парочка примеров кастомных хуков
 
 ## Оглавление
 
@@ -23,6 +23,7 @@
 - [useTheme](#use_theme)
 - [useTimer](#use_timer)
 - [useWindowSize](#use_windowsize)
+- [useCopyToClipboard](#use_copytoclipboard)
 
 ## useBeforeUnload <a name="use_beforeunload"></a>
 
@@ -819,3 +820,32 @@ export function App() {
 <div align="right">
   <b><a href="#">↥ Наверх</a></b>
 </div>
+
+## useCopyToClipboard <a name="use_copytoclipboard">
+
+Хук для копирования текста в буфер обмена
+
+```js
+import { useState, useEffect } from 'react'
+
+export const useCopyToClipboard = (resetTime) => {
+  const [copied, setCopied] = useState(false)
+
+  const copy = async (text) => {
+    await navigator.clipboard.writeText(text)
+    setCopied(true)
+  }
+
+  useEffect(() => {
+    let timerId
+    if (resetTime && copied) {
+      tmerId = setTimeout(() => {
+        setCopied(false)
+      }, resetTime)
+    }
+    return () => clearTimeout(timerId)
+  }, [])
+
+  return [copied, copy]
+}
+```
