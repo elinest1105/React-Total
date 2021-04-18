@@ -624,5 +624,3 @@ formEl.onsubmit = async (e) => {
 <div align="right">
   <b><a href="#">↥ Наверх</a></b>
 </div>
-
-Пожалуй, это все, что нам нужно знать о `json-server`.

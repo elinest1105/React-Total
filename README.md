@@ -2,7 +2,7 @@
 
 ## Ресурс для изучения React.js и связанных с ним технологий на русском языке :ru:
 
-> Последнее обновление: 12.04.2021 - добавил шпаргалку по `Express API`
+> Последнее обновление: 18.04.2021 - добавил руководство по `GraphQL`
 
 - :page_with_curl: [Вопросы для подготовки к собеседованию. Версия 1](./md/questions.md)
 - :page_with_curl: [Вопросы для подготовки к собеседованию. Версия 2](./md/questions-v2.md)
@@ -23,6 +23,7 @@
 
 ---
 
+- :page_with_curl: [Руководство по `GraphQL`](./md/graphql.md)
 - :memo: [Шпаргалка по `Express API`](./md/express-api.md)
 - :page_with_curl: [Руководство по `Mongoose`](./md/mongoose.md)
 - :page_with_curl: [Руководство по `Socket.IO`](./md/socket/README.md)
