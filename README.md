@@ -2,7 +2,7 @@
 
 ## Ресурс для изучения React.js и связанных с ним технологий на русском языке :ru:
 
-> Последнее обновление: 18.04.2021 - добавил руководство по `GraphQL`
+> Последнее обновление: 30.04.2021 - добавил раздел про авторизацию, обновил несколько других разделов
 
 - :page_with_curl: [Вопросы для подготовки к собеседованию. Версия 1](./md/questions.md)
 - :page_with_curl: [Вопросы для подготовки к собеседованию. Версия 2](./md/questions-v2.md)
@@ -38,45 +38,37 @@
 
 ## Проекты
 
-- :link: [Пример использования Apollo Server, Apollo Client, Graphql и React для создания блога](https://github.com/harryheman/Apollo-Graphql-React-Social-App)
+- :link: [Пример использования Apollo Server, Apollo Client, GraphQL и React для создания блога](https://github.com/harryheman/Apollo-GraphQL-React-Social-App)
 - :link: [Пример использования Socket.io и React для создания чата](https://github.com/harryheman/Socket.io-React-Chat-App)
 - :link: [Пример реализации подписки на обновления с помощью Netlify Functions и Google Таблиц](https://github.com/harryheman/Mail-List)
 
 ---
 
-## Пользовательские (кастомные) хуки
+## Пользовательские хуки
 
-- [Примеры](./md/custom-hooks.md)
+- [Несколько примеров](./md/custom-hooks.md)
 - [Awesome React Hooks](https://github.com/rehooks/awesome-react-hooks)
-- [React Use](https://github.com/streamich/react-use)
+- [react-use](https://github.com/streamich/react-use)
 - [@react-hook](https://www.npmjs.com/search?q=%40react-hook)
-- [Beautiful React Hooks](https://github.com/beautifulinteractions/beautiful-react-hooks)
+- [beautiful-react-hooks](https://github.com/beautifulinteractions/beautiful-react-hooks)
 
 ## Пользовательские (кастомные) компоненты
 
-- [Примеры](./md/custom-components.md)
-- [Curated List of React Components & Libraries - большая коллекция компонентов и библиотек для React](https://github.com/brillout/awesome-react-components)
-- [React Icons - компоненты-иконки](https://react-icons.github.io/react-icons/)
-- [React Search Input - инпут для поиска](https://www.npmjs.com/package/react-search-input)
-- [Emoji Mart - компонент с эмоджи](https://github.com/missive/emoji-mart)
-- [React Loader Spinner - индикатор загрузки](https://www.npmjs.com/package/react-loader-spinner)
-- [React Burger Menu - панель навигации](https://www.npmjs.com/package/react-burger-menu)
-- [React Timeago - компонент для форматирования даты и времени с поддержкой русского языка](https://www.npmjs.com/package/react-timeago)
-- [React Beautiful DnD - компоненты для реализации перетаскивания и бросания](https://github.com/vtereshyn/react-beautiful-dnd-ru)
-- [React Copy To Clipboard - компонент для копирования текста в буфер обмена](https://www.npmjs.com/package/react-copy-to-clipboard)
-- [React Error Boundary - предохранитель](https://www.npmjs.com/package/react-error-boundary)
-- [React FilePond](https://github.com/pqina/react-filepond)
-- [React Google Recaptcha](https://www.npmjs.com/package/react-google-recaptcha)
+- [Несколько примеров](./md/custom-components.md)
+- [Curated List of React Components & Libraries](https://github.com/ brillout/awesome-react-components) - большая коллекция компонентов и библиотек для `React`
+- [emoji-mart](https://github.com/missive/emoji-mart) - компонент с эмоджи
+- [react-beautiful-dnd](https://github.com/vtereshyn/react-beautiful-dnd-ru) - компоненты для реализации перетаскивания и бросания
+- [react-burger-menu](https://www.npmjs.com/package/react-burger-menu) - меню, навбар
+- [react-copy-to-clipboard](https://www.npmjs.com/package/react-copy-to-clipboard) - компонент для копирования текста в буфер обмена
+- [react-error-boundary](https://www.npmjs.com/package/react-error-boundary) - предохранитель
+- [react-filepond](https://github.com/pqina/react-filepond) - компонент для отправки файлов
+- [react-icons](https://react-icons.github.io/react-icons/) - компоненты-иконки
+- [react-google-recaptcha](https://www.npmjs.com/package/react-google-recaptcha)
+- [react-loader-spinner](https://www.npmjs.com/package/react-loader-spinner) - индикатор загрузки
+- [react-search-input](https://www.npmjs.com/package/react-search-input) - инпут для поиска
+- [react-timeago](https://www.npmjs.com/package/react-timeago) - компонент для форматирования даты и времени с поддержкой русского языка
 
 ---
-
-- [Material UI](https://material-ui.com/ru/)
-- [React Bootstrap](https://react-bootstrap.github.io/)
-- [Semantic UI React](https://react.semantic-ui.com/)
-- [React Hook Form - валидация форм](https://react-hook-form.com/ru/)
-- [Formik](https://formik.org/)
-- [React Leaflet - карта](https://react-leaflet.js.org/)
-- [React Snap - предварительный рендеринг страниц для SPA](https://github.com/stereobooster/react-snap)
 
 ## Источники и полезные ссылки
 
@@ -95,37 +87,76 @@
 - [Styled Components](https://styled-components.com/)
 - [React Spring](https://www.react-spring.io/)
 
-### Другое
+---
 
-- [Express](https://expressjs.com/)
-- [Mongoose](https://mongoosejs.com/)
-- [Mongo Atlas/Cloud](https://www.mongodb.com/cloud/atlas)
-- [Postman](https://www.postman.com/)
-- [Socket.IO](https://socket.io/)
-- [Webpack](https://webpack.js.org/)
-- [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/basic-types.html)
-- [Рекомендуемый tsconfig.json](https://www.npmjs.com/package/@tsconfig/recommended)
-- [Google SpreadSheet](https://theoephraim.github.io/node-google-spreadsheet/#/)
-- [Nodemailer](https://nodemailer.com/)
-- [Mailtrap](https://mailtrap.io/)
+- [Material UI](https://material-ui.com/ru/)
+- [Ant Design](https://ant.design/docs/react/introduce)
+- [React Bootstrap](https://react-bootstrap.github.io/)
+- [Semantic UI React](https://react.semantic-ui.com/)
 
 ---
 
-- [Статус-коды](https://httpstatuses.com/)
-- [Axios - выполнение HTTP-запросов](https://github.com/axios/axios)
-- [JSON Server - создание fake REST API](https://github.com/typicode/json-server)
-- [JSON Web Token - создание и подтверждение токенов](https://github.com/auth0/node-jsonwebtoken)
-- [Express Validator - валидация входящих данных](https://express-validator.github.io/docs/)
-- [Validator.js - библиотека, лежащая в основе `express-validator`](https://github.com/validatorjs/validator.js)
-- [Express Session - библиотека для реализации сессий с помощью `Express`](https://www.npmjs.com/package/express-session)
-- [Connect Mongo - библиотека для хранения сессий в `MongoDB`](https://www.npmjs.com/package/connect-mongo)
-- [Supervisor - утилита для запуска сервера для разработки](https://www.npmjs.com/package/supervisor)
-- [Nodemon - альтернатива `supervisor`](https://www.npmjs.com/package/nodemon)
-- [Nanoid - генерация уникальных идентификаторов](https://www.npmjs.com/package/nanoid)
-- [Concurrently - одновременное выполнения нескольких команд в `package.json`](https://www.npmjs.com/package/concurrently)
-- [Npm Run All - альтернатива `concurrently`](https://www.npmjs.com/package/npm-run-all)
-- [base64url - кодирование/декодирование строки в base64](https://www.npmjs.com/package/base64url)
-- [Multer - обработка `multipart/form-data`](https://github.com/expressjs/multer/blob/master/doc/README-ru.md)
+- [React Hook Form](https://react-hook-form.com/ru/) - хуки для валидации формы
+- [Formik](https://formik.org/) - альтернатива `react-hook-form`
+- [React Leaflet](https://react-leaflet.js.org/) - компоненты для работы с картой
+- [React Snap](https://github.com/stereobooster/react-snap) - утилита для предварительного рендеринга страниц для `SPA`
+
+---
+
+### Другое
+
+- [Node.js](https://nodejs.org/en/)
+- [npm](https://www.npmjs.com/)
+- [yarn](https://yarnpkg.com/)
+- [Express](https://expressjs.com/)
+- [Mongoose](https://mongoosejs.com/)
+- [Mongo Atlas/Cloud](https://www.mongodb.com/cloud/atlas)
+- [Prisma](https://www.prisma.io/) - `ORM` для работы с такими базами данных, как `MySQL`, `PostgreSQL` и `SQLite`
+- [GraphQL](https://graphql.org/)
+- [Webpack](https://webpack.js.org/) - сборщик модулей
+- [Socket.IO](https://socket.io/) - библиотека для создания приложений, работающих в режиме реального времени
+- [TypeScript](https://www.typescriptlang.org/)
+- [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/basic-types.html)
+- [Рекомендуемый tsconfig.json](https://www.npmjs.com/package/@tsconfig/recommended)
+- [Postman](https://www.postman.com/) - сервис для тестирования API
+- [Mirage.js](https://miragejs.com/) - библиотека, позволяющая тестировать API на клиенте
+- [Mailtrap](https://mailtrap.io/) - сервис для тестирования отправки email
+
+---
+
+### Авторизация
+
+- [Passport](http://www.passportjs.org/) - фреймворк для работы с авторизацией
+- [JSON Web Tokens](https://jwt.io/) -
+- [Auth0](https://auth0.com/) - централизованный сервис для работы с авторизацией
+- [express-session](https://www.npmjs.com/package/express-session) - библиотека для реализации куки-сессий с помощью `Express`
+- [connect-mongo](https://www.npmjs.com/package/connect-mongo) - библиотека для хранения куки-сессий в `MongoDB`
+- [jsonwebtoken](https://github.com/auth0/node-jsonwebtoken) - библиотека для создание и подтверждения токенов
+- [bcrypt](https://www.npmjs.com/package/bcrypt) - утилита для хэширования и проверки паролей
+- [base64url](https://www.npmjs.com/package/base64url)- утилита для кодирования/декодирования строки в `base64`
+- [react-google-login](https://www.npmjs.com/package/react-google-login) - компонент для авторизации с помощью Google-аккаунта
+- [react-facebook-login](https://github.com/keppelen/react-facebook-login) - компонент для авторизации с помощью Facebook-аккаунта
+- [react-github-login](https://github.com/checkr/react-github-login) - компонент для авторизации с помощью GitHub-аккаунта
+
+---
+
+### npm-пакеты
+
+- [Статус-коды HTTP](https://httpstatuses.com/)
+- [axios](https://github.com/axios/axios) - библиотека для выполнения HTTP-запросов
+- [concurrently](https://www.npmjs.com/package/concurrently) - утилита для одновременного выполнения нескольких команд (скриптов)
+- [express-validator](https://express-validator.github.io/docs/) - утилита для проверки входящих данных
+- [generate-password](https://www.npmjs.com/package/generate-password) - утилита для генерации паролей
+- [google-spreadsheet](https://theoephraim.github.io/node-google-spreadsheet/#/) - библиотека для работы с Google таблицами
+- [json-server](https://github.com/typicode/json-server) - библиотека для создания `fake REST API`
+- [multer](https://github.com/expressjs/multer/blob/master/doc/README-ru.md) - утилита для обработки `multipart/form-data`
+- [nanoid](https://www.npmjs.com/package/nanoid) - утилита для генерации уникальных идентификаторов
+- [nodemailer](https://nodemailer.com/) - утилита для отправки email
+- [nodemon](https://www.npmjs.com/package/nodemon) - альтернатива `supervisor`
+- [npm-run-all](https://www.npmjs.com/package/npm-run-all) - альтернатива `concurrently`
+- [serve](https://www.npmjs.com/package/serve) - утилита для обслуживания статических файлов
+- [supervisor](https://www.npmjs.com/package/supervisor)  - утилита для запуска сервера для разработки
+- [validator.js](https://github.com/validatorjs/validator.js) - библиотека, лежащая в основе `express-validator`
 
 ---
 
