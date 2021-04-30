@@ -2,7 +2,7 @@
 
 ## Ресурс для изучения React.js и связанных с ним технологий на русском языке :ru:
 
-> Последнее обновление: 30.04.2021 - добавил раздел про авторизацию, обновил несколько других разделов
+> Последнее обновление: 30.04.2021 - добавил раздел про авторизацию, обновил несколько других разделов, добавил шпагралку по HTML5-тегам (why not)
 
 - :page_with_curl: [Вопросы для подготовки к собеседованию. Версия 1](./md/questions.md)
 - :page_with_curl: [Вопросы для подготовки к собеседованию. Версия 2](./md/questions-v2.md)
@@ -28,6 +28,7 @@
 - :page_with_curl: [Руководство по `Mongoose`](./md/mongoose.md)
 - :page_with_curl: [Руководство по `Socket.IO`](./md/socket/README.md)
 - :memo: [Шпаргалка по `Webpack`](./md/webpack.md)
+- :memo: [Шпаргалка по `HTML5`-тегам](./md/html5.md)
 - :memo: [Шпаргалка по `Axios`](./md/axios.md)
 - :memo: [Шпаргалка по `JSON Server`](./md/json-server/README.md)
 - :memo: [Шпаргалка по `JSON Web Token`](./md/jsonwebtoken.md)
