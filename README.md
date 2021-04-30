@@ -55,7 +55,7 @@
 ## Пользовательские (кастомные) компоненты
 
 - [Несколько примеров](./md/custom-components.md)
-- [Curated List of React Components & Libraries](https://github.com/ brillout/awesome-react-components) - большая коллекция компонентов и библиотек для `React`
+- [Curated List of React Components & Libraries](https://github.com/brillout/awesome-react-components) - большая коллекция компонентов и библиотек для `React`
 - [emoji-mart](https://github.com/missive/emoji-mart) - компонент с эмоджи
 - [react-beautiful-dnd](https://github.com/vtereshyn/react-beautiful-dnd-ru) - компоненты для реализации перетаскивания и бросания
 - [react-burger-menu](https://www.npmjs.com/package/react-burger-menu) - меню, навбар
