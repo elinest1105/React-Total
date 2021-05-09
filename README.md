@@ -61,6 +61,7 @@
 - [emoji-mart](https://github.com/missive/emoji-mart) - компонент с эмоджи
 - [react-beautiful-dnd](https://github.com/vtereshyn/react-beautiful-dnd-ru) - компоненты для реализации перетаскивания и бросания
 - [react-burger-menu](https://www.npmjs.com/package/react-burger-menu) - меню, навбар
+- [react-circular-progressbar](https://www.npmjs.com/package/react-circular-progressbar) - компонент для создания прогресса в виде круга
 - [react-copy-to-clipboard](https://www.npmjs.com/package/react-copy-to-clipboard) - компонент для копирования текста в буфер обмена
 - [react-error-boundary](https://www.npmjs.com/package/react-error-boundary) - предохранитель
 - [react-filepond](https://github.com/pqina/react-filepond) - компонент для отправки файлов
@@ -107,7 +108,11 @@
 
 ### Другое
 
+- [ECMAScript 2022 Language Specification](https://tc39.es/ecma262/)
+- [V8 JavaScript Engine](https://v8.dev/)
 - [Node.js](https://nodejs.org/en/)
+- [Документация Node.js с примерами кода](https://nodejsdev.ru/doc/)
+- [Node.js: лучшие практики](https://github.com/goldbergyoni/nodebestpractices/blob/master/README.russian.md)
 - [npm](https://www.npmjs.com/)
 - [yarn](https://yarnpkg.com/)
 - [Express](https://expressjs.com/)
