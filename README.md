@@ -96,6 +96,7 @@
 - [Ant Design](https://ant.design/docs/react/introduce)
 - [React Bootstrap](https://react-bootstrap.github.io/)
 - [Semantic UI React](https://react.semantic-ui.com/)
+- [Tailwind CSS](https://tailwindcss.com/)
 
 ---
 
