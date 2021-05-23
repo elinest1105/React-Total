@@ -2,11 +2,12 @@
 
 ## Ресурс для изучения React.js и связанных с ним технологий на русском языке :ru:
 
-> Последнее обновление: 09.05.2021 - добавил шпагралку по JS-методам для работы с DOM
+> Последнее обновление: 23.05.2021 - добавил руководство по `React Transition Group`
 
 - :page_with_curl: [Вопросы для подготовки к собеседованию. Версия 1](./md/questions.md)
 - :page_with_curl: [Вопросы для подготовки к собеседованию. Версия 2](./md/questions-v2.md)
 - :memo: [Шпаргалки по React, Jest, Redux и лучшие практики по React](./md/cheatsheets-bestpractices.md)
+- :memo: [React и TypeScript](https://reactdev.ru/types/)
 - :memo: [Шпаргалка React + TypeScript](./md/react-typescript.md)
 - :memo: [Выдержки из определений типов для React (TypeScript)](./md/react-types.md)
 
@@ -18,6 +19,7 @@
 - :page_with_curl: [Руководство по `Redux Toolkit`](./md/redux-toolkit.md)
 - :page_with_curl: [Руководство по `Recoil`](./md/recoil.md)
 - :page_with_curl: [Руководство по `React Query`](./md/react-query.md)
+- :page_with_curl: [Руководство по `React Transition Group`](./md/react-transition-group.md)
 - :page_with_curl: [Руководство по `React Spring`](./md/react-spring.md)
 - :memo: [Шпаргалка по `Styled Components`](./md/styled-components.md)
 
@@ -67,9 +69,12 @@
 - [react-filepond](https://github.com/pqina/react-filepond) - компонент для отправки файлов
 - [react-icons](https://react-icons.github.io/react-icons/) - компоненты-иконки
 - [react-google-recaptcha](https://www.npmjs.com/package/react-google-recaptcha)
+- [react-lazyload](https://www.npmjs.com/package/react-lazyload) - ленивая загрузка компонентов
 - [react-loader-spinner](https://www.npmjs.com/package/react-loader-spinner) - индикатор загрузки
+- [react-responsive](https://www.npmjs.com/package/react-responsive) - использование медиа-запросов в компонентах
 - [react-search-input](https://www.npmjs.com/package/react-search-input) - инпут для поиска
 - [react-timeago](https://www.npmjs.com/package/react-timeago) - компонент для форматирования даты и времени с поддержкой русского языка
+- [react-virtualized](https://bvaughn.github.io/react-virtualized/#/components/List) - рендеринг только видимых элементов списка
 
 ---
 
