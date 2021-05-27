@@ -1,4 +1,4 @@
-# Шпаргалка по JS-методам для работы с DOM
+# `JavaScript DOM` Cheatsheet :metal:
 
 - [На главную](../README.md)
 
