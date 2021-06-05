@@ -1,4 +1,4 @@
-# `HTML5 tags` cheatsheet :metal:
+# `HTML5 tags` Cheatsheet :metal:
 
 - [На главную](../README.md)
 

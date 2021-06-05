@@ -1,4 +1,4 @@
-# React Transition Group
+# `React Transition Group` Guide :metal:
 
 - [На главную](../README.md)
 
