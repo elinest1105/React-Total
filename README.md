@@ -30,7 +30,7 @@
 - :page_with_curl: [Руководство по `Mongoose`](./md/mongoose.md)
 - :page_with_curl: [Руководство по `Socket.IO`](./md/socket/README.md)
 - :memo: [Шпаргалка по `Webpack`](./md/webpack.md)
-- :memo: [Шпаргалка по `HTML5`-тегам](./md/html5.md)
+- :memo: [Шпаргалка по HTML5-тегам](./md/html5.md)
 - :memo: [Шпаргалка по `JS`-методам для работы с `DOM`](./md/js-dom.md)
 - :memo: [Шпаргалка по `Axios`](./md/axios.md)
 - :memo: [Шпаргалка по `JSON Server`](./md/json-server/README.md)
@@ -38,15 +38,11 @@
 - :memo: [Шпаргалка по `Markdown`](./md/markdown.md)
 - :memo: [Шпаргалка по `Google Spreadsheet`](./md/google-spreadsheet.md)
 
----
-
 ## Проекты
 
 - :link: [Пример использования Apollo Server, Apollo Client, GraphQL и React для создания блога](https://github.com/harryheman/Apollo-GraphQL-React-Social-App)
 - :link: [Пример использования Socket.io и React для создания чата](https://github.com/harryheman/Socket.io-React-Chat-App)
-- :link: [Пример реализации подписки на обновления с помощью Netlify Functions и Google Таблиц](https://github.com/harryheman/Mail-List)
-
----
+- :link: [Пример реализации подписки на обновления с помощью React, Netlify Functions и Google Sheets](https://github.com/harryheman/Mail-List)
 
 ## Пользовательские хуки
 
@@ -56,7 +52,7 @@
 - [@react-hook](https://www.npmjs.com/search?q=%40react-hook)
 - [beautiful-react-hooks](https://github.com/beautifulinteractions/beautiful-react-hooks)
 
-## Пользовательские (кастомные) компоненты
+## Что называется "battle tested" React-компоненты
 
 - [Несколько примеров](./md/custom-components.md)
 - [Curated List of React Components & Libraries](https://github.com/brillout/awesome-react-components) - большая коллекция компонентов и библиотек для `React`
@@ -76,8 +72,6 @@
 - [react-timeago](https://www.npmjs.com/package/react-timeago) - компонент для форматирования даты и времени с поддержкой русского языка
 - [react-virtualized](https://bvaughn.github.io/react-virtualized/#/components/List) - рендеринг только видимых элементов списка
 
----
-
 ## Источники и полезные ссылки
 
 ### Экосистема React
@@ -93,29 +87,31 @@
 - [Next](https://nextjs.org/)
 - [Create React App](https://create-react-app.dev/)
 - [Styled Components](https://styled-components.com/)
+- [React Transition Group](https://reactcommunity.org/react-transition-group/)
 - [React Spring](https://www.react-spring.io/)
 
----
+### CSS-фреймворки для React
 
 - [Material UI](https://material-ui.com/ru/)
-- [Ant Design](https://ant.design/docs/react/introduce)
 - [React Bootstrap](https://react-bootstrap.github.io/)
+- [Reactstrap](https://reactstrap.github.io/)
 - [Semantic UI React](https://react.semantic-ui.com/)
+- [Ant Design](https://ant.design/docs/react/introduce)
+- [React Toolbox](http://react-toolbox.io/#/)
+- [Shards React](https://designrevision.com/downloads/shards-react/)
 - [Tailwind CSS](https://tailwindcss.com/)
 
 ---
 
-- [React Hook Form](https://react-hook-form.com/ru/) - хуки для валидации формы
+- [React Hook Form](https://react-hook-form.com/ru/) - работа с формами
 - [Formik](https://formik.org/) - альтернатива `react-hook-form`
-- [React Leaflet](https://react-leaflet.js.org/) - компоненты для работы с картой
-- [React Snap](https://github.com/stereobooster/react-snap) - утилита для предварительного рендеринга страниц для `SPA`
+- [React Table](https://react-table.tanstack.com/) - работа с таблицами
+- [React Leaflet](https://react-leaflet.js.org/) - работа с картой
+- [Resharts](https://recharts.org/en-US) - визуализация данных
+- [React Snap](https://github.com/stereobooster/react-snap) - предварительный рендеринг страниц для `SPA`
 
----
+### Node.js
 
-### Другое
-
-- [ECMAScript 2022 Language Specification](https://tc39.es/ecma262/)
-- [V8 JavaScript Engine](https://v8.dev/)
 - [Node.js](https://nodejs.org/en/)
 - [Документация Node.js с примерами кода](https://nodejsdev.ru/doc/)
 - [Node.js: лучшие практики](https://github.com/goldbergyoni/nodebestpractices/blob/master/README.russian.md)
@@ -124,26 +120,43 @@
 - [Express](https://expressjs.com/)
 - [Mongoose](https://mongoosejs.com/)
 - [Mongo Atlas/Cloud](https://www.mongodb.com/cloud/atlas)
-- [Prisma](https://www.prisma.io/) - `ORM` для работы с такими базами данных, как `MySQL`, `PostgreSQL` и `SQLite`
+- [Sequalize](https://sequelize.org/master/index.html) - `ORM` для работы с  `Postgres`, `MySQL`, `MariaDB`, `SQLite` и `Microsoft SQL Server`
+- [Prisma](https://www.prisma.io/) - `ORM` "нового поколения" для работы с `MySQL`, `PostgreSQL` и `SQLite`
 - [GraphQL](https://graphql.org/)
-- [Webpack](https://webpack.js.org/) - сборщик модулей
-- [Socket.IO](https://socket.io/) - библиотека для создания приложений, работающих в режиме реального времени
+- [Postman](https://www.postman.com/) - сервис для тестирования API
+
+### TypeScript
+
 - [TypeScript](https://www.typescriptlang.org/)
 - [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/basic-types.html)
 - [Рекомендуемый tsconfig.json](https://www.npmjs.com/package/@tsconfig/recommended)
-- [Postman](https://www.postman.com/) - сервис для тестирования API
-- [Mirage.js](https://miragejs.com/) - библиотека, позволяющая тестировать API на клиенте
-- [Mailtrap](https://mailtrap.io/) - сервис для тестирования отправки email
 
----
+
+### Другое
+
+- [ECMAScript 2022 Language Specification](https://tc39.es/ecma262/)
+- [V8 JavaScript Engine](https://v8.dev/)
+- [Google Fonts](https://fonts.google.com/)
+- [FontAwesome](https://fontawesome.com/)
+- [FlatIcon](https://www.flaticon.com/)
+- [FreeIcons](https://freeicons.io/)
+- [PngTree](https://pngtree.com/)
+- [PngImg](http://pngimg.com/)
+- [Webpack](https://webpack.js.org/) - сборщик модулей
+- [Socket.IO](https://socket.io/) - библиотека для создания приложений, работающих в режиме реального времени
+- [Mirage.js](https://miragejs.com/) - библиотека, позволяющая тестировать API на клиенте
+- [Mailtrap](https://mailtrap.io/) - сервис для тестирования отправки электронных писем
+- [Статус-коды HTTP](https://httpstatuses.com/)
+- [HTML-эмодзи](https://www.w3schools.com/charsets/ref_emoji.asp)
+- [Классы Bootstrap 4](https://www.w3schools.com/bootstrap4/bootstrap_ref_all_classes.asp)
 
 ### Авторизация
 
-- [Passport](http://www.passportjs.org/) - фреймворк для работы с авторизацией
-- [JSON Web Tokens](https://jwt.io/) -
-- [Auth0](https://auth0.com/) - централизованный сервис для работы с авторизацией
-- [express-session](https://www.npmjs.com/package/express-session) - библиотека для реализации куки-сессий с помощью `Express`
-- [connect-mongo](https://www.npmjs.com/package/connect-mongo) - библиотека для хранения куки-сессий в `MongoDB`
+- [Passport](http://www.passportjs.org/) - фреймворк для аутентификации/авторизации
+- [JSON Web Tokens](https://jwt.io/)
+- [Auth0](https://auth0.com/)
+- [express-session](https://www.npmjs.com/package/express-session) - утилита для реализации куки-сессий с помощью `Express`
+- [connect-mongo](https://www.npmjs.com/package/connect-mongo) - утилита для хранения куки-сессий в `MongoDB`
 - [jsonwebtoken](https://github.com/auth0/node-jsonwebtoken) - библиотека для создание и подтверждения токенов
 - [bcrypt](https://www.npmjs.com/package/bcrypt) - утилита для хэширования и проверки паролей
 - [base64url](https://www.npmjs.com/package/base64url)- утилита для кодирования/декодирования строки в `base64`
@@ -151,11 +164,8 @@
 - [react-facebook-login](https://github.com/keppelen/react-facebook-login) - компонент для авторизации с помощью Facebook-аккаунта
 - [react-github-login](https://github.com/checkr/react-github-login) - компонент для авторизации с помощью GitHub-аккаунта
 
----
-
 ### npm-пакеты
 
-- [Статус-коды HTTP](https://httpstatuses.com/)
 - [axios](https://github.com/axios/axios) - библиотека для выполнения HTTP-запросов
 - [concurrently](https://www.npmjs.com/package/concurrently) - утилита для одновременного выполнения нескольких команд (скриптов)
 - [express-validator](https://express-validator.github.io/docs/) - утилита для проверки входящих данных
@@ -171,13 +181,9 @@
 - [supervisor](https://www.npmjs.com/package/supervisor)  - утилита для запуска сервера для разработки
 - [validator.js](https://github.com/validatorjs/validator.js) - библиотека, лежащая в основе `express-validator`
 
----
-
 ## Участие
 
 Буду признателен за помощь в обнаружении ошибок, опечаток и неточностей, а также за любой вклад в развитие проекта :wink:
-
----
 
 ## Лицензия
 
