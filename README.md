@@ -2,7 +2,7 @@
 
 ## Ресурс для изучения React.js и связанных с ним технологий на русском языке :ru:
 
-> Последнее обновление: 23.05.2021 - добавил руководство по `React Transition Group`
+> Последнее обновление: 14.06.2021 - добавил руководство по `Workbox`
 
 - :page_with_curl: [Вопросы для подготовки к собеседованию. Версия 1](./md/questions.md)
 - :page_with_curl: [Вопросы для подготовки к собеседованию. Версия 2](./md/questions-v2.md)
@@ -26,6 +26,7 @@
 ---
 
 - :page_with_curl: [Руководство по `GraphQL`](./md/graphql.md)
+- :page_with_curl: [Руководство по `Workbox`](./md/wb/wb.md)
 - :memo: [Шпаргалка по `Express API`](./md/express-api.md)
 - :page_with_curl: [Руководство по `Mongoose`](./md/mongoose.md)
 - :page_with_curl: [Руководство по `Socket.IO`](./md/socket/README.md)
