@@ -2,14 +2,15 @@
 
 ## Ресурс для изучения React.js и связанных с ним технологий на русском языке :ru:
 
-> Последнее обновление: 14.06.2021 - добавил руководство по `Workbox`
+> Последнее обновление: 19.06.2021 - добавил карманную книгу по `TypeScript`
 
 - :page_with_curl: [Вопросы для подготовки к собеседованию. Версия 1](./md/questions.md)
 - :page_with_curl: [Вопросы для подготовки к собеседованию. Версия 2](./md/questions-v2.md)
-- :memo: [Шпаргалки по React, Jest, Redux и лучшие практики по React](./md/cheatsheets-bestpractices.md)
-- :memo: [React и TypeScript](https://reactdev.ru/types/)
-- :memo: [Шпаргалка React + TypeScript](./md/react-typescript.md)
-- :memo: [Выдержки из определений типов для React (TypeScript)](./md/react-types.md)
+- :memo: [Шпаргалки по `React`, `Jest`, `Redux` и лучшие практики по `React`](./md/cheatsheets-bestpractices.md)
+- :page_with_curl: [Карманная книга по `TypeScript`](./md/ts.md)
+- :memo: [`React` и `TypeScript`](https://reactdev.ru/types/)
+- :memo: [Шпаргалка `React` + `TypeScript`](./md/react-typescript.md)
+- :memo: [Выдержки из определений типов для `React` (`TypeScript`)](./md/react-types.md)
 
 ---
 
