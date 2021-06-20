@@ -2,12 +2,12 @@
 
 ## Ресурс для изучения React.js и связанных с ним технологий на русском языке :ru:
 
-> Последнее обновление: 19.06.2021 - добавил карманную книгу по `TypeScript`
+> Последнее обновление: 20.06.2021 - добавил карманную книгу по `TypeScript`. Обратите внимание, что книга также доступна в формате прогрессивного веб-приложения
 
 - :page_with_curl: [Вопросы для подготовки к собеседованию. Версия 1](./md/questions.md)
 - :page_with_curl: [Вопросы для подготовки к собеседованию. Версия 2](./md/questions-v2.md)
 - :memo: [Шпаргалки по `React`, `Jest`, `Redux` и лучшие практики по `React`](./md/cheatsheets-bestpractices.md)
-- :page_with_curl: [Карманная книга по `TypeScript`](./md/ts.md)
+- :page_with_curl: [Карманная книга по `TypeScript`](./md/ts.md) или [в формате `PWA`](https://typescript-handbook.ru/)
 - :memo: [`React` и `TypeScript`](https://reactdev.ru/types/)
 - :memo: [Шпаргалка `React` + `TypeScript`](./md/react-typescript.md)
 - :memo: [Выдержки из определений типов для `React` (`TypeScript`)](./md/react-types.md)
