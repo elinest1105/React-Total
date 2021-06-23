@@ -4,7 +4,7 @@
 
 [Источник](https://github.com/learning-zone/react-interview-questions)
 
-## Оглавление
+## Содержание
 
 - [Шпаргалка по React](#react)
 - [Шпаргалка по Jest](#jest)

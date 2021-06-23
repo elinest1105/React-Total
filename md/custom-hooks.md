@@ -2,9 +2,7 @@
 
 [На главную](../README.md)
 
-> #### Парочка примеров кастомных хуков
-
-## Оглавление
+## Содержание
 
 - [useBeforeUnload](#use_beforeunload)
 - [useClick](#use_click)

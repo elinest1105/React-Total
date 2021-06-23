@@ -2,12 +2,7 @@
 
 [На главную](../README.md)
 
-> #### Парочка примеров кастомных компонентов
-
-- [Код](https://github.com/harryheman/React-Projects/tree/main/custom-components)
-- [Демо](https://codesandbox.io/s/custom-components-d0wwb)
-
-## Оглавление
+## Содержание
 
 - [Accordion](#accordion)
 - [Carousel](#carousel)

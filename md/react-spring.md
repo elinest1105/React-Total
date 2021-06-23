@@ -8,7 +8,7 @@
 
 [Примеры использования](https://www.react-spring.io/docs/hooks/examples)
 
-## Оглавление
+## Содержание
 
 - [Установка](#install)
 - [Хуки](#hooks)

@@ -2,10 +2,7 @@
 
 [На главную](../README.md)
 
-- :link: [Код](https://github.com/harryheman/React-Projects/tree/main/client/hooks-cheatsheet)
-- :link: [Песочница](https://codesandbox.io/s/react-hooks-cheatsheet-bo9jv)
-
-## Оглавление
+## Содержание
 
 - [useState](#useState)
 - [useEffect](#useEffect)

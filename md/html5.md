@@ -2,7 +2,7 @@
 
 - [На главную](../README.md)
 
-## Оглавление
+## Содержание
 
 - [abbr](#abbr)
 - [address](#address)

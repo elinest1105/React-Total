@@ -2,8 +2,6 @@
 
 [На главную](../README.md)
 
-- :link: [Песочница](https://codesandbox.io/s/styled-components-cheatsheet-zmqph)
-
 ## Установка
 
 ```bash

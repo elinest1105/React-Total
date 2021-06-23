@@ -4,7 +4,7 @@
 
 [Источник](https://github.com/typescript-cheatsheets/react)
 
-## Оглавление
+## Содержание
 
 - [Импорт React](#react_import)
 - [Функциональные компоненты](#fn_components)

@@ -2,12 +2,7 @@
 
 [На главную](../REDAME.md)
 
-### Примеры
-
-- :link: [Код](https://github.com/harryheman/React-Projects/tree/main/client/react-query-examples)
-- :link: [Песочница](https://codesandbox.io/s/react-query-examples-s87kb)
-
-## Оглавление
+## Содержание
 
 - [Обзор](#intro)
 - [Быстрый старт](#quick_start)

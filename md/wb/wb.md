@@ -2,6 +2,105 @@
 
 [На главную](../../README.md)
 
+## Содержание
+
+- [Что такое `Workbox`?](#что-такое-workbox)
+- [На что похож `WB API`?](#на-что-похож-wb-api)
+  - [Кэширование шрифтов Google](#кэширование-шрифтов-google)
+  - [Кэширование `JavaScript` и `CSS`](#кэширование-javascript-и-css)
+  - [Кэширование изображений](#кэширование-изображений)
+  - [Предварительное кэширование](#предварительное-кэширование)
+  - [Гугл-аналитика в режиме офлайн](#гугл-аналитика-в-режиме-офлайн)
+- [Начало работы](#начало-работы)
+  - [Установка](#установка)
+  - [Создание СВ](#создание-св)
+- [Использование `WB`](#использование-wb)
+  - [Маршрутизация и стратегии кэширования](#маршрутизация-и-стратегии-кэширования)
+  - [Предварительное кэширование](#предварительное-кэширование-1)
+  - [Резервный контент](#резервный-контент)
+- [Использование сборщиков модулей с `WB`](#использование-сборщиков-модулей-с-wb)
+  - [Создание сборки](#создание-сборки)
+- [Обработка запросов](#обработка-запросов)
+  - [Поиск совпадений](#поиск-совпадений)
+  - [Обработка запросов](#обработка-запросов-1)
+- [Настройка `WB`](#настройка-wb)
+  - [Настройка названия кэша](#настройка-названия-кэша)
+  - [Кастомные названия кэша в стратегиях](#кастомные-названия-кэша-в-стратегиях)
+  - [Настройки запросов в стратегиях](#настройки-запросов-в-стратегиях)
+- [Обработка запросов к другим источникам](#обработка-запросов-к-другим-источникам)
+  - [Запросы к другим источникам и непрозрачные ответы](#запросы-к-другим-источникам-и-непрозрачные-ответы)
+  - [Не забывайте включать режим `CORS`](#не-забывайте-включать-режим-cors)
+  - [Опасность кэширования непрозрачных ответов](#опасность-кэширования-непрозрачных-ответов)
+  - [Принудительное кэширование непрозрачных ответов](#принудительное-кэширование-непрозрачных-ответов)
+- [Использование плагинов](#использование-плагинов)
+  - [Плагины, предоставляемые `WB`](#плагины-предоставляемые-wb)
+  - [Кастомные плагины](#кастомные-плагины)
+- [Квота хранилища](#квота-хранилища)
+- [Общие рекомендации](#общие-рекомендации)
+  - [Гугл-шрифты](#гугл-шрифты)
+  - [Кэширование изображений](#кэширование-изображений-1)
+  - [Кэширование `JS` и `CSS-файлов`](#кэширование-js-и-css-файлов)
+  - [Кэширование контента из разных источников](#кэширование-контента-из-разных-источников)
+  - [Кэширование ресурсов из определенного источника](#кэширование-ресурсов-из-определенного-источника)
+  - [Установка таймера на выполнение сетевого запроса](#установка-таймера-на-выполнение-сетевого-запроса)
+  - [Кэширование ресурсов из определенной поддиректории](#кэширование-ресурсов-из-определенной-поддиректории)
+  - [Кэширование на основе типа ресурса](#кэширование-на-основе-типа-ресурса)
+- [Доступ к кэшу из приложения](#доступ-к-кэшу-из-приложения)
+- [Продвинутые техники](#продвинутые-техники)
+  - [Предлагаем пользователю перезагрузить страницу](#предлагаем-пользователю-перезагрузить-страницу)
+  - [Подготовка кэша во время выполнения](#подготовка-кэша-во-время-выполнения)
+  - [Резервный контент](#резервный-контент-1)
+  - [Выполнение автономных запросов](#выполнение-автономных-запросов)
+  - [Кэширование аудио и видео](#кэширование-аудио-и-видео)
+- [Автоматическое создание СВ](#автоматическое-создание-св)
+  - [`workbox-cli`](#workbox-cli)
+  - [`workbox-build`](#workbox-build)
+  - [`Webpack`](#webpack)
+- [Модули](#модули)
+- [`workbox-background-sync`](#workbox-background-sync)
+  - [Базовое использование](#базовое-использование)
+  - [Продвинутое использование](#продвинутое-использование)
+- [`workbox-cacheable-response`](#workbox-cacheable-response)
+  - [Кэширование на основе статус-кода](#кэширование-на-основе-статус-кода)
+  - [Кэширование на основе заголовка](#кэширование-на-основе-заголовка)
+  - [Продвинутое использование](#продвинутое-использование-1)
+- [`workbox-expiration`](#workbox-expiration)
+  - [Ограничение количества записей в кэше](#ограничение-количества-записей-в-кэше)
+  - [Ограничение времени хранения ресурсов в кэше](#ограничение-времени-хранения-ресурсов-в-кэше)
+  - [Продвинутое использование](#продвинутое-использование-2)
+- [`workbox-precaching`](#workbox-precaching)
+  - [Обработка предварительно кэшированных ответов](#обработка-предварительно-кэшированных-ответов)
+  - [Список предварительно кэшируемых ресурсов](#список-предварительно-кэшируемых-ресурсов)
+  - [Автоматическая обработка входящих запросов](#автоматическая-обработка-входящих-запросов)
+- [`workbox-routing`](#workbox-routing)
+  - [Определение совпадений и обработка запросов](#определение-совпадений-и-обработка-запросов)
+  - [Определение совпадений с помощью регулярного выражения](#определение-совпадений-с-помощью-регулярного-выражения)
+  - [Роут для навигации](#роут-для-навигации)
+  - [Обработчик по умолчанию](#обработчик-по-умолчанию)
+  - [Обработчик ошибок](#обработчик-ошибок)
+  - [Обработка `не-GET-запросов`](#обработка-не-get-запросов)
+- [`workbox-strategies`](#workbox-strategies)
+    - [Stale-While-Revalidate](#stale-while-revalidate)
+    - [Cache-Fisrt](#cache-fisrt)
+    - [Network-First](#network-first)
+    - [Network-Only](#network-only)
+    - [Cache-Only](#cache-only)
+  - [Настройка стратегии](#настройка-стратегии)
+- [`workbox-recipies`](#workbox-recipies)
+  - [Рецепты](#рецепты)
+    - [Резервный контент](#резервный-контент-2)
+  - [Подготовка кэша](#подготовка-кэша)
+  - [Кэширование страницы](#кэширование-страницы)
+  - [Кэширование статических ресурсов](#кэширование-статических-ресурсов)
+  - [Кэширование изображений](#кэширование-изображений-2)
+  - [Кэширование гугл-шрифтов](#кэширование-гугл-шрифтов)
+  - [Быстрое использование](#быстрое-использование)
+- [`workbox-window`](#workbox-window)
+  - [Использование CDN](#использование-cdn)
+  - [Использование сборщика модулей](#использование-сборщика-модулей)
+  - [Примеры](#примеры)
+- [Практика](#практика)
+
 ## Что такое `Workbox`?
 
 <a href="https://developers.google.com/web/tools/workbox">`Workbox`</a> (далее - `WB`) - это библиотека (точнее, набор библиотек), основной целью которой является "предоставление лучших практик и избавление от шаблонного кода при работе с сервис-воркерами" (далее - СВ).
@@ -38,13 +137,12 @@ import { StaleWhileRevalidate } from 'workbox-strategies'
 // Записываем гугл-шрифты в кэш с применением стратегии `stale-while-revalidate` (см. ниже) с
 // ограничением максимального количества вхождений (записей в кэше)
 registerRoute(
-  ({ url }) =>  url.origin === 'https://fonts.googleapis.com' ||
-                url.origin === 'https://fonts.gstatic.com',
+  ({ url }) =>
+    url.origin === 'https://fonts.googleapis.com' ||
+    url.origin === 'https://fonts.gstatic.com',
   new StaleWhileRevalidate({
     cacheName: 'google-fonts',
-    plugins: [
-      new ExpirationPlugin({ maxEntries: 20 })
-    ]
+    plugins: [new ExpirationPlugin({ maxEntries: 20 })]
   })
 )
 ```
@@ -58,8 +156,8 @@ import { registerRoute } from 'workbox-routing'
 import { StaleWhileRevalidate } from 'workbox-strategies'
 
 registerRoute(
-  ({ request }) =>  request.destination === 'script' ||
-                    request.destination === 'style',
+  ({ request }) =>
+    request.destination === 'script' || request.destination === 'style',
   new StaleWhileRevalidate()
 )
 ```
@@ -152,13 +250,13 @@ console.log('Привет от сервис-воркера!')
 
 ```html
 <script>
-// Проверяем поддержку СВ
-if ('serviceWorker' in navigator) {
-  // Ожидаем полной загрузки страницы
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/service-worker.js')
-  })
-}
+  // Проверяем поддержку СВ
+  if ('serviceWorker' in navigator) {
+    // Ожидаем полной загрузки страницы
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/service-worker.js')
+    })
+  }
 </script>
 ```
 
@@ -317,7 +415,7 @@ registerRoute(
 
 **Опционально: встраивание манифеста предварительного кэширования**
 
-Для того, чтобы кэшировать ресурсы во время установки СВ, необходимо предоставить `WB` оформленный определенным образом список `URL`. Данный список называется “манифестом предварительного кэширования”  (precaching manifest).
+Для того, чтобы кэшировать ресурсы во время установки СВ, необходимо предоставить `WB` оформленный определенным образом список `URL`. Данный список называется “манифестом предварительного кэширования” (precaching manifest).
 
 Место для вставки такого манифеста во время сборки обозначается с помощью `self.__WB_MANIFEST`.
 
@@ -493,7 +591,7 @@ const match = ({ url, event }) => {
   if (url.pathname === '/example') {
     return {
       name: 'Workbox',
-      type: 'Руководство',
+      type: 'Руководство'
     }
   }
 }
@@ -772,7 +870,7 @@ const myPlugin = {
     matchOptions,
     cachedResponse,
     event,
-    state,
+    state
   }) => {
     // Возвращаем `cachedResponse`, другой объект `Response` или `null`
     return cachedResponse
@@ -882,7 +980,7 @@ registerRoute(
     cacheName: 'google-fonts-webfonts',
     plugins: [
       new CacheableResponsePlugin({
-        statuses: [0, 200],
+        statuses: [0, 200]
       }),
       new ExpirationPlugin({
         maxAgeSeconds: 60 * 60 * 24 * 365,
@@ -1149,11 +1247,7 @@ self.addEventListener('install', (event) => {
     /* ... */
   ]
   const cacheName = cacheNames.runtime
-  event.waitUntil(
-    caches
-      .open(cacheName)
-      .then((cache) => cache.addAll(urls))
-    )
+  event.waitUntil(caches.open(cacheName).then((cache) => cache.addAll(urls)))
 })
 ```
 
@@ -1298,11 +1392,11 @@ self.addEventListener('fetch', (event) => {
         // Поскольку мы передаем `event`, `event.waitUntil()` вызывается автоматически
         const firstPromise = strategy.handle({
           event,
-          request: 'https://example.com/api1',
+          request: 'https://example.com/api1'
         })
         const secondPromise = strategy.handle({
           event,
-          request: 'https://example.com/api2',
+          request: 'https://example.com/api2'
         })
 
         const [firstResponse, secondResponse] = await Promise.all(
@@ -1317,7 +1411,7 @@ self.addEventListener('fetch', (event) => {
         // Предположим, что мы просто хотим объединить первый ответ от API со вторым для создания
         // финального ответа в формате HTML
         const compositeResponse = new Response(firstBody + secondBody, {
-          headers: { 'content-type': 'text/html' },
+          headers: { 'content-type': 'text/html' }
         })
 
         return compositeResponse
@@ -1540,7 +1634,7 @@ const { generateSW } = require('workbox-build')
 
 const swDest = 'build/sw.js'
 generateSW({
-  swDest,
+  swDest
   // другие настройки
 }).then(({ count, size }) => {
   console.log(
@@ -1559,7 +1653,7 @@ const swSrc = 'src/sw.js'
 const swDest = 'build/sw.js'
 injectManifest({
   swSrc,
-  swDest,
+  swDest
   // другие настройки
 }).then(({ count, size }) => {
   console.log(
@@ -1644,13 +1738,13 @@ import { registerRoute } from 'workbox-routing'
 import { NetworkOnly } from 'workbox-strategies'
 
 const bgSyncPlugin = new BackgroundSyncPlugin('myQueueName', {
-  maxRetentionTime: 24 * 60, // Попытка выполнения повторного запроса будет выполнена в течение 24 часов (в минутах)
+  maxRetentionTime: 24 * 60 // Попытка выполнения повторного запроса будет выполнена в течение 24 часов (в минутах)
 })
 
 registerRoute(
   /\/api\/.*\/*.json/,
   new NetworkOnly({
-    plugins: [bgSyncPlugin],
+    plugins: [bgSyncPlugin]
   }),
   'POST'
 )
@@ -1911,7 +2005,7 @@ import { precacheAndRoute } from 'workbox-precaching'
 precacheAndRoute([
   { url: '/index.html', revision: '383676' },
   { url: '/styles/app.0c9a31.css', revision: null },
-  { url: '/scripts/app.0d5770.js', revision: null },
+  { url: '/scripts/app.0d5770.js', revision: null }
   // другие записи
 ])
 ```
@@ -1963,7 +2057,7 @@ precacheAndRoute(
   [
     { url: '/index.html', revision: '383676' },
     { url: '/styles/app.0c9a31.css', revision: null },
-    { url: '/scripts/app.0d5770.js', revision: null },
+    { url: '/scripts/app.0d5770.js', revision: null }
   ],
   {
     directoryIndex: null
@@ -2030,7 +2124,7 @@ _Обратите внимание_ на следующее:
 
 ```js
 const matchCb = ({ url, request, event }) => {
-  return (url.pathname === '/special/url')
+  return url.pathname === '/special/url'
 }
 ```
 
@@ -2064,10 +2158,7 @@ registerRoute(matchCb, handlerCb)
 import { registerRoute } from 'workbox-routing'
 import { StaleWhileRevalidate } from 'workbox-strategies'
 
-registerRoute(
-  matchCb,
-  new StaleWhileRevalidate()
-)
+registerRoute(matchCb, new StaleWhileRevalidate())
 ```
 
 ### Определение совпадений с помощью регулярного выражения
@@ -2077,10 +2168,7 @@ registerRoute(
 ```js
 import { registerRoute } from 'workbox-routing'
 
-registerRoute(
-  new RegExp('/styles/.*\\.css'),
-  handlerCb
-)
+registerRoute(new RegExp('/styles/.*\\.css'), handlerCb)
 ```
 
 Для запросов из одного источника данная "регулярка" будет регистрировать совпадения для следующих `URL`:
@@ -2105,7 +2193,7 @@ new RegExp('https://cdn\\.third-party-site\\.com.*/styles/.*\\.css')
 
 ### Роут для навигации
 
-Если ваше приложение - это одностраничник, для обработки всех запросов, связанных с навигацией, можно использовать  `NavigationRoute`.
+Если ваше приложение - это одностраничник, для обработки всех запросов, связанных с навигацией, можно использовать `NavigationRoute`.
 
 ```js
 import { createHandlerBoundToURL } from 'workbox-precaching'
@@ -2128,18 +2216,14 @@ import { NavigationRoute, registerRoute } from 'workbox-routing'
 const handler = createHandlerBoundToURL('/app-shell.html')
 
 const navigationRoute = new NavigationRoute(handler, {
-  allowlist: [
-    new RegExp('/blog/')
-  ],
-  denylist: [
-    new RegExp('/blog/restricted/')
-  ]
+  allowlist: [new RegExp('/blog/')],
+  denylist: [new RegExp('/blog/restricted/')]
 })
 
 registerRoute(navigationRoute)
 ```
 
-__Обратите внимание__, что `denyList` имеет приоритет перед `allowList`.
+**Обратите внимание**, что `denyList` имеет приоритет перед `allowList`.
 
 ### Обработчик по умолчанию
 
@@ -2198,7 +2282,7 @@ import { registerRoute } from 'workbox-routing'
 import { StaleWhileRevalidate } from 'workbox-strategies'
 
 registerRoute(
-  ({url}) => url.pathname.startsWith('/images/avatars/'),
+  ({ url }) => url.pathname.startsWith('/images/avatars/'),
   new StaleWhileRevalidate()
 )
 ```
@@ -2246,7 +2330,7 @@ import { registerRoute } from 'workbox-routing'
 import { NetworkOnly } from 'workbox-strategies'
 
 registerRoute(
-  ({url}) => url.pathname.startsWith('/admin/'),
+  ({ url }) => url.pathname.startsWith('/admin/'),
   new NetworkOnly()
 )
 ```
@@ -2259,10 +2343,7 @@ registerRoute(
 import { registerRoute } from 'workbox-routing'
 import { CacheOnly } from 'workbox-strategies'
 
-registerRoute(
-  ({ url }) => url.pathname.startsWith('/app/v2/'),
-  new CacheOnly()
-)
+registerRoute(({ url }) => url.pathname.startsWith('/app/v2/'), new CacheOnly())
 ```
 
 ### Настройка стратегии
@@ -2273,7 +2354,7 @@ registerRoute(
 - лимит записей в кэше и время их "жизни"
 - плагины
 
-__Название кэша__
+**Название кэша**
 
 ```js
 import { registerRoute } from 'workbox-routing'
@@ -2282,12 +2363,12 @@ import { CacheFirst } from 'workbox-strategies'
 registerRoute(
   ({ request }) => request.destination === 'image',
   new CacheFirst({
-    cacheName: 'image-cache',
+    cacheName: 'image-cache'
   })
 )
 ```
 
-__Плагины__
+**Плагины**
 
 В стратегии могут использоваться следующие плагины:
 
@@ -2336,21 +2417,19 @@ registerRoute(
 
 Резервный контент возвращается при совпадении с определенным запросом. При использовании рассматриваемого рецепта в отдельности, необходимо реализовать соответствующие роуты. Простейшим способом это сделать является использование метода `setDefaultHandler()` для создания роута, применяющего стратегию "только сеть" в отношении всех запросов.
 
-__Рецепт__
+**Рецепт**
 
 ```js
 import { offlineFallback } from 'workbox-recipes'
 import { setDefaultHandler } from 'workbox-routing'
 import { NetworkOnly } from 'workbox-strategies'
 
-setDefaultHandler(
-  new NetworkOnly()
-)
+setDefaultHandler(new NetworkOnly())
 
 offlineFallback()
 ```
 
-__Паттерн__
+**Паттерн**
 
 ```js
 import { setCatchHandler, setDefaultHandler } from 'workbox-routing'
@@ -2360,11 +2439,9 @@ const pageFallback = 'offline.html'
 const imageFallback = false
 const fontFallback = false
 
-setDefaultHandler(
-  new NetworkOnly()
-)
+setDefaultHandler(new NetworkOnly())
 
-self.addEventListener('install', event => {
+self.addEventListener('install', (event) => {
   const files = [pageFallback]
   if (imageFallback) {
     files.push(imageFallback)
@@ -2373,7 +2450,11 @@ self.addEventListener('install', event => {
     files.push(fontFallback)
   }
 
-  event.waitUntil(self.caches.open('workbox-offline-fallbacks').then(cache => cache.addAll(files)))
+  event.waitUntil(
+    self.caches
+      .open('workbox-offline-fallbacks')
+      .then((cache) => cache.addAll(files))
+  )
 })
 
 const handler = async (options) => {
@@ -2402,7 +2483,7 @@ setCatchHandler(handler)
 
 Данный рецепт позволяет записывать определенные `URL` в кэш во время установки СВ. Она может использоваться в качестве альтернативы предварительного кэширования в случае, когда нам заранее известен список `URL` для сохранения.
 
-__Рецепт__
+**Рецепт**
 
 ```js
 import { warmStrategyCache } from 'workbox-recipes'
@@ -2410,29 +2491,28 @@ import { CacheFirst } from 'workbox-strategies'
 
 // Здесь может испоьзоваться любая стратегия
 const strategy = new CacheFirst()
-const urls = [
-  '/offline.html'
-]
+const urls = ['/offline.html']
 
-warmStrategyCache({urls, strategy})
+warmStrategyCache({ urls, strategy })
 ```
 
-__Паттерн__
+**Паттерн**
 
 ```js
 import { CacheFirst } from 'workbox-strategies'
 // Здесь может использоваться любая стратегия
 const strategy = new CacheFirst()
-const urls = [
-  '/offline.html',
-]
+const urls = ['/offline.html']
 
-self.addEventListener('install', event => {
+self.addEventListener('install', (event) => {
   // `handleAll` возвращает два промиса, второй промис разрешается после добавления всех элементов в кэш
-  const done = urls.map(path => strategy.handleAll({
-    event,
-    request: new Request(path),
-  })[1])
+  const done = urls.map(
+    (path) =>
+      strategy.handleAll({
+        event,
+        request: new Request(path)
+      })[1]
+  )
 
   event.waitUntil(Promise.all(done))
 })
@@ -2442,7 +2522,7 @@ self.addEventListener('install', event => {
 
 Данный рецепт позволяет СВ отвечать на запрос на получение `HTML-страницы` с помощью стратегии "сначала сеть". При этом, СВ оптимизируется таким образом, что в случае отсутствия подключения к сети, возвращает ответ из кэша менее чем за 4 секунды. По умолчанию запрос к сети выполняется в течение 3 секунд. Настройка `warmCache` позволяет подготовить ("разогреть") кэш к использованию.
 
-__Рецепт__
+**Рецепт**
 
 ```js
 import { pageCache } from 'workbox-recipes'
@@ -2450,7 +2530,7 @@ import { pageCache } from 'workbox-recipes'
 pageCache()
 ```
 
-__Паттерн__
+**Паттерн**
 
 ```js
 import { registerRoute } from 'workbox-routing'
@@ -2479,7 +2559,7 @@ registerRoute(
 
 Данный рецепт позволяет СВ отвечать на запросы на получение статических ресурсов, таких как `JavaScript`, `CSS` и веб-воркеры с помощью стратегии "считается устаревшим после запроса" (ответ возвращается из кэша, после чего кэш обновляется). Поддерживается разогрев кэша (`warmCache`).
 
-__Рецепт__
+**Рецепт**
 
 ```js
 import { staticResourceCache } from 'workbox-recipes'
@@ -2487,7 +2567,7 @@ import { staticResourceCache } from 'workbox-recipes'
 staticResourceCache()
 ```
 
-__Паттерн__
+**Паттерн**
 
 ```js
 import { registerRoute } from 'workbox-routing'
@@ -2520,7 +2600,7 @@ registerRoute(
 
 Данный рецепт позволяет СВ отвечать на запросы на получение изображений с помощью стратегии "сначала кэш". По умолчанию кэшируется до 60 изображений в течение 30 дней. Поддерживается разогрев кэша.
 
-__Рецепт__
+**Рецепт**
 
 ```js
 import { imageCache } from 'workbox-recipes'
@@ -2528,7 +2608,7 @@ import { imageCache } from 'workbox-recipes'
 imageCache()
 ```
 
-__Паттерн__
+**Паттерн**
 
 ```js
 import { registerRoute } from 'workbox-routing'
@@ -2562,7 +2642,7 @@ registerRoute(
 
 Данный рецепт кэширует таблицу стилей для шрифтов с помощью стратегии "считается устаревшим после запроса" и сами шрифты с помощью стратегии "сначала кэш". По умолчанию кэшируется до 30 шрифтов в течение 1 года.
 
-__Рецепт__
+**Рецепт**
 
 ```js
 import { googleFontsCache } from 'workbox-recipes'
@@ -2570,7 +2650,7 @@ import { googleFontsCache } from 'workbox-recipes'
 googleFontsCache()
 ```
 
-__Паттерн__
+**Паттерн**
 
 ```js
 import { registerRoute } from 'workbox-routing'
@@ -2598,7 +2678,7 @@ registerRoute(
     cacheName: fontCacheName,
     plugins: [
       new CacheableResponsePlugin({
-        statuses: [0, 200],
+        statuses: [0, 200]
       }),
       new ExpirationPlugin({
         maxAgeSeconds,
@@ -2645,19 +2725,19 @@ offlineFallback()
 
 ```html
 <script type="module">
-import { Workbox } from 'https://storage.googleapis.com/workbox-cdn/releases/6.1.5/workbox-window.prod.mjs'
+  import { Workbox } from 'https://storage.googleapis.com/workbox-cdn/releases/6.1.5/workbox-window.prod.mjs'
 
-if ('serviceWorker' in navigator) {
-  const wb = new Workbox('/sw.js')
+  if ('serviceWorker' in navigator) {
+    const wb = new Workbox('/sw.js')
 
-  wb.register()
-}
+    wb.register()
+  }
 </script>
 ```
 
 ### Использование сборщика модулей
 
-__Установка__
+**Установка**
 
 ```bash
 yarn add workbox-window
@@ -2665,7 +2745,7 @@ yarn add workbox-window
 npm i workbox-window
 ```
 
-__Использование__
+**Использование**
 
 ```js
 import { Workbox } from 'workbox-window'
@@ -2679,7 +2759,7 @@ if ('serviceWorker' in navigator) {
 
 ### Примеры
 
-__Регистрация СВ и уведомление пользователя о его активации__
+**Регистрация СВ и уведомление пользователя о его активации**
 
 ```js
 const wb = new Workbox('/sw.js')
@@ -2699,7 +2779,7 @@ wb.addEventListener('activated', (event) => {
 wb.register()
 ```
 
-__Уведомление пользователя о том, что СВ был установлен, но ожидает активации__
+**Уведомление пользователя о том, что СВ был установлен, но ожидает активации**
 
 Когда на странице, управляемой СВ, региструется новый СВ, по умолчанию последний не будет активирован до тех пор, пока все клиенты, контрлируемые первым, не завершат свои сессии.
 
@@ -2715,7 +2795,7 @@ wb.addEventListener('waiting', (event) => {
 wb.register()
 ```
 
-__Уведомление пользователя об обновлении кэша__
+**Уведомление пользователя об обновлении кэша**
 
 Модуль `workbox-broadcast-update` позволяет информировать пользователей об обновлении контента. Для получения этой информации в браузере используется событие `message` с типом `CACHE_UPDATED`:
 
@@ -2733,7 +2813,7 @@ wb.addEventListener('message', (event) => {
 wb.register()
 ```
 
-__Отправка СВ списка URL для кэширования__
+**Отправка СВ списка URL для кэширования**
 
 В некоторых приложениях имеет смысл кэшировать только те ресурсы, которые используются посещенной пользователем страницей. Модуль `workbox-routing` принимает список `URL` и кэширует их на основе правил, определенных в маршрутизаторе.
 
@@ -2746,9 +2826,7 @@ wb.addEventListener('activated', (event) => {
   // Получаем `URL` текущей страницы + все загружаемые страницей ресурсы
   const urlsToCache = [
     location.href,
-    ...performance
-      .getEntriesByType('resource')
-      .map((r) => r.name)
+    ...performance.getEntriesByType('resource').map((r) => r.name)
   ]
   // Передаем этот список СВ
   wb.messageSW({
@@ -2770,7 +2848,7 @@ wb.register()
 
 Как правило, манифест (и СВ) размещаются на верхнем уровне (в корневой директории) проекта. Манифест может иметь расширение `.json` или `.webmanifest` (лучше использовать первый вариант).
 
-__Манифест__
+**Манифест**
 
 ```json
 {
@@ -2813,7 +2891,7 @@ __Манифест__
 }
 ```
 
-__Ручная реализация СВ, использующего стратегию "сначала кэш"__
+**Ручная реализация СВ, использующего стратегию "сначала кэш"**
 
 ```js
 // Название кэша
@@ -2832,9 +2910,7 @@ const ASSETS_TO_CACHE = [
 // Предварительное кэширование ресурсов, выполняемое во время установки СВ
 self.addEventListener('install', (e) => {
   e.waitUntil(
-    caches
-      .open(CACHE_NAME)
-      .then((cache) => cache.addAll(ASSETS_TO_CACHE))
+    caches.open(CACHE_NAME).then((cache) => cache.addAll(ASSETS_TO_CACHE))
   )
   self.skipWaiting()
 })
@@ -2842,17 +2918,15 @@ self.addEventListener('install', (e) => {
 // Удаление старого кэша во время активации нового СВ
 self.addEventListener('activate', (e) => {
   e.waitUntil(
-    caches
-      .keys()
-      .then((keys) =>
-        Promise.all(
-          keys.map((key) => {
-            if (key !== CACHE_NAME) {
-              return caches.delete(key)
-            }
-          })
-        )
+    caches.keys().then((keys) =>
+      Promise.all(
+        keys.map((key) => {
+          if (key !== CACHE_NAME) {
+            return caches.delete(key)
+          }
+        })
       )
+    )
   )
   self.clients.claim()
 })
@@ -2870,16 +2944,16 @@ self.addEventListener('fetch', (e) => {
   e.respondWith(
     caches
       .match(e.request)
-      .then((response) =>
-          response || fetch(e.request)
-            .then((response) =>
-              caches.open(CACHE_NAME)
-                .then((cache) => {
-                  if (e.request.method === 'GET') {
-                    cache.put(e.request, response.clone())
-                  }
-                  return response
-                })
+      .then(
+        (response) =>
+          response ||
+          fetch(e.request).then((response) =>
+            caches.open(CACHE_NAME).then((cache) => {
+              if (e.request.method === 'GET') {
+                cache.put(e.request, response.clone())
+              }
+              return response
+            })
           )
       )
       .catch(() => caches.match('./offline.html'))
@@ -2887,7 +2961,7 @@ self.addEventListener('fetch', (e) => {
 })
 ```
 
-__Конфигурация `Webpack`__
+**Конфигурация `Webpack`**
 
 Пример настройки вебпака для производственной сборки прогрессивного веб-приложения.
 
@@ -3096,7 +3170,7 @@ module.exports = {
 
 <a href="">Здесь</a> вы найдете шпаргалку по настройке вебпака. Пример полной конфигурации вебпака для `JS/React/TS-проекта` можно посмотреть <a href="">здесь</a>.
 
-__React PWA__
+**React PWA**
 
 Для того, чтобы получить готовый шаблон `React-приложения` с возможностями `PWA`, достаточно выполнить команду:
 
@@ -3120,19 +3194,19 @@ npx create-react-app ...
 
 ```js
 // до
-serviceWorkerRegistration.unregister();
+serviceWorkerRegistration.unregister()
 
 // после
-serviceWorkerRegistration.register();
+serviceWorkerRegistration.register()
 ```
 
 Подробнее об этом можно прочитать <a href="https://create-react-app.dev/docs/making-a-progressive-web-app/">здесь</a>.
 
-__Vue PWA__
+**Vue PWA**
 
 С `Vue` дела обстоят еще проще.
 
-Глобально  устанавливаем `vue-cli`:
+Глобально устанавливаем `vue-cli`:
 
 ```bash
 yarn global add @vue/cli

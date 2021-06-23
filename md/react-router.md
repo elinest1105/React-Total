@@ -2,12 +2,7 @@
 
 [На главную](../README.md)
 
-### Примеры
-
-- :link: [Код](https://github.com/harryheman/React-Projects/tree/main/client/react-router-examples)
-- :link: [Песочница](https://codesandbox.io/s/react-router-examples-uctt5)
-
-## Оглавление
+## Содержание
 
 - [Примеры](#examples)
 - [Основные компоненты](#main)

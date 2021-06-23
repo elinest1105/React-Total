@@ -2,11 +2,9 @@
 
 [На главную](../README.md)
 
-## Выдержки из определений типов для React
-
 [Источник](https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/react/index.d.ts)
 
-## Оглавление
+## Содержание
 
 - [Хуки](#hooks)
 - [Система событий](#event_system)

@@ -1,5 +1,7 @@
 # `Google Spreadsheet` Cheatsheet :metal:
 
+[На главную](../README.md)
+
 ## Инициализация
 
 ```js

@@ -2,13 +2,6 @@
 
 [На главную](../README.md)
 
-## Пример конфигурации Webpack для JS/React/TS проектов
-
-- [Код](https://github.com/harryheman/Webpack5-Max)
-- [Песочница](https://codesandbox.io/s/webpack5-max-j2o2u)
-
-## Описание
-
 > #### <a href="https://webpack.js.org/">`Webpack`</a> - лучший на сегодняшний день сборщик модулей ("бандлер", bundler), если не по скорости, то по возможностям тонкой настройки процесса сборки.
 
 Файл с настройками, обычно, носит название "webpack.config.js" и экспортируется в виде CommonJS-модуля:
