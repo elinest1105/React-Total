@@ -121,7 +121,7 @@ Cat.find((err, cats) => {
 Поиск одного объекта (по имени)
 
 ```js
-Cat.find({ name: 'Cat' }, callback)
+Cat.findOne({ name: 'Cat' }, callback)
 ```
 
 Для поиска объекта можно использовать регулярное выражение.
