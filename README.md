@@ -15,6 +15,8 @@
 ---
 
 - :memo: [Шпаргалка по хукам](./md/hooks.md)
+- :memo: [Примеры кастомных хуков](./md/custom-hooks.md)
+- :memo: [Примеры кастомных компонентов](./md/custom-components.md)
 - :memo: [Шпаргалка по `Create React App`](./md/create-react-app.md)
 - :page_with_curl: [Руководство по `React Router`](./md/react-router.md)
 - :page_with_curl: [Руководство по `Redux Toolkit`](./md/redux-toolkit.md)
@@ -49,7 +51,6 @@
 
 ## Пользовательские хуки
 
-- [Несколько примеров](./md/custom-hooks.md)
 - [Awesome React Hooks](https://github.com/rehooks/awesome-react-hooks)
 - [react-use](https://github.com/streamich/react-use)
 - [@react-hook](https://www.npmjs.com/search?q=%40react-hook)
@@ -57,7 +58,6 @@
 
 ## Что называется "battle tested" React-компоненты
 
-- [Несколько примеров](./md/custom-components.md)
 - [Curated List of React Components & Libraries](https://github.com/brillout/awesome-react-components) - большая коллекция компонентов и библиотек для `React`
 - [emoji-mart](https://github.com/missive/emoji-mart) - компонент с эмоджи
 - [react-beautiful-dnd](https://github.com/vtereshyn/react-beautiful-dnd-ru) - компоненты для реализации перетаскивания и бросания
