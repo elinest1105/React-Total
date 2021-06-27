@@ -80,11 +80,11 @@
   - [Обработчик ошибок](#обработчик-ошибок)
   - [Обработка `не-GET-запросов`](#обработка-не-get-запросов)
 - [`workbox-strategies`](#workbox-strategies)
-    - [Stale-While-Revalidate](#stale-while-revalidate)
-    - [Cache-Fisrt](#cache-fisrt)
-    - [Network-First](#network-first)
-    - [Network-Only](#network-only)
-    - [Cache-Only](#cache-only)
+  - [Stale-While-Revalidate](#stale-while-revalidate)
+  - [Cache-Fisrt](#cache-fisrt)
+  - [Network-First](#network-first)
+  - [Network-Only](#network-only)
+  - [Cache-Only](#cache-only)
   - [Настройка стратегии](#настройка-стратегии)
 - [`workbox-recipies`](#workbox-recipies)
   - [Рецепты](#рецепты)
@@ -120,6 +120,10 @@
 - обработка (перехват сетевых) запросов
 - фоновая синхронизация
 - помощь в отладке
+
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
 
 ## На что похож `WB API`?
 
@@ -228,6 +232,10 @@ import * as googleAnalytics from 'wortkbox-google-analytics'
 googleAnalytics.initialize()
 ```
 
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
+
 ## Начало работы
 
 `WB` - это набор библиотек для помощи в создании и управлении СВ и кэшированием через <a href="https://developer.mozilla.org/ru/docs/Web/API/CacheStorage">`CacheStorage API`</a>. СВ и `CacheStorage API` при совместном использовании позволяют управлять тем, откуда загружаются ресурсы, используемые приложением (`JavaScript`, `CSS`, `HTML`, изображения и т.д.), из сети или из кэша.
@@ -265,6 +273,10 @@ console.log('Привет от сервис-воркера!')
 Если переключиться на вкладку `Application`, то можно увидеть, что СВ был успешно зарегистрирован.
 
 После этого можно подключать `WB`.
+
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
 
 ## Использование `WB`
 
@@ -380,6 +392,10 @@ setCatchHandler(async ({ event }) => {
 
 Данный СВ предварительно сохраняет резервную страницу и возвращает ее при отсутствии подключения к сети вместо ошибки.
 
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
+
 ## Использование сборщиков модулей с `WB`
 
 Как было отмечено ранее, начиная с 5 версии, `WB` может использоваться в СВ с помощью `JS-модулей`.
@@ -432,6 +448,10 @@ registerRoute(
 **`GenerateSW`**
 
 В режиме `generateSW` при использовании `workbox-build`, `workbox-cli` или `GenerateSW` в `workbox-webpack-plugin` не нужно настраивать процесс сборки - готовый к использованию СВ будет сгенерирован автоматически.
+
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
 
 ## Обработка запросов
 
@@ -606,6 +626,10 @@ registerRoute(match, handler)
 
 Это может быть полезным, например, в случае, когда у нас имеется какая-то информации, “зашитая” в URL, которая извлекается в `match` (путем разбора `URL`) и используется в `handler`.
 
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
+
 ## Настройка `WB`
 
 `WB` предоставляет названия для кэша и уровни логгирования из коробки. Эти значения можно изменять.
@@ -697,6 +721,10 @@ registerRoute(
 )
 ```
 
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
+
 ## Обработка запросов к другим источникам
 
 Запросы к другим источникам обрабатываются `WB` особым образом.
@@ -782,6 +810,10 @@ registerRoute(
   })
 )
 ```
+
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
 
 ## Использование плагинов
 
@@ -917,6 +949,10 @@ const myPlugin = {
 
 Все колбэки также принимают объект `state`, который является уникальным по отношению к объекту конкретного плагина и вызову стратегии. Это делает возможным реализацию плагинов, где один колбэк выполняет операции на основе данных, полученных от другого колбэка в том же плагине (например, вычисление дельты времени между запуском `requestWillFetch()` и `fetchDidSucceed()` или `fetchDidFail()`).
 
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
+
 ## Квота хранилища
 
 Каждый браузер устанавливает определенный лимит объема памяти, который может использоваться приложением. Данный лимит зависит от браузера. Объем используемой и доступной памяти можно проверить с помощью `navigator.storage.estimate()`. `WB` позволяет настроить автоматическую очистку хранилища при достижении квоты (storage quota).
@@ -945,6 +981,10 @@ registerRoute(
   })
 )
 ```
+
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
 
 ## Общие рекомендации
 
@@ -1124,6 +1164,10 @@ registerRoute(
 )
 ```
 
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
+
 ## Доступ к кэшу из приложения
 
 `Cache Storage API` доступен как в СВ, так и в контексте `window`. Если вы хотите изменить кэш - добавить или удалить из него записи или получить список кэшированных `URL`, вы можете сделать это напрямую, без обращения к СВ через `postMessage()`.
@@ -1160,6 +1204,10 @@ registerRoute(
   })
 )
 ```
+
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
 
 ## Продвинутые техники
 
@@ -1453,6 +1501,10 @@ registerRoute(
 )
 ```
 
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
+
 ## Автоматическое создание СВ
 
 ### `workbox-cli`
@@ -1701,6 +1753,10 @@ module.exports = {
 }
 ```
 
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
+
 ## Модули
 
 Каждый модуль решает определенную задачу и может быть использован как совместно с другими модулями, так и самостоятельно.
@@ -1719,6 +1775,10 @@ module.exports = {
 - `workbox-strategies`: стратегии кэширования во время выполнения, как правило, используемые совместно с `workbox-routing`
 - <a href="https://developers.google.com/web/tools/workbox/reference-docs/latest/module-workbox-streams">`workbox-streams`</a>: формирование ответа на основе нескольких источников потоковой передачи данных
 - `workbox-window`: регистрация, управление обновлением и обработка событий жизненного цикла СВ
+
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
 
 ## `workbox-background-sync`
 
@@ -1783,6 +1843,10 @@ self.addEventListener('fetch', (event) => {
 ```
 
 После добавления в очередь, запрос будет автоматически выполнен повторно при получении СВ события `sync` (или при следующем запуске СВ в браузерах, которые не поддерживают фоновую синхронизацию).
+
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
 
 ## `workbox-cacheable-response`
 
@@ -1893,6 +1957,10 @@ if (cacheable.isResponseCacheable(response)) {
 }
 ```
 
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
+
 ## `workbox-expiration`
 
 Данный плагин позволяет ограничивать количество ресурсов, сохраняемых в кэше, а также время их хранения.
@@ -1970,6 +2038,10 @@ await expirationManager.updateTimestamp(request.url)
 ```js
 await expirationManager.expireEntries()
 ```
+
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
 
 ## `workbox-precaching`
 
@@ -2098,6 +2170,10 @@ precacheAndRoute(
   }
 )
 ```
+
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
 
 ## `workbox-routing`
 
@@ -2265,6 +2341,10 @@ registerRoute(
 )
 ```
 
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
+
 ## `workbox-strategies`
 
 Стратегия кэширования - это паттерн, определяющий порядок формирования СВ ответа на запрос (после возникновения события `fetch`).
@@ -2400,6 +2480,10 @@ registerRoute(
 ```
 
 `WB` также позволяет создавать и использовать <a href="https://developers.google.com/web/tools/workbox/modules/workbox-strategies#custom_strategies">собственные стратегии</a>.
+
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
 
 ## `workbox-recipies`
 
@@ -2713,6 +2797,10 @@ imageCache()
 offlineFallback()
 ```
 
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
+
 ## `workbox-window`
 
 Данный модуль выполняется в контексте `window`. Его основными задачами является следующее:
@@ -2837,6 +2925,10 @@ wb.addEventListener('activated', (event) => {
 
 wb.register()
 ```
+
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
 
 ## Практика
 
@@ -3168,7 +3260,7 @@ module.exports = {
 }
 ```
 
-<a href="">Здесь</a> вы найдете шпаргалку по настройке вебпака. Пример полной конфигурации вебпака для `JS/React/TS-проекта` можно посмотреть <a href="">здесь</a>.
+<a href="https://github.com/harryheman/React-Total/blob/main/md/webpack.md">Здесь</a> вы найдете шпаргалку по настройке вебпака. Пример полной конфигурации вебпака для `JS/React/TS-проекта` можно посмотреть <a href="https://github.com/harryheman/Webpack5-Max">здесь</a>.
 
 **React PWA**
 
@@ -3217,3 +3309,7 @@ npm i -g @vue/cli
 Затем, при создании шаблона проекта с помощью команды `vue create my-app`, выбираем `Manually select features` и `Progressive Web App (PWA) Support`.
 
 Кроме прочего, в директории `src` создается файл `registerServiceWorker.ts`, который импортируется в `main.ts`. Данный файл содержит ссылку на файл `service-worker.js`, который, как и `manifest.json`, автоматически создается при сборке проекта с помощью команды `yarn build` или `npm run build`. Разумеется, содержимое обоих файлов можно <a href="https://cli.vuejs.org/ru/core-plugins/pwa.html">кастомизировать</a>.
+
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
