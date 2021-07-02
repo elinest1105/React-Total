@@ -42,6 +42,8 @@
 - :memo: [Шпаргалка по `SQL`](./md/sql.md)
 - :memo: [Шпаргалка по `Markdown`](./md/markdown.md)
 - :memo: [Шпаргалка по `Google Spreadsheet`](./md/google-spreadsheet.md)
+- :floppy_disk: [Пример файла `.gitconfig`](./assets/.gitconfig)
+- :floppy_disk: [Пример файла `.gitignore`](./assets/.gitignore)
 
 ## Проекты
 
@@ -123,7 +125,7 @@
 - [Express](https://expressjs.com/)
 - [Mongoose](https://mongoosejs.com/)
 - [Mongo Atlas/Cloud](https://www.mongodb.com/cloud/atlas)
-- [Sequalize](https://sequelize.org/master/index.html) - `ORM` для работы с  `Postgres`, `MySQL`, `MariaDB`, `SQLite` и `Microsoft SQL Server`
+- [Sequalize](https://sequelize.org/master/index.html) - `ORM` для работы с `Postgres`, `MySQL`, `MariaDB`, `SQLite` и `Microsoft SQL Server`
 - [Prisma](https://www.prisma.io/) - `ORM` "нового поколения" для работы с `MySQL`, `PostgreSQL` и `SQLite`
 - [GraphQL](https://graphql.org/)
 - [Postman](https://www.postman.com/) - сервис для тестирования API
@@ -133,7 +135,6 @@
 - [TypeScript](https://www.typescriptlang.org/)
 - [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/basic-types.html)
 - [Рекомендуемый tsconfig.json](https://www.npmjs.com/package/@tsconfig/recommended)
-
 
 ### Другое
 
@@ -181,7 +182,7 @@
 - [nodemon](https://www.npmjs.com/package/nodemon) - альтернатива `supervisor`
 - [npm-run-all](https://www.npmjs.com/package/npm-run-all) - альтернатива `concurrently`
 - [serve](https://www.npmjs.com/package/serve) - утилита для обслуживания статических файлов
-- [supervisor](https://www.npmjs.com/package/supervisor)  - утилита для запуска сервера для разработки
+- [supervisor](https://www.npmjs.com/package/supervisor) - утилита для запуска сервера для разработки
 - [validator.js](https://github.com/validatorjs/validator.js) - библиотека, лежащая в основе `express-validator`
 
 ## Участие
