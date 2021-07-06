@@ -2,46 +2,54 @@
 
 ## Ресурс для изучения React.js и связанных с ним технологий на русском языке :ru:
 
-> Последнее обновление: 02.07.2021 - добавил примеры файлов `.gitconfig` и `.gitignore`
+---
+
+> Последнее обновление: 06.07.2021 - добавил туториал по регулярным выражениям
+
+---
+
+## Руководства
+
+- :page_with_curl: [Руководство по `Redux Toolkit`](./md/redux-toolkit.md)
+- :page_with_curl: [Руководство по `Recoil`](./md/recoil.md)
+- :page_with_curl: [Руководство по `React Query`](./md/react-query.md)
+- :page_with_curl: [Руководство по `React Router`](./md/react-router.md)
+- :page_with_curl: [Руководство по `React Transition Group`](./md/react-transition-group.md)
+- :page_with_curl: [Руководство по `React Spring`](./md/react-spring.md)
+---
+- :page_with_curl: [Карманная книга по `TypeScript`](./md/ts.md) или [в формате `PWA`](https://typescript-handbook.ru/)
+- :page_with_curl: [Руководство по `GraphQL`](./md/graphql.md)
+- :page_with_curl: [Руководство по `Workbox`](./md/wb/wb.md)
+- :page_with_curl: [Руководство по `Mongoose`](./md/mongoose.md)
+- :page_with_curl: [Руководство по `Socket.IO`](./md/socket/README.md)
+
+---
+
+## Шпаргалки
 
 - :page_with_curl: [Вопросы для подготовки к собеседованию. Версия 1](./md/questions.md)
 - :page_with_curl: [Вопросы для подготовки к собеседованию. Версия 2](./md/questions-v2.md)
 - :memo: [Шпаргалки по `React`, `Jest`, `Redux` и лучшие практики по `React`](./md/cheatsheets-bestpractices.md)
-- :page_with_curl: [Карманная книга по `TypeScript`](./md/ts.md) или [в формате `PWA`](https://typescript-handbook.ru/)
-- :memo: [`React` и `TypeScript`](https://reactdev.ru/types/)
+- :memo: [Шпаргалка по хукам](./md/hooks.md)
+- :memo: [Шпаргалка по `Create React App`](./md/create-react-app.md)
+- :memo: [Шпаргалка по `Styled Components`](./md/styled-components.md)
 - :memo: [Шпаргалка `React` + `TypeScript`](./md/react-typescript.md)
 - :memo: [Выдержки из определений типов для `React` (`TypeScript`)](./md/react-types.md)
-
----
-
-- :memo: [Шпаргалка по хукам](./md/hooks.md)
 - :memo: [Примеры кастомных хуков](./md/custom-hooks.md)
 - :memo: [Примеры кастомных компонентов](./md/custom-components.md)
-- :memo: [Шпаргалка по `Create React App`](./md/create-react-app.md)
-- :page_with_curl: [Руководство по `React Router`](./md/react-router.md)
-- :page_with_curl: [Руководство по `Redux Toolkit`](./md/redux-toolkit.md)
-- :page_with_curl: [Руководство по `Recoil`](./md/recoil.md)
-- :page_with_curl: [Руководство по `React Query`](./md/react-query.md)
-- :page_with_curl: [Руководство по `React Transition Group`](./md/react-transition-group.md)
-- :page_with_curl: [Руководство по `React Spring`](./md/react-spring.md)
-- :memo: [Шпаргалка по `Styled Components`](./md/styled-components.md)
-
 ---
-
-- :page_with_curl: [Руководство по `GraphQL`](./md/graphql.md)
-- :page_with_curl: [Руководство по `Workbox`](./md/wb/wb.md)
 - :memo: [Шпаргалка по `Express API`](./md/express-api.md)
-- :page_with_curl: [Руководство по `Mongoose`](./md/mongoose.md)
-- :page_with_curl: [Руководство по `Socket.IO`](./md/socket/README.md)
 - :memo: [Шпаргалка по `Webpack`](./md/webpack.md)
 - :memo: [Шпаргалка по HTML5-тегам](./md/html5.md)
-- :memo: [Шпаргалка по `JS`-методам для работы с `DOM`](./md/js-dom.md)
+- :memo: [Шпаргалка по методам для работы с `DOM`](./md/js-dom.md)
+- :memo: [Туториал по регулярным выражениям](./md/regexp/regexp.md)
 - :memo: [Шпаргалка по `Axios`](./md/axios.md)
 - :memo: [Шпаргалка по `JSON Server`](./md/json-server/README.md)
 - :memo: [Шпаргалка по `JSON Web Token`](./md/jsonwebtoken.md)
 - :memo: [Шпаргалка по `SQL`](./md/sql.md)
 - :memo: [Шпаргалка по `Markdown`](./md/markdown.md)
 - :memo: [Шпаргалка по `Google Spreadsheet`](./md/google-spreadsheet.md)
+---
 - :floppy_disk: [Пример файла `.gitconfig`](./assets/.gitconfig)
 - :floppy_disk: [Пример файла `.gitignore`](./assets/.gitignore)
 
@@ -58,7 +66,7 @@
 - [@react-hook](https://www.npmjs.com/search?q=%40react-hook)
 - [beautiful-react-hooks](https://github.com/beautifulinteractions/beautiful-react-hooks)
 
-## Что называется "battle tested" React-компоненты
+## Кастомные компоненты
 
 - [Curated List of React Components & Libraries](https://github.com/brillout/awesome-react-components) - большая коллекция компонентов и библиотек для `React`
 - [emoji-mart](https://github.com/missive/emoji-mart) - компонент с эмоджи
