@@ -4,7 +4,7 @@
 
 ---
 
-> Последнее обновление: 06.07.2021 - добавил туториал по регулярным выражениям
+> Последнее обновление: 10.07.2021 - добавил руководство по `Sequelize`
 
 ---
 
@@ -21,6 +21,7 @@
 - :page_with_curl: [Руководство по `GraphQL`](./md/graphql.md)
 - :page_with_curl: [Руководство по `Workbox`](./md/wb/wb.md)
 - :page_with_curl: [Руководство по `Mongoose`](./md/mongoose.md)
+- :page_with_curl: [Руководство по `Sequelize`](./md/sequelize.md)
 - :page_with_curl: [Руководство по `Socket.IO`](./md/socket/README.md)
 
 ---
