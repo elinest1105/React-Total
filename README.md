@@ -4,7 +4,7 @@
 
 ---
 
-> Последнее обновление: 06.07.2021 - добавил туториал по регулярным выражениям
+> Последнее обновление: 10.07.2021 - добавил руководство по `Sequelize`
 
 ---
 
@@ -16,20 +16,20 @@
 - :page_with_curl: [Руководство по `React Router`](./md/react-router.md)
 - :page_with_curl: [Руководство по `React Transition Group`](./md/react-transition-group.md)
 - :page_with_curl: [Руководство по `React Spring`](./md/react-spring.md)
+
 ---
+
 - :page_with_curl: [Карманная книга по `TypeScript`](./md/ts.md) или [в формате `PWA`](https://typescript-handbook.ru/)
 - :page_with_curl: [Руководство по `GraphQL`](./md/graphql.md)
 - :page_with_curl: [Руководство по `Workbox`](./md/wb/wb.md)
 - :page_with_curl: [Руководство по `Mongoose`](./md/mongoose.md)
+- :page_with_curl: [Руководство по `Sequelize`](./md/sequelize.md)
 - :page_with_curl: [Руководство по `Socket.IO`](./md/socket/README.md)
 
 ---
 
 ## Шпаргалки
 
-- :page_with_curl: [Вопросы для подготовки к собеседованию. Версия 1](./md/questions.md)
-- :page_with_curl: [Вопросы для подготовки к собеседованию. Версия 2](./md/questions-v2.md)
-- :memo: [Шпаргалки по `React`, `Jest`, `Redux` и лучшие практики по `React`](./md/cheatsheets-bestpractices.md)
 - :memo: [Шпаргалка по хукам](./md/hooks.md)
 - :memo: [Шпаргалка по `Create React App`](./md/create-react-app.md)
 - :memo: [Шпаргалка по `Styled Components`](./md/styled-components.md)
@@ -37,19 +37,29 @@
 - :memo: [Выдержки из определений типов для `React` (`TypeScript`)](./md/react-types.md)
 - :memo: [Примеры кастомных хуков](./md/custom-hooks.md)
 - :memo: [Примеры кастомных компонентов](./md/custom-components.md)
+
 ---
+
 - :memo: [Шпаргалка по `Express API`](./md/express-api.md)
 - :memo: [Шпаргалка по `Webpack`](./md/webpack.md)
 - :memo: [Шпаргалка по HTML5-тегам](./md/html5.md)
 - :memo: [Шпаргалка по методам для работы с `DOM`](./md/js-dom.md)
-- :memo: [Туториал по регулярным выражениям](./md/regexp/regexp.md)
+- :memo: [Туториал по `RegExp`](./md/regexp/regexp.md)
 - :memo: [Шпаргалка по `Axios`](./md/axios.md)
 - :memo: [Шпаргалка по `JSON Server`](./md/json-server/README.md)
 - :memo: [Шпаргалка по `JSON Web Token`](./md/jsonwebtoken.md)
 - :memo: [Шпаргалка по `SQL`](./md/sql.md)
 - :memo: [Шпаргалка по `Markdown`](./md/markdown.md)
 - :memo: [Шпаргалка по `Google Spreadsheet`](./md/google-spreadsheet.md)
+
 ---
+
+- :page_with_curl: [Вопросы для подготовки к собеседованию. Версия 1](./md/questions.md)
+- :page_with_curl: [Вопросы для подготовки к собеседованию. Версия 2](./md/questions-v2.md)
+- :memo: [Шпаргалки по `React`, `Jest`, `Redux` и лучшие практики по `React`](./md/cheatsheets-bestpractices.md)
+
+---
+
 - :floppy_disk: [Пример файла `.gitconfig`](./assets/.gitconfig)
 - :floppy_disk: [Пример файла `.gitignore`](./assets/.gitignore)
 
@@ -59,7 +69,7 @@
 - :link: [Пример использования Socket.io и React для создания чата](https://github.com/harryheman/Socket.io-React-Chat-App)
 - :link: [Пример реализации подписки на обновления с помощью React, Netlify Functions и Google Sheets](https://github.com/harryheman/Mail-List)
 
-## Пользовательские хуки
+## Кастомные хуки
 
 - [Awesome React Hooks](https://github.com/rehooks/awesome-react-hooks)
 - [react-use](https://github.com/streamich/react-use)
@@ -76,91 +86,28 @@
 - [react-copy-to-clipboard](https://www.npmjs.com/package/react-copy-to-clipboard) - компонент для копирования текста в буфер обмена
 - [react-error-boundary](https://www.npmjs.com/package/react-error-boundary) - предохранитель
 - [react-filepond](https://github.com/pqina/react-filepond) - компонент для отправки файлов
+- [react-hook-form](https://react-hook-form.com/ru/) - хуки для работы с формами
 - [react-icons](https://react-icons.github.io/react-icons/) - компоненты-иконки
+- [react-intl](https://formatjs.io/) - компоненты для интернационализации
 - [react-google-recaptcha](https://www.npmjs.com/package/react-google-recaptcha)
 - [react-lazyload](https://www.npmjs.com/package/react-lazyload) - ленивая загрузка компонентов
+- [react-leaflet](https://react-leaflet.js.org/) - компоненты для работы с картами
 - [react-loader-spinner](https://www.npmjs.com/package/react-loader-spinner) - индикатор загрузки
 - [react-responsive](https://www.npmjs.com/package/react-responsive) - использование медиа-запросов в компонентах
 - [react-search-input](https://www.npmjs.com/package/react-search-input) - инпут для поиска
+- [react-table](https://react-table.tanstack.com/) - компоненты для работы с таблицами
 - [react-timeago](https://www.npmjs.com/package/react-timeago) - компонент для форматирования даты и времени с поддержкой русского языка
 - [react-virtualized](https://bvaughn.github.io/react-virtualized/#/components/List) - рендеринг только видимых элементов списка
+- [resharts](https://recharts.org/en-US) - компоненты для визуализации данных
 
-## Источники и полезные ссылки
-
-### Экосистема React
-
-- [React](https://ru.reactjs.org/)
-- [React Native](https://reactnative.dev/)
-- [React Router](https://reactrouter.com/)
-- [Redux](https://redux.js.org/)
-- [Redux Toolkit](https://redux-toolkit.js.org/)
-- [Recoil](https://recoiljs.org/)
-- [React Query](https://react-query.tanstack.com/)
-- [Gatsby](https://www.gatsbyjs.com/)
-- [Next](https://nextjs.org/)
-- [Create React App](https://create-react-app.dev/)
-- [Styled Components](https://styled-components.com/)
-- [React Transition Group](https://reactcommunity.org/react-transition-group/)
-- [React Spring](https://www.react-spring.io/)
-
-### CSS-фреймворки для React
+### CSS-фреймворки
 
 - [Material UI](https://material-ui.com/ru/)
 - [React Bootstrap](https://react-bootstrap.github.io/)
 - [Reactstrap](https://reactstrap.github.io/)
 - [Semantic UI React](https://react.semantic-ui.com/)
 - [Ant Design](https://ant.design/docs/react/introduce)
-- [React Toolbox](http://react-toolbox.io/#/)
-- [Shards React](https://designrevision.com/downloads/shards-react/)
 - [Tailwind CSS](https://tailwindcss.com/)
-
----
-
-- [React Hook Form](https://react-hook-form.com/ru/) - работа с формами
-- [Formik](https://formik.org/) - альтернатива `react-hook-form`
-- [React Table](https://react-table.tanstack.com/) - работа с таблицами
-- [React Leaflet](https://react-leaflet.js.org/) - работа с картой
-- [Resharts](https://recharts.org/en-US) - визуализация данных
-- [React Snap](https://github.com/stereobooster/react-snap) - предварительный рендеринг страниц для `SPA`
-
-### Node.js
-
-- [Node.js](https://nodejs.org/en/)
-- [Документация Node.js с примерами кода](https://nodejsdev.ru/doc/)
-- [Node.js: лучшие практики](https://github.com/goldbergyoni/nodebestpractices/blob/master/README.russian.md)
-- [npm](https://www.npmjs.com/)
-- [yarn](https://yarnpkg.com/)
-- [Express](https://expressjs.com/)
-- [Mongoose](https://mongoosejs.com/)
-- [Mongo Atlas/Cloud](https://www.mongodb.com/cloud/atlas)
-- [Sequalize](https://sequelize.org/master/index.html) - `ORM` для работы с `Postgres`, `MySQL`, `MariaDB`, `SQLite` и `Microsoft SQL Server`
-- [Prisma](https://www.prisma.io/) - `ORM` "нового поколения" для работы с `MySQL`, `PostgreSQL` и `SQLite`
-- [GraphQL](https://graphql.org/)
-- [Postman](https://www.postman.com/) - сервис для тестирования API
-
-### TypeScript
-
-- [TypeScript](https://www.typescriptlang.org/)
-- [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/basic-types.html)
-- [Рекомендуемый tsconfig.json](https://www.npmjs.com/package/@tsconfig/recommended)
-
-### Другое
-
-- [ECMAScript 2022 Language Specification](https://tc39.es/ecma262/)
-- [V8 JavaScript Engine](https://v8.dev/)
-- [Google Fonts](https://fonts.google.com/)
-- [FontAwesome](https://fontawesome.com/)
-- [FlatIcon](https://www.flaticon.com/)
-- [FreeIcons](https://freeicons.io/)
-- [PngTree](https://pngtree.com/)
-- [PngImg](http://pngimg.com/)
-- [Webpack](https://webpack.js.org/) - сборщик модулей
-- [Socket.IO](https://socket.io/) - библиотека для создания приложений, работающих в режиме реального времени
-- [Mirage.js](https://miragejs.com/) - библиотека, позволяющая тестировать API на клиенте
-- [Mailtrap](https://mailtrap.io/) - сервис для тестирования отправки электронных писем
-- [Статус-коды HTTP](https://httpstatuses.com/)
-- [HTML-эмодзи](https://www.w3schools.com/charsets/ref_emoji.asp)
-- [Классы Bootstrap 4](https://www.w3schools.com/bootstrap4/bootstrap_ref_all_classes.asp)
 
 ### Авторизация
 
@@ -176,6 +123,27 @@
 - [react-facebook-login](https://github.com/keppelen/react-facebook-login) - компонент для авторизации с помощью Facebook-аккаунта
 - [react-github-login](https://github.com/checkr/react-github-login) - компонент для авторизации с помощью GitHub-аккаунта
 
+## Полезные ссылки
+
+- [GitHowTo](https://githowto.com/ru) - интерактивный курс по основам работы с `Git`
+- [Статус-коды HTTP](https://httpstatuses.com/)
+- [Документация Node.js с примерами кода](https://nodejsdev.ru/doc/)
+- [Node.js: лучшие практики](https://github.com/goldbergyoni/nodebestpractices/blob/master/README.russian.md)
+- [Developer Roadmap](https://github.com/kamranahmedse/developer-roadmap) - "дорожная карта" веб-разработчика
+- [The Art of Command Line](https://github.com/jlevy/the-art-of-command-line) - искусство командной строки
+- [Postman](https://www.postman.com/) - сервис для тестирования API
+- [Mailtrap](https://mailtrap.io/) - сервис для тестирования отправки электронных писем
+- [React и TypeScript](https://reactdev.ru/types/)
+- [Рекомендуемый tsconfig.json](https://www.npmjs.com/package/@tsconfig/recommended)
+- [Google Fonts](https://fonts.google.com/)
+- [FontAwesome](https://fontawesome.com/)
+- [FlatIcon](https://www.flaticon.com/)
+- [FreeIcons](https://freeicons.io/)
+- [PngTree](https://pngtree.com/)
+- [PngImg](http://pngimg.com/)
+- [HTML-эмодзи](https://www.w3schools.com/charsets/ref_emoji.asp)
+- [Классы Bootstrap 4](https://www.w3schools.com/bootstrap4/bootstrap_ref_all_classes.asp)
+
 ### npm-пакеты
 
 - [axios](https://github.com/axios/axios) - библиотека для выполнения HTTP-запросов
@@ -187,10 +155,10 @@
 - [multer](https://github.com/expressjs/multer/blob/master/doc/README-ru.md) - утилита для обработки `multipart/form-data`
 - [nanoid](https://www.npmjs.com/package/nanoid) - утилита для генерации уникальных идентификаторов
 - [nodemailer](https://nodemailer.com/) - утилита для отправки email
-- [nodemon](https://www.npmjs.com/package/nodemon) - альтернатива `supervisor`
-- [npm-run-all](https://www.npmjs.com/package/npm-run-all) - альтернатива `concurrently`
+- [nodemon](https://www.npmjs.com/package/nodemon) - утилита для запуска сервера для разработки
 - [serve](https://www.npmjs.com/package/serve) - утилита для обслуживания статических файлов
-- [supervisor](https://www.npmjs.com/package/supervisor) - утилита для запуска сервера для разработки
+- [supervisor](https://www.npmjs.com/package/supervisor) -
+альтернатива `nodemon`
 - [validator.js](https://github.com/validatorjs/validator.js) - библиотека, лежащая в основе `express-validator`
 
 ## Участие
