@@ -4,7 +4,7 @@
 
 ---
 
-> Последнее обновление: 10.07.2021 - добавил руководство по `Sequelize`
+> Последнее обновление: 16.07.2021 - добавил шпаргалки по `Helmet` и `Cors`
 
 ---
 
@@ -48,6 +48,8 @@
 - :memo: [Шпаргалка по `Axios`](./md/axios.md)
 - :memo: [Шпаргалка по `JSON Server`](./md/json-server/README.md)
 - :memo: [Шпаргалка по `JSON Web Token`](./md/jsonwebtoken.md)
+- :memo: [Шпаргалка по `Helmet`](./md/helmet.md)
+- :memo: [Шпаргалка по `Cors`](./md/cors.md)
 - :memo: [Шпаргалка по `SQL`](./md/sql.md)
 - :memo: [Шпаргалка по `Markdown`](./md/markdown.md)
 - :memo: [Шпаргалка по `Google Spreadsheet`](./md/google-spreadsheet.md)
@@ -158,7 +160,7 @@
 - [nodemon](https://www.npmjs.com/package/nodemon) - утилита для запуска сервера для разработки
 - [serve](https://www.npmjs.com/package/serve) - утилита для обслуживания статических файлов
 - [supervisor](https://www.npmjs.com/package/supervisor) -
-альтернатива `nodemon`
+  альтернатива `nodemon`
 - [validator.js](https://github.com/validatorjs/validator.js) - библиотека, лежащая в основе `express-validator`
 
 ## Участие
