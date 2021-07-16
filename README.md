@@ -137,6 +137,8 @@
 - [Mailtrap](https://mailtrap.io/) - сервис для тестирования отправки электронных писем
 - [React и TypeScript](https://reactdev.ru/types/)
 - [Рекомендуемый tsconfig.json](https://www.npmjs.com/package/@tsconfig/recommended)
+- [Команды SQL (PostreSQL)](https://postgrespro.ru/docs/postgresql/13/sql-commands)
+- [Команды psql (PostreSQL)](https://postgrespro.ru/docs/postgresql/13/app-psql)
 - [Google Fonts](https://fonts.google.com/)
 - [FontAwesome](https://fontawesome.com/)
 - [FlatIcon](https://www.flaticon.com/)
