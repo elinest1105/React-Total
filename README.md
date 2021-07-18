@@ -1,10 +1,10 @@
-# Тотальный React :metal:
+# Тотальный React :metal
 
-## Ресурс для изучения React.js и связанных с ним технологий на русском языке :ru:
+## Ресурс для изучения React.js и связанных с ним технологий на русском языке :ru
 
 ---
 
-> Последнее обновление: 16.07.2021 - добавил шпаргалки по `Helmet` и `Cors`
+> Последнее обновление: 16.07.2021 - добавил пример файла `settings.json` и список используемых мной расширений для `VSCode`
 
 ---
 
@@ -64,6 +64,8 @@
 
 - :floppy_disk: [Пример файла `.gitconfig`](./assets/.gitconfig)
 - :floppy_disk: [Пример файла `.gitignore`](./assets/.gitignore)
+- :floppy_disk: [Пример файла `settings.json`](./assets/settings.json)
+- :memo: [Расширения для `VSCode`](./md/extensions.md)
 
 ## Проекты
 
@@ -137,6 +139,7 @@
 - [Mailtrap](https://mailtrap.io/) - сервис для тестирования отправки электронных писем
 - [React и TypeScript](https://reactdev.ru/types/)
 - [Рекомендуемый tsconfig.json](https://www.npmjs.com/package/@tsconfig/recommended)
+- [Настройки Prettier](https://prettier.io/docs/en/options.html)
 - [Команды SQL (PostreSQL)](https://postgrespro.ru/docs/postgresql/13/sql-commands)
 - [Команды psql (PostreSQL)](https://postgrespro.ru/docs/postgresql/13/app-psql)
 - [Google Fonts](https://fonts.google.com/)
