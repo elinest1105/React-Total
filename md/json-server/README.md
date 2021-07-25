@@ -42,7 +42,7 @@ json-server -w db.json
   <b><a href="#">↥ Наверх</a></b>
 </div>
 
-## <a name="install"></a> Использование
+## <a name="usage"></a> Использование
 
 Создаем такую БД:
 
