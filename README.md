@@ -136,6 +136,7 @@
 - [Developer Roadmap](https://github.com/kamranahmedse/developer-roadmap) - "дорожная карта" веб-разработчика
 - [The Art of Command Line](https://github.com/jlevy/the-art-of-command-line) - искусство командной строки
 - [Postman](https://www.postman.com/) - сервис для тестирования API
+- [Insomnia](https://insomnia.rest/) - сервис для тестирования API
 - [Mailtrap](https://mailtrap.io/) - сервис для тестирования отправки электронных писем
 - [React и TypeScript](https://reactdev.ru/types/)
 - [Рекомендуемый tsconfig.json](https://www.npmjs.com/package/@tsconfig/recommended)
