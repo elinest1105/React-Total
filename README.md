@@ -4,7 +4,7 @@
 
 ---
 
-> Последнее обновление: 18.07.2021 - добавил пример файла `settings.json` и список используемых мной расширений для `VSCode`
+> Последнее обновление: 01.08.2021 - добавил туториал по `Web Speech API`, а также шпаргалку и туториал по `Security Headers`. Также _обратите внимание_ на разработанную мной <a href="https://github.com/harryheman/simple-fetch">утилиту, сильно упрощающую работу с `Fetch API`</a>
 
 ---
 
@@ -42,9 +42,11 @@
 
 - :memo: [Шпаргалка по `Express API`](./md/express-api.md)
 - :memo: [Шпаргалка по `Webpack`](./md/webpack.md)
+- :memo: [Шпаргалка и туториал по `Security Headers`](./md/webpack.md)
 - :memo: [Шпаргалка по HTML5-тегам](./md/html5.md)
 - :memo: [Шпаргалка по методам для работы с `DOM`](./md/js-dom.md)
 - :memo: [Туториал по `RegExp`](./md/regexp/regexp.md)
+- :memo: [Туториал по `Web Speech API`](./md/regexp/regexp.md)
 - :memo: [Шпаргалка по `Axios`](./md/axios.md)
 - :memo: [Шпаргалка по `JSON Server`](./md/json-server/README.md)
 - :memo: [Шпаргалка по `JSON Web Token`](./md/jsonwebtoken.md)
@@ -72,6 +74,7 @@
 - :link: [Пример использования Apollo Server, Apollo Client, GraphQL и React для создания блога](https://github.com/harryheman/Apollo-GraphQL-React-Social-App)
 - :link: [Пример использования Socket.io и React для создания чата](https://github.com/harryheman/Socket.io-React-Chat-App)
 - :link: [Пример реализации подписки на обновления с помощью React, Netlify Functions и Google Sheets](https://github.com/harryheman/Mail-List)
+- :link: [Утилита упрощающая работу с `Fetch API`](https://github.com/harryheman/simple-fetch)
 
 ## Кастомные хуки
 
@@ -101,6 +104,7 @@
 - [react-search-input](https://www.npmjs.com/package/react-search-input) - инпут для поиска
 - [react-table](https://react-table.tanstack.com/) - компоненты для работы с таблицами
 - [react-timeago](https://www.npmjs.com/package/react-timeago) - компонент для форматирования даты и времени с поддержкой русского языка
+- [react-toastify]() - компонент для создания уведомлений
 - [react-virtualized](https://bvaughn.github.io/react-virtualized/#/components/List) - рендеринг только видимых элементов списка
 - [resharts](https://recharts.org/en-US) - компоненты для визуализации данных
 
@@ -122,9 +126,7 @@
 - [connect-mongo](https://www.npmjs.com/package/connect-mongo) - утилита для хранения куки-сессий в `MongoDB`
 - [jsonwebtoken](https://github.com/auth0/node-jsonwebtoken) - библиотека для создание и подтверждения токенов
 - [bcrypt](https://www.npmjs.com/package/bcrypt) - утилита для хэширования и проверки паролей
-- [base64url](https://www.npmjs.com/package/base64url)- утилита для кодирования/декодирования строки в `base64`
 - [react-google-login](https://www.npmjs.com/package/react-google-login) - компонент для авторизации с помощью Google-аккаунта
-- [react-facebook-login](https://github.com/keppelen/react-facebook-login) - компонент для авторизации с помощью Facebook-аккаунта
 - [react-github-login](https://github.com/checkr/react-github-login) - компонент для авторизации с помощью GitHub-аккаунта
 
 ## Полезные ссылки
@@ -141,6 +143,7 @@
 - [React и TypeScript](https://reactdev.ru/types/)
 - [Рекомендуемый tsconfig.json](https://www.npmjs.com/package/@tsconfig/recommended)
 - [Настройки Prettier](https://prettier.io/docs/en/options.html)
+- [Список правил ESLint](https://eslint.org/docs/rules/)
 - [Команды SQL (PostreSQL)](https://postgrespro.ru/docs/postgresql/13/sql-commands)
 - [Команды psql (PostreSQL)](https://postgrespro.ru/docs/postgresql/13/app-psql)
 - [Google Fonts](https://fonts.google.com/)
