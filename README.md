@@ -1,8 +1,8 @@
-# Тотальный React :metal
+# Тотальный React :metal:
 
 ## Ресурс для изучения React.js и связанных с ним технологий на русском языке :ru
 
-> Последнее обновление: 07.08.2021 - добавил учебный проект "Копия Amazon, разработанная с помощью React, Firebase и Stripe"
+> Последнее обновление: 07.08.2021 - добавил учебный проект `Копия Amazon, разработанная с помощью React, Firebase и Stripe` и шпаргалку по `Netlify`
 
 ## Руководства
 
@@ -47,6 +47,7 @@
 - :memo: [Шпаргалка по `Helmet`](./md/helmet.md)
 - :memo: [Шпаргалка по `Cors`](./md/cors.md)
 - :memo: [Шпаргалка по `SQL`](./md/sql.md)
+- :memo: [Шпаргалка по `Netlify`](./md/netlify.md)
 - :memo: [Шпаргалка по `Markdown`](./md/markdown.md)
 - :memo: [Шпаргалка по `Google Spreadsheet`](./md/google-spreadsheet.md)
 
