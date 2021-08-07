@@ -4,7 +4,7 @@
 
 ---
 
-> Последнее обновление: 01.08.2021 - добавил туториал по `Web Speech API`, а также шпаргалку и туториал по `Security Headers`. Также _обратите внимание_ на разработанную мной <a href="https://github.com/harryheman/simple-fetch">утилиту, сильно упрощающую работу с `Fetch API`</a>
+> Последнее обновление: 07.08.2021 - добавил учебный проект "Копия Amazon, разработанная с помощью React, Firebase и Stripe"
 
 ---
 
@@ -71,10 +71,11 @@
 
 ## Проекты
 
-- :link: [Пример использования Apollo Server, Apollo Client, GraphQL и React для создания блога](https://github.com/harryheman/Apollo-GraphQL-React-Social-App)
-- :link: [Пример использования Socket.io и React для создания чата](https://github.com/harryheman/Socket.io-React-Chat-App)
-- :link: [Пример реализации подписки на обновления с помощью React, Netlify Functions и Google Sheets](https://github.com/harryheman/Mail-List)
-- :link: [Утилита упрощающая работу с `Fetch API`](https://github.com/harryheman/simple-fetch)
+- :link: [Блог, разработанная с помощью Apollo, GraphQL и React](https://github.com/harryheman/Apollo-GraphQL-React-Social-App)
+- :link: [Чат, разработанная с помощью Socket.io и React](https://github.com/harryheman/Socket.io-React-Chat-App)
+- :link: [Подписка на обновления, реализованная с помощью React, Netlify Functions и Google Sheets](https://github.com/harryheman/mail-list)
+- :link: [Копия Amazon, разработанная с помощью React, Firebase и Stripe](https://github.com/harryheman/React-Firebase-Stripe-Amazon-Clone)
+- :link: [Утилита, упрощающая работу с `Fetch API`](https://github.com/harryheman/simple-fetch)
 
 ## Кастомные хуки
 
