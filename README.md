@@ -1,12 +1,8 @@
-# Тотальный React :metal:
+# Тотальный React :metal
 
-## Ресурс для изучения React.js и связанных с ним технологий на русском языке :ru:
-
----
+## Ресурс для изучения React.js и связанных с ним технологий на русском языке :ru
 
 > Последнее обновление: 07.08.2021 - добавил учебный проект "Копия Amazon, разработанная с помощью React, Firebase и Stripe"
-
----
 
 ## Руководства
 
@@ -25,8 +21,6 @@
 - :page_with_curl: [Руководство по `Mongoose`](./md/mongoose.md)
 - :page_with_curl: [Руководство по `Sequelize`](./md/sequelize.md)
 - :page_with_curl: [Руководство по `Socket.IO`](./md/socket/README.md)
-
----
 
 ## Шпаргалки
 
@@ -58,6 +52,8 @@
 
 ---
 
+_Обратите внимание_: вопросы немного устарели, поскольку посвящены, преимущественно, "классовому" `React`
+
 - :page_with_curl: [Вопросы для подготовки к собеседованию. Версия 1](./md/questions.md)
 - :page_with_curl: [Вопросы для подготовки к собеседованию. Версия 2](./md/questions-v2.md)
 - :memo: [Шпаргалки по `React`, `Jest`, `Redux` и лучшие практики по `React`](./md/cheatsheets-bestpractices.md)
@@ -71,22 +67,15 @@
 
 ## Проекты
 
-- :link: [Блог, разработанная с помощью Apollo, GraphQL и React](https://github.com/harryheman/Apollo-GraphQL-React-Social-App)
-- :link: [Чат, разработанная с помощью Socket.io и React](https://github.com/harryheman/Socket.io-React-Chat-App)
+- :link: [Блог, разработанный с помощью Apollo, GraphQL и React](https://github.com/harryheman/Apollo-GraphQL-React-Social-App)
+- :link: [Чат, разработанный с помощью Socket.io и React](https://github.com/harryheman/Socket.io-React-Chat-App)
 - :link: [Подписка на обновления, реализованная с помощью React, Netlify Functions и Google Sheets](https://github.com/harryheman/mail-list)
 - :link: [Копия Amazon, разработанная с помощью React, Firebase и Stripe](https://github.com/harryheman/React-Firebase-Stripe-Amazon-Clone)
 - :link: [Утилита, упрощающая работу с `Fetch API`](https://github.com/harryheman/simple-fetch)
-
-## Кастомные хуки
-
-- [Awesome React Hooks](https://github.com/rehooks/awesome-react-hooks)
-- [react-use](https://github.com/streamich/react-use)
-- [@react-hook](https://www.npmjs.com/search?q=%40react-hook)
-- [beautiful-react-hooks](https://github.com/beautifulinteractions/beautiful-react-hooks)
+- :link: [Работа с HTTP-заголовками, связанными с безопасностью, на примере двух приложений](https://github.com/harryheman/secure-app)
 
 ## Кастомные компоненты
 
-- [Curated List of React Components & Libraries](https://github.com/brillout/awesome-react-components) - большая коллекция компонентов и библиотек для `React`
 - [emoji-mart](https://github.com/missive/emoji-mart) - компонент с эмоджи
 - [react-beautiful-dnd](https://github.com/vtereshyn/react-beautiful-dnd-ru) - компоненты для реализации перетаскивания и бросания
 - [react-burger-menu](https://www.npmjs.com/package/react-burger-menu) - меню, навбар
@@ -113,9 +102,7 @@
 
 - [Material UI](https://material-ui.com/ru/)
 - [React Bootstrap](https://react-bootstrap.github.io/)
-- [Reactstrap](https://reactstrap.github.io/)
 - [Semantic UI React](https://react.semantic-ui.com/)
-- [Ant Design](https://ant.design/docs/react/introduce)
 - [Tailwind CSS](https://tailwindcss.com/)
 
 ### Авторизация
@@ -130,8 +117,15 @@
 - [react-google-login](https://www.npmjs.com/package/react-google-login) - компонент для авторизации с помощью Google-аккаунта
 - [react-github-login](https://github.com/checkr/react-github-login) - компонент для авторизации с помощью GitHub-аккаунта
 
+## Интересные статьи
+
+- [Using Forms in React](https://daveceddia.com/react-forms/) - статья про разные способы использования форм в `React`
+- [Demystifying styled-components](https://www.joshwcomeau.com/react/demystifying-styled-components/) - статья про то, как работают стилизованные компоненты (styled components)
+
 ## Полезные ссылки
 
+- [Awesome React Hooks](https://github.com/rehooks/awesome-react-hooks) - большая коллекция кастомных хуков
+- [Curated List of React Components & Libraries](https://github.com/brillout/awesome-react-components) - большая коллекция компонентов и библиотек для `React`
 - [GitHowTo](https://githowto.com/ru) - интерактивный курс по основам работы с `Git`
 - [Статус-коды HTTP](https://httpstatuses.com/)
 - [Документация Node.js с примерами кода](https://nodejsdev.ru/doc/)
@@ -139,7 +133,6 @@
 - [Developer Roadmap](https://github.com/kamranahmedse/developer-roadmap) - "дорожная карта" веб-разработчика
 - [The Art of Command Line](https://github.com/jlevy/the-art-of-command-line) - искусство командной строки
 - [Postman](https://www.postman.com/) - сервис для тестирования API
-- [Insomnia](https://insomnia.rest/) - сервис для тестирования API
 - [Mailtrap](https://mailtrap.io/) - сервис для тестирования отправки электронных писем
 - [React и TypeScript](https://reactdev.ru/types/)
 - [Рекомендуемый tsconfig.json](https://www.npmjs.com/package/@tsconfig/recommended)
@@ -156,7 +149,7 @@
 - [HTML-эмодзи](https://www.w3schools.com/charsets/ref_emoji.asp)
 - [Классы Bootstrap 4](https://www.w3schools.com/bootstrap4/bootstrap_ref_all_classes.asp)
 
-### npm-пакеты
+### NPM-пакеты
 
 - [axios](https://github.com/axios/axios) - библиотека для выполнения HTTP-запросов
 - [concurrently](https://www.npmjs.com/package/concurrently) - утилита для одновременного выполнения нескольких команд (скриптов)
@@ -169,8 +162,6 @@
 - [nodemailer](https://nodemailer.com/) - утилита для отправки email
 - [nodemon](https://www.npmjs.com/package/nodemon) - утилита для запуска сервера для разработки
 - [serve](https://www.npmjs.com/package/serve) - утилита для обслуживания статических файлов
-- [supervisor](https://www.npmjs.com/package/supervisor) -
-  альтернатива `nodemon`
 - [validator.js](https://github.com/validatorjs/validator.js) - библиотека, лежащая в основе `express-validator`
 
 ## Участие
