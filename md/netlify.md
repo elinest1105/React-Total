@@ -2,7 +2,14 @@
 
 [На главную](../README.md)
 
-## Интерфейс командной строки
+## Содержание
+
+- [Интерфейс командной строки](#cli)
+- [Перенаправления](#redirects)
+- [netlify.toml](#toml)
+- [Функции](#functions)
+
+## Интерфейс командной строки <a name="cli"></a>
 
 _Установка_
 
@@ -84,7 +91,11 @@ _Полезные команды_
   - `functions:list`
   - `functions:serve`
 
-## Перенаправления
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
+
+## Перенаправления <a name="redirects"></a>
 
 Правила выполнения перенаправлений определяются в файле `_redirects`.
 
@@ -131,7 +142,11 @@ _Настройки_
 /api/*  https://api.example.com/:splat  200
 ```
 
-## `netlify.toml`
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
+
+## `netlify.toml` <a name="toml"></a>
 
 `netlify.toml` - основной файл для настройки серверной части приложения, разворачиваемого на `Netlify`.
 
@@ -311,7 +326,11 @@ _Настройки_
     keyFile = "key.pem"
 ```
 
-## Функции
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
+
+## Функции <a name="functions"></a>
 
 _Сигнатура_
 
@@ -412,7 +431,7 @@ exports.handler = async function (event) {
 }
 ```
 
-## `TypeScript`
+__`TypeScript`__
 
 _Типы_
 
@@ -434,3 +453,7 @@ const handler: Handler = async (event, context) => {
 
 export { handler }
 ```
+
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
