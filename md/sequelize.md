@@ -1,4 +1,4 @@
-# Sequelize Guide :metal
+# `Sequelize` Guide :metal:
 
 [На главную](../README.md)
 
