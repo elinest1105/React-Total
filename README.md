@@ -70,9 +70,10 @@ _Обратите внимание_: вопросы немного устаре�
 
 - :link: [Блог, разработанный с помощью Apollo, GraphQL и React](https://github.com/harryheman/Apollo-GraphQL-React-Social-App)
 - :link: [Чат, разработанный с помощью Socket.io и React](https://github.com/harryheman/Socket.io-React-Chat-App)
-- :link: [Подписка на обновления, реализованная с помощью React, Netlify Functions и Google Sheets](https://github.com/harryheman/mail-list)
+- :link: [Подписка на обновления, реализованная с помощью React, Netlify Functions и Google Sheets](https://github.com/harryheman/React-Mail-List)
 - :link: [Копия Amazon, разработанная с помощью React, Firebase и Stripe](https://github.com/harryheman/React-Firebase-Stripe-Amazon-Clone)
 - :link: [Утилита, упрощающая работу с `Fetch API`](https://github.com/harryheman/simple-fetch)
+- :link: [Кастомный хук для работы с формами](https://github.com/harryheman/simple-form-react)
 - :link: [Работа с HTTP-заголовками, связанными с безопасностью, на примере двух приложений](https://github.com/harryheman/secure-app)
 
 ## Кастомные компоненты
