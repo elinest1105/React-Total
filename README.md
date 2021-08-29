@@ -98,8 +98,8 @@ _Обратите внимание_: вопросы немного устаре�
 - [react-search-input](https://www.npmjs.com/package/react-search-input) - инпут для поиска
 - [react-table](https://react-table.tanstack.com/) - компоненты для работы с таблицами
 - [react-timeago](https://www.npmjs.com/package/react-timeago) - компонент для форматирования даты и времени с поддержкой русского языка
-- [react-toastify]() - компонент для создания уведомлений
-- [react-virtualized](https://bvaughn.github.io/react-virtualized/#/components/List) - рендеринг только видимых элементов списка
+- [react-toastify](https://github.com/fkhadra/react-toastify) - компонент для создания уведомлений
+- [react-virtualized](https://bvaughn.github.io/react-virtualized) - рендеринг только видимых элементов списка
 - [resharts](https://recharts.org/en-US) - компоненты для визуализации данных
 
 ### CSS-фреймворки
