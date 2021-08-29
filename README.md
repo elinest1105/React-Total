@@ -68,12 +68,11 @@ _Обратите внимание_: вопросы немного устаре�
 
 ## Проекты
 
-- :link: [Блог, разработанный с помощью Apollo, GraphQL и React](https://github.com/harryheman/Apollo-GraphQL-React-Social-App)
-- :link: [Чат, разработанный с помощью Socket.io и React](https://github.com/harryheman/Socket.io-React-Chat-App)
-- :link: [Подписка на обновления, реализованная с помощью React, Netlify Functions и Google Sheets](https://github.com/harryheman/mail-list)
+- :link: [Блог, разработанный с помощью React, Apollo и GraphQL](https://github.com/harryheman/React-Apollo-GraphQL-Social-App)
+- :link: [Чат, разработанный с помощью React и Socket.io](https://github.com/harryheman/React-Socket.io-Chat-App)
 - :link: [Копия Amazon, разработанная с помощью React, Firebase и Stripe](https://github.com/harryheman/React-Firebase-Stripe-Amazon-Clone)
 - :link: [Утилита, упрощающая работу с `Fetch API`](https://github.com/harryheman/simple-fetch)
-- :link: [Работа с HTTP-заголовками, связанными с безопасностью, на примере двух приложений](https://github.com/harryheman/secure-app)
+- :link: [Кастомный React-хук для работы с формами](https://github.com/harryheman/simple-form-react)
 
 ## Кастомные компоненты
 
@@ -87,6 +86,8 @@ _Обратите внимание_: вопросы немного устаре�
 - [react-hook-form](https://react-hook-form.com/ru/) - хуки для работы с формами
 - [react-icons](https://react-icons.github.io/react-icons/) - компоненты-иконки
 - [react-intl](https://formatjs.io/) - компоненты для интернационализации
+- [react-github-login](https://github.com/checkr/react-github-login) - компонент для авторизации с помощью GitHub-аккаунта
+- [react-google-login](https://www.npmjs.com/package/react-google-login) - компонент для авторизации с помощью Google-аккаунта
 - [react-google-recaptcha](https://www.npmjs.com/package/react-google-recaptcha)
 - [react-lazyload](https://www.npmjs.com/package/react-lazyload) - ленивая загрузка компонентов
 - [react-leaflet](https://react-leaflet.js.org/) - компоненты для работы с картами
@@ -105,18 +106,6 @@ _Обратите внимание_: вопросы немного устаре�
 - [React Bootstrap](https://react-bootstrap.github.io/)
 - [Semantic UI React](https://react.semantic-ui.com/)
 - [Tailwind CSS](https://tailwindcss.com/)
-
-### Авторизация
-
-- [Passport](http://www.passportjs.org/) - фреймворк для аутентификации/авторизации
-- [JSON Web Tokens](https://jwt.io/)
-- [Auth0](https://auth0.com/)
-- [express-session](https://www.npmjs.com/package/express-session) - утилита для реализации куки-сессий с помощью `Express`
-- [connect-mongo](https://www.npmjs.com/package/connect-mongo) - утилита для хранения куки-сессий в `MongoDB`
-- [jsonwebtoken](https://github.com/auth0/node-jsonwebtoken) - библиотека для создание и подтверждения токенов
-- [bcrypt](https://www.npmjs.com/package/bcrypt) - утилита для хэширования и проверки паролей
-- [react-google-login](https://www.npmjs.com/package/react-google-login) - компонент для авторизации с помощью Google-аккаунта
-- [react-github-login](https://github.com/checkr/react-github-login) - компонент для авторизации с помощью GitHub-аккаунта
 
 ## Интересные статьи
 
@@ -154,11 +143,13 @@ _Обратите внимание_: вопросы немного устаре�
 ### NPM-пакеты
 
 - [axios](https://github.com/axios/axios) - библиотека для выполнения HTTP-запросов
+- [bcrypt](https://www.npmjs.com/package/bcrypt) - утилита для хеширования и проверки паролей
 - [concurrently](https://www.npmjs.com/package/concurrently) - утилита для одновременного выполнения нескольких команд (скриптов)
 - [express-validator](https://express-validator.github.io/docs/) - утилита для проверки входящих данных
 - [generate-password](https://www.npmjs.com/package/generate-password) - утилита для генерации паролей
 - [google-spreadsheet](https://theoephraim.github.io/node-google-spreadsheet/#/) - библиотека для работы с Google таблицами
 - [json-server](https://github.com/typicode/json-server) - библиотека для создания `fake REST API`
+- [jsonwebtoken](https://github.com/auth0/node-jsonwebtoken) - библиотека для создание и подтверждения токенов
 - [multer](https://github.com/expressjs/multer/blob/master/doc/README-ru.md) - утилита для обработки `multipart/form-data`
 - [nanoid](https://www.npmjs.com/package/nanoid) - утилита для генерации уникальных идентификаторов
 - [nodemailer](https://nodemailer.com/) - утилита для отправки email
