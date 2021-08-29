@@ -2,7 +2,7 @@
 
 ## Ресурс для изучения React.js и связанных с ним технологий на русском языке :ru
 
-> Последнее обновление: 07.08.2021 - добавил учебный проект `Копия Amazon, разработанная с помощью React, Firebase и Stripe` и шпаргалку по `Netlify`
+> Последнее обновление: 25.08.2021 - добавил шпаргалку по `Web Accessibility`
 
 ## Руководства
 
@@ -39,6 +39,7 @@
 - :memo: [Шпаргалка и туториал по `Security Headers`](./md/webpack.md)
 - :memo: [Шпаргалка по HTML5-тегам](./md/html5.md)
 - :memo: [Шпаргалка по методам для работы с `DOM`](./md/js-dom.md)
+- :memo: [Шпаргалка по `Web Accessibility`](./md/access/access.md)
 - :memo: [Туториал по `RegExp`](./md/regexp/regexp.md)
 - :memo: [Туториал по `Web Speech API`](./md/regexp/regexp.md)
 - :memo: [Шпаргалка по `Axios`](./md/axios.md)
@@ -68,6 +69,7 @@ _Обратите внимание_: вопросы немного устаре�
 
 ## Проекты
 
+- :link: [Исследования и эксперименты](https://github.com/harryheman/JavaScript-Projects)
 - :link: [Блог, разработанный с помощью React, Apollo и GraphQL](https://github.com/harryheman/React-Apollo-GraphQL-Social-App)
 - :link: [Чат, разработанный с помощью React и Socket.io](https://github.com/harryheman/React-Socket.io-Chat-App)
 - :link: [Копия Amazon, разработанная с помощью React, Firebase и Stripe](https://github.com/harryheman/React-Firebase-Stripe-Amazon-Clone)
