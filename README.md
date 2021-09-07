@@ -75,7 +75,7 @@ _Обратите внимание_: вопросы немного устаре�
 - :link: [Копия Amazon, разработанная с помощью React, Firebase и Stripe](https://github.com/harryheman/React-Firebase-Stripe-Amazon-Clone)
 - :link: [Утилита, упрощающая работу с `Fetch API`](https://github.com/harryheman/simple-fetch)
 - :link: [Кастомный React-хук для работы с формами](https://github.com/harryheman/simple-form-react)
-- - :link: [Утилита, упрощающая работу с `Internationalization API`](https://github.com/harryheman/easy-intl)
+- :link: [Утилита, упрощающая работу с `Internationalization API`](https://github.com/harryheman/easy-intl)
 
 ## Кастомные компоненты
 
