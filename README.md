@@ -75,6 +75,7 @@ _Обратите внимание_: вопросы немного устаре�
 - :link: [Копия Amazon, разработанная с помощью React, Firebase и Stripe](https://github.com/harryheman/React-Firebase-Stripe-Amazon-Clone)
 - :link: [Утилита, упрощающая работу с `Fetch API`](https://github.com/harryheman/simple-fetch)
 - :link: [Кастомный React-хук для работы с формами](https://github.com/harryheman/simple-form-react)
+- - :link: [Утилита, упрощающая работу с `Internationalization API`](https://github.com/harryheman/easy-intl)
 
 ## Кастомные компоненты
 
@@ -99,7 +100,8 @@ _Обратите внимание_: вопросы немного устаре�
 - [react-table](https://react-table.tanstack.com/) - компоненты для работы с таблицами
 - [react-timeago](https://www.npmjs.com/package/react-timeago) - компонент для форматирования даты и времени с поддержкой русского языка
 - [react-toastify](https://github.com/fkhadra/react-toastify) - компонент для создания уведомлений
-- [react-virtualized](https://bvaughn.github.io/react-virtualized) - рендеринг только видимых элементов списка
+- [react-virtualized](https://bvaughn.github.io/react-virtualized) - рендеринг только тех элементов списка, которые находятся в области просмотра
+- [react-window](https://react-window.vercel.app/#/examples/list/fixed-size) - альтернатива `react-virtualized`
 - [resharts](https://recharts.org/en-US) - компоненты для визуализации данных
 
 ### CSS-фреймворки
@@ -111,6 +113,7 @@ _Обратите внимание_: вопросы немного устаре�
 
 ## Интересные статьи
 
+- [5 React performance optimization techniques](https://blog.logrocket.com/5-react-performance-optimization-techniques/) - статья про 5 техник по оптимизации производительности React-приложений
 - [The World of CSS Transforms](https://www.joshwcomeau.com/css/transforms/) - статья про CSS-трансформации с наглядными примерами
 - [Using Forms in React](https://daveceddia.com/react-forms/) - статья про разные способы использования форм в `React`
 - [Demystifying styled-components](https://www.joshwcomeau.com/react/demystifying-styled-components/) - статья про то, как работают стилизованные компоненты (styled components)
@@ -120,6 +123,8 @@ _Обратите внимание_: вопросы немного устаре�
 - [Awesome React Hooks](https://github.com/rehooks/awesome-react-hooks) - большая коллекция кастомных хуков
 - [Curated List of React Components & Libraries](https://github.com/brillout/awesome-react-components) - большая коллекция компонентов и библиотек для `React`
 - [GitHowTo](https://githowto.com/ru) - интерактивный курс по основам работы с `Git`
+- [GitZip](http://kinolien.github.io/gitzip/) - инструмент для скачивания определенной части репозитория по URL
+- [Faker.js](https://fakerjsdocs.netlify.app/#browser-demo) - инструмент для генерации всевозможных фиктивных данных
 - [Статус-коды HTTP](https://httpstatuses.com/)
 - [Документация Node.js с примерами кода](https://nodejsdev.ru/doc/)
 - [Node.js: лучшие практики](https://github.com/goldbergyoni/nodebestpractices/blob/master/README.russian.md)
@@ -145,7 +150,8 @@ _Обратите внимание_: вопросы немного устаре�
 ### NPM-пакеты
 
 - [axios](https://github.com/axios/axios) - библиотека для выполнения HTTP-запросов
-- [bcrypt](https://www.npmjs.com/package/bcrypt) - утилита для хеширования и проверки паролей
+- [argon2](https://www.npmjs.com/package/argon2) - утилита для хеширования и проверки паролей
+- [bcrypt](https://www.npmjs.com/package/bcrypt) - альтернатива `argon2`
 - [concurrently](https://www.npmjs.com/package/concurrently) - утилита для одновременного выполнения нескольких команд (скриптов)
 - [express-validator](https://express-validator.github.io/docs/) - утилита для проверки входящих данных
 - [generate-password](https://www.npmjs.com/package/generate-password) - утилита для генерации паролей
