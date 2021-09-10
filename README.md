@@ -2,7 +2,7 @@
 
 ## Ресурс для изучения React.js и связанных с ним технологий на русском языке :ru
 
-> Последнее обновление: 25.08.2021 - добавил шпаргалку по `Web Accessibility`
+> Последнее обновление: 10.09.2021 - добавил шпаргалку по `Internationalization API`
 
 ## Руководства
 
@@ -37,11 +37,12 @@
 - :memo: [Шпаргалка по `Express API`](./md/express-api.md)
 - :memo: [Шпаргалка по `Webpack`](./md/webpack.md)
 - :memo: [Шпаргалка и туториал по `Security Headers`](./md/webpack.md)
-- :memo: [Шпаргалка по HTML5-тегам](./md/html5.md)
+- :memo: [Шпаргалка по `HTML5-тегам`](./md/html5.md)
 - :memo: [Шпаргалка по методам для работы с `DOM`](./md/js-dom.md)
 - :memo: [Шпаргалка по `Web Accessibility`](./md/access/access.md)
 - :memo: [Туториал по `RegExp`](./md/regexp/regexp.md)
 - :memo: [Туториал по `Web Speech API`](./md/regexp/regexp.md)
+- :memo: [Шпаргалка по `Internationalization API`](./md/intl.md)
 - :memo: [Шпаргалка по `Axios`](./md/axios.md)
 - :memo: [Шпаргалка по `JSON Server`](./md/json-server/README.md)
 - :memo: [Шпаргалка по `JSON Web Token`](./md/jsonwebtoken.md)
@@ -73,9 +74,9 @@ _Обратите внимание_: вопросы немного устаре�
 - :link: [Блог, разработанный с помощью React, Apollo и GraphQL](https://github.com/harryheman/React-Apollo-GraphQL-Social-App)
 - :link: [Чат, разработанный с помощью React и Socket.io](https://github.com/harryheman/React-Socket.io-Chat-App)
 - :link: [Копия Amazon, разработанная с помощью React, Firebase и Stripe](https://github.com/harryheman/React-Firebase-Stripe-Amazon-Clone)
-- :link: [Утилита, упрощающая работу с `Fetch API`](https://github.com/harryheman/simple-fetch)
+- :link: [Утилита, облегчающая работу с `Fetch API`](https://github.com/harryheman/simple-fetch)
 - :link: [Кастомный React-хук для работы с формами](https://github.com/harryheman/simple-form-react)
-- :link: [Утилита, упрощающая работу с `Internationalization API`](https://github.com/harryheman/easy-intl)
+- :link: [Утилита, облегчающая работу с `Internationalization API`](https://github.com/harryheman/easy-intl)
 
 ## Кастомные компоненты
 
@@ -104,14 +105,7 @@ _Обратите внимание_: вопросы немного устаре�
 - [react-window](https://react-window.vercel.app/#/examples/list/fixed-size) - альтернатива `react-virtualized`
 - [resharts](https://recharts.org/en-US) - компоненты для визуализации данных
 
-### CSS-фреймворки
-
-- [Material UI](https://material-ui.com/ru/)
-- [React Bootstrap](https://react-bootstrap.github.io/)
-- [Semantic UI React](https://react.semantic-ui.com/)
-- [Tailwind CSS](https://tailwindcss.com/)
-
-## Интересные статьи
+## Свежие статьи, которые показались мне интересными
 
 - [5 React performance optimization techniques](https://blog.logrocket.com/5-react-performance-optimization-techniques/) - статья про 5 техник по оптимизации производительности React-приложений
 - [The World of CSS Transforms](https://www.joshwcomeau.com/css/transforms/) - статья про CSS-трансформации с наглядными примерами
