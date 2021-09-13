@@ -107,7 +107,7 @@ _Обратите внимание_: вопросы немного устаре�
 
 ## Свежие статьи, которые показались мне интересными
 
-- [5 React performance optimization techniques](https://blog.logrocket.com/5-react-performance-optimization-techniques/) - статья про 5 техник по оптимизации производительности React-приложений
+- [An Interactive Guide to Keyframe Animations](https://www.joshwcomeau.com/animation/keyframe-animations/) - интерактивное руководство по CSS-анимации
 - [The World of CSS Transforms](https://www.joshwcomeau.com/css/transforms/) - статья про CSS-трансформации с наглядными примерами
 - [Using Forms in React](https://daveceddia.com/react-forms/) - статья про разные способы использования форм в `React`
 - [Demystifying styled-components](https://www.joshwcomeau.com/react/demystifying-styled-components/) - статья про то, как работают стилизованные компоненты (styled components)
@@ -124,6 +124,7 @@ _Обратите внимание_: вопросы немного устаре�
 - [GitHowTo](https://githowto.com/ru) - интерактивный курс по основам работы с `Git`
 - [GitZip](http://kinolien.github.io/gitzip/) - инструмент для скачивания определенной части репозитория по URL
 - [Faker.js](https://fakerjsdocs.netlify.app/#browser-demo) - инструмент для генерации всевозможных фиктивных данных
+- [Mockaroo](https://www.mockaroo.com/) - сервис для генерации фиктивных данных, в том числе, в формате `SQL`
 - [Статус-коды HTTP](https://httpstatuses.com/)
 - [Документация Node.js с примерами кода](https://nodejsdev.ru/doc/)
 - [Node.js: лучшие практики](https://github.com/goldbergyoni/nodebestpractices/blob/master/README.russian.md)
