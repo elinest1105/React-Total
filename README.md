@@ -2,7 +2,7 @@
 
 ## Ресурс для изучения React.js и связанных с ним технологий на русском языке :ru
 
-> Последнее обновление: 10.09.2021 - добавил шпаргалку по `Internationalization API`
+> Последнее обновление: 15.09.2021 - добавил руководство по `Apollo Client`. Next - руководство по `Apollo Server`
 
 ## Руководства
 
@@ -12,6 +12,7 @@
 - :page_with_curl: [Руководство по `React Router`](./md/react-router.md)
 - :page_with_curl: [Руководство по `React Transition Group`](./md/react-transition-group.md)
 - :page_with_curl: [Руководство по `React Spring`](./md/react-spring.md)
+- :page_with_curl: [Руководство по `Apollo Client`](./md/apollo/client.md)
 
 ---
 
