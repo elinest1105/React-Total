@@ -2,7 +2,7 @@
 
 ## Ресурс для изучения React.js и связанных с ним технологий на русском языке :ru
 
-> Последнее обновление: 25.08.2021 - добавил шпаргалку по `Web Accessibility`
+> Последнее обновление: 15.09.2021 - добавил руководство по `Apollo Client`. Next - руководство по `Apollo Server`
 
 ## Руководства
 
@@ -12,6 +12,7 @@
 - :page_with_curl: [Руководство по `React Router`](./md/react-router.md)
 - :page_with_curl: [Руководство по `React Transition Group`](./md/react-transition-group.md)
 - :page_with_curl: [Руководство по `React Spring`](./md/react-spring.md)
+- :page_with_curl: [Руководство по `Apollo Client`](./md/apollo/client.md)
 
 ---
 
@@ -37,11 +38,12 @@
 - :memo: [Шпаргалка по `Express API`](./md/express-api.md)
 - :memo: [Шпаргалка по `Webpack`](./md/webpack.md)
 - :memo: [Шпаргалка и туториал по `Security Headers`](./md/webpack.md)
-- :memo: [Шпаргалка по HTML5-тегам](./md/html5.md)
+- :memo: [Шпаргалка по `HTML5-тегам`](./md/html5.md)
 - :memo: [Шпаргалка по методам для работы с `DOM`](./md/js-dom.md)
 - :memo: [Шпаргалка по `Web Accessibility`](./md/access/access.md)
 - :memo: [Туториал по `RegExp`](./md/regexp/regexp.md)
 - :memo: [Туториал по `Web Speech API`](./md/regexp/regexp.md)
+- :memo: [Шпаргалка по `Internationalization API`](./md/intl.md)
 - :memo: [Шпаргалка по `Axios`](./md/axios.md)
 - :memo: [Шпаргалка по `JSON Server`](./md/json-server/README.md)
 - :memo: [Шпаргалка по `JSON Web Token`](./md/jsonwebtoken.md)
@@ -73,8 +75,9 @@ _Обратите внимание_: вопросы немного устаре�
 - :link: [Блог, разработанный с помощью React, Apollo и GraphQL](https://github.com/harryheman/React-Apollo-GraphQL-Social-App)
 - :link: [Чат, разработанный с помощью React и Socket.io](https://github.com/harryheman/React-Socket.io-Chat-App)
 - :link: [Копия Amazon, разработанная с помощью React, Firebase и Stripe](https://github.com/harryheman/React-Firebase-Stripe-Amazon-Clone)
-- :link: [Утилита, упрощающая работу с `Fetch API`](https://github.com/harryheman/simple-fetch)
+- :link: [Утилита, облегчающая работу с `Fetch API`](https://github.com/harryheman/simple-fetch)
 - :link: [Кастомный React-хук для работы с формами](https://github.com/harryheman/simple-form-react)
+- :link: [Утилита, облегчающая работу с `Internationalization API`](https://github.com/harryheman/easy-intl)
 
 ## Кастомные компоненты
 
@@ -99,27 +102,30 @@ _Обратите внимание_: вопросы немного устаре�
 - [react-table](https://react-table.tanstack.com/) - компоненты для работы с таблицами
 - [react-timeago](https://www.npmjs.com/package/react-timeago) - компонент для форматирования даты и времени с поддержкой русского языка
 - [react-toastify](https://github.com/fkhadra/react-toastify) - компонент для создания уведомлений
-- [react-virtualized](https://bvaughn.github.io/react-virtualized) - рендеринг только видимых элементов списка
+- [react-virtualized](https://bvaughn.github.io/react-virtualized) - рендеринг только тех элементов списка, которые находятся в области просмотра
+- [react-window](https://react-window.vercel.app/#/examples/list/fixed-size) - альтернатива `react-virtualized`
 - [resharts](https://recharts.org/en-US) - компоненты для визуализации данных
 
-### CSS-фреймворки
+## Свежие статьи, которые показались мне интересными
 
-- [Material UI](https://material-ui.com/ru/)
-- [React Bootstrap](https://react-bootstrap.github.io/)
-- [Semantic UI React](https://react.semantic-ui.com/)
-- [Tailwind CSS](https://tailwindcss.com/)
-
-## Интересные статьи
-
+- [An Interactive Guide to Keyframe Animations](https://www.joshwcomeau.com/animation/keyframe-animations/) - интерактивное руководство по CSS-анимации
 - [The World of CSS Transforms](https://www.joshwcomeau.com/css/transforms/) - статья про CSS-трансформации с наглядными примерами
 - [Using Forms in React](https://daveceddia.com/react-forms/) - статья про разные способы использования форм в `React`
 - [Demystifying styled-components](https://www.joshwcomeau.com/react/demystifying-styled-components/) - статья про то, как работают стилизованные компоненты (styled components)
+
+## Штуки, которые я часто использую при разработке приложений
+
+- [Sass](https://sass-lang.com/) - лучший инструмент для работы со стилями
+- [Lodash](https://lodash.com/) - набор очень полезных утилит
 
 ## Полезные ссылки
 
 - [Awesome React Hooks](https://github.com/rehooks/awesome-react-hooks) - большая коллекция кастомных хуков
 - [Curated List of React Components & Libraries](https://github.com/brillout/awesome-react-components) - большая коллекция компонентов и библиотек для `React`
 - [GitHowTo](https://githowto.com/ru) - интерактивный курс по основам работы с `Git`
+- [GitZip](http://kinolien.github.io/gitzip/) - инструмент для скачивания определенной части репозитория по URL
+- [Faker.js](https://fakerjsdocs.netlify.app/#browser-demo) - инструмент для генерации всевозможных фиктивных данных
+- [Mockaroo](https://www.mockaroo.com/) - сервис для генерации фиктивных данных, в том числе, в формате `SQL`
 - [Статус-коды HTTP](https://httpstatuses.com/)
 - [Документация Node.js с примерами кода](https://nodejsdev.ru/doc/)
 - [Node.js: лучшие практики](https://github.com/goldbergyoni/nodebestpractices/blob/master/README.russian.md)
@@ -145,7 +151,8 @@ _Обратите внимание_: вопросы немного устаре�
 ### NPM-пакеты
 
 - [axios](https://github.com/axios/axios) - библиотека для выполнения HTTP-запросов
-- [bcrypt](https://www.npmjs.com/package/bcrypt) - утилита для хеширования и проверки паролей
+- [argon2](https://www.npmjs.com/package/argon2) - утилита для хеширования и проверки паролей
+- [bcrypt](https://www.npmjs.com/package/bcrypt) - альтернатива `argon2`
 - [concurrently](https://www.npmjs.com/package/concurrently) - утилита для одновременного выполнения нескольких команд (скриптов)
 - [express-validator](https://express-validator.github.io/docs/) - утилита для проверки входящих данных
 - [generate-password](https://www.npmjs.com/package/generate-password) - утилита для генерации паролей
