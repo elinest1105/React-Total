@@ -296,3 +296,25 @@ const atob = (str) => Buffer.from(str, 'base64').toString('binary')
 
 console.log(atob('Ynll')) // bye
 ```
+
+## Промисификация
+
+```js
+const promisify =
+  (fn) =>
+  (...args) =>
+    new Promise((resolve, reject) =>
+      fn(...args, (err, data) => (err ? reject(err) : resolve(data)))
+    )
+
+const readFile = promisify((...args) => fs.readFile(...args, 'utf-8'))
+
+// usage
+readFile('some_file.txt')
+  .then((data) => {})
+  .catch((e) => {})
+// or
+try {
+  const data = await readFile('some_file.txt')
+} catch (e) {}
+```
