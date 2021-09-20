@@ -74,7 +74,6 @@ _Обратите внимание_: вопросы немного устаре�
 - :link: [Исследования и эксперименты](https://github.com/harryheman/JavaScript-Projects)
 - :link: [Блог, разработанный с помощью React, Apollo и GraphQL](https://github.com/harryheman/React-Apollo-GraphQL-Social-App)
 - :link: [Чат, разработанный с помощью React и Socket.io](https://github.com/harryheman/React-Socket.io-Chat-App)
-- :link: [Копия Amazon, разработанная с помощью React, Firebase и Stripe](https://github.com/harryheman/React-Firebase-Stripe-Amazon-Clone)
 - :link: [Утилита, облегчающая работу с `Fetch API`](https://github.com/harryheman/simple-fetch)
 - :link: [Кастомный React-хук для работы с формами](https://github.com/harryheman/simple-form-react)
 - :link: [Утилита, облегчающая работу с `Internationalization API`](https://github.com/harryheman/easy-intl)
