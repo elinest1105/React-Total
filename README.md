@@ -37,7 +37,7 @@
 
 - :memo: [Шпаргалка по `Express API`](./md/express-api.md)
 - :memo: [Шпаргалка по `Webpack`](./md/webpack.md)
-- :memo: [Шпаргалка и туториал по `Security Headers`](./md/webpack.md)
+- :memo: [Шпаргалка и туториал по `Security Headers`](./md/security/security.md)
 - :memo: [Шпаргалка по `HTML5-тегам`](./md/html5.md)
 - :memo: [Шпаргалка по методам для работы с `DOM`](./md/js-dom.md)
 - :memo: [Шпаргалка по `Web Accessibility`](./md/access/access.md)
