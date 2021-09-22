@@ -1,8 +1,8 @@
-# Сниттепы (утилиты)
+# Сниппеты (утилиты)
 
 [На главную](../README.md)
 
-## Оглавление
+### Содержание
 
 - [Число](#number)
 - [Строка](#string)
@@ -11,7 +11,6 @@
 - [Функция](#function)
 - [DOM](#dom)
 - [Разное](#diff)
-- [Node.js](#node)
 
 ## <a name="number"></a> Число
 
@@ -143,7 +142,6 @@ const primes = (num) => {
 primes(10) // [2, 3, 5, 7]
 
 // Решето Эратосфена
-// https://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D1%88%D0%B5%D1%82%D0%BE_%D0%AD%D1%80%D0%B0%D1%82%D0%BE%D1%81%D1%84%D0%B5%D0%BD%D0%B0
 const _primes = (num) => {
   const arr = new Array(num + 1)
   arr.fill(true)
@@ -243,19 +241,6 @@ digitize(123) // [1, 2, 3]
 
 // --- / --- / --- / --- //
 /**
- * Преобразование числа в валюту
- */
-const toCurrency = (num, cur, lang = 'en-US') =>
-  Intl.NumberFormat(lang, {
-    style: 'currency',
-    currency: cur
-  }).format(num)
-
-toCurrency(100, 'RUB', 'ru-RU') // 100,00 ₽
-
-
-// --- / --- / --- / --- //
-/**
  * Преобразование арабских чисел в римские
  */
 const toRomanNum = (n) => {
@@ -311,10 +296,9 @@ average(1, 2, 3) // 2
 // --- / --- / --- / --- //
 /**
  * Числа Фибоначчи
- * https://ru.wikipedia.org/wiki/%D0%A7%D0%B8%D1%81%D0%BB%D0%B0_%D0%A4%D0%B8%D0%B1%D0%BE%D0%BD%D0%B0%D1%87%D1%87%D0%B8
  */
 const fib = (n) => {
-  if (n < 0) throw new Error('error')
+  if (n < 0) return 'invalid'
   if (n <= 1) return n
 
   let a = 1,
@@ -335,10 +319,9 @@ fib(10) // 55
 // --- / --- / --- / --- //
 /**
  * Факториал
- * https://ru.wikipedia.org/wiki/%D0%A4%D0%B0%D0%BA%D1%82%D0%BE%D1%80%D0%B8%D0%B0%D0%BB
  */
 const fact = (n) => {
-  if (n < 0) throw new Error('error')
+  if (n < 0) return 'invalid'
   if (n <= 1) return 1
 
   return n * fact(n - 1)
@@ -359,10 +342,10 @@ const getRandomInt = (min, max) => ~~(min + Math.random() * (max - min + 1))
  * Случайное положительное число (целое или дробное)
  * в заданном диапазоне
  */
-const getRandomPosiviteNum = (min, max, precision) => {
-  if (min < 0 || min <= max) throw new Error('error')
+const getRandomPosiviteNum = (min, max, p) => {
+  if (min < 0 || min <= max) return 'invalid'
   const n = min + Math.random() * (max - min + 1)
-  return !precision ? ~~n : n.toFixed(precision)
+  return !p ? ~~n : n.toFixed(p)
 }
 
 
@@ -423,25 +406,6 @@ formatBytes(123456789, 3, false) // '123MB'
 
 // --- / --- / --- / --- //
 /**
- * Приведение числа ко времени в двенадцатичасовом формате
- */
-const getSuffixOfInt = (num) =>
-  num === 0 || num === 24
-    ? 12 + 'am'
-    : num === 12
-    ? 12 + 'pm'
-    : num < 12
-    ? (num % 12) + 'am'
-    : (num % 12) + 'pm'
-
-getSuffixOfInt(0) // '12am'
-getSuffixOfInt(11) // '11am'
-getSuffixOfInt(13) // '1pm'
-getSuffixOfInt(25) // '1pm'
-
-
-// --- / --- / --- / --- //
-/**
  * Маскировка чисел
  */
 const mask = (num, n = 4, mask = '*') =>
@@ -464,7 +428,6 @@ distance(0, 0, 10, 10) // 14.142135623730951
 // --- / --- / --- / --- //
 /**
  * Расстояние Хэмминга
- * https://ru.wikipedia.org/wiki/%D0%A0%D0%B0%D1%81%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%B8%D0%B5_%D0%A5%D1%8D%D0%BC%D0%BC%D0%B8%D0%BD%D0%B3%D0%B0
  */
 const hammingDistance = (num1, num2) =>
   ((num1 ^ num2).toString(2).match(/1/g) || '').length
@@ -475,9 +438,8 @@ hammingDistance(2, 3) // 1
 // --- / --- / --- / --- //
 /**
  * Биномиальный коэффициент
- * https://ru.wikipedia.org/wiki/%D0%91%D0%B8%D0%BD%D0%BE%D0%BC%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BE%D1%8D%D1%84%D1%84%D0%B8%D1%86%D0%B8%D0%B5%D0%BD%D1%82
  */
-const binomialCoefficient = (n, k) => {
+const binomCoef = (n, k) => {
   if (Number.isNaN(n) || Number.isNaN(k)) return NaN
   if (k < 0 || k > n) return 0
   if (k === 0 || k === n) return 1
@@ -488,7 +450,7 @@ const binomialCoefficient = (n, k) => {
   return Math.round(res)
 }
 
-binomialCoefficient(8, 2) // 28
+binomCoef(8, 2) // 28
 ```
 
 ## <a name="string"></a> Строка
@@ -509,9 +471,9 @@ const _reverseWord = (str) => {
   return res
 }
 
-// 3
-reverseWord('bar') // rab
+_reverseWord('bar') // rab
 
+// 3
 const __reverse = (str) => [...str].reduce((res, char) => char + res)
 
 __reverse('baz') // zab
@@ -546,7 +508,7 @@ capitilizeWord('foo') // Foo
 
 // 2
 const _capitilizeWord = ([first, ...rest]) =>
-  first.toUpperCase() + rest.join('').toLocaleLowerCase()
+  first.toUpperCase() + rest.join('').toLowerCase()
 
 _capitilizeWord('bAr') // Bar
 
@@ -2870,17 +2832,6 @@ throttledLog(arr)
 /**
  * Копирование строки в буфер обмена
  */
-//  1
-const copyToClip = (str) => {
-  const $ = document.createElement('textarea')
-  $.value = str
-  document.body.append($)
-  $.select()
-  document.execCommand('copy')
-  $.remove()
-}
-
-// 2
 const copy = async (text) => await navigator.clipboard.writeText(text)
 
 /**
@@ -2923,12 +2874,6 @@ const fullscreen = (mode = true, el = 'body') =>
   mode
     ? document.querySelector(el).requestFullscreen()
     : document.exitFullscreen()
-
-// HTML
-// <button>fullscreen</button>
-document.querySelector('button').onclick = () => {
-  fullscreen()
-}
 
 
 // --- / --- / --- / --- //
@@ -3009,57 +2954,6 @@ const createElFromStr = (str) => {
 
 // или в одну строку
 const createElFromStr = (str) => new Range().createContextualFragment(str)
-
-// --- / --- / --- / --- //
-/**
- * Определение устройства пользователя
- */
-const detectDeviceType = () =>
-  /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-    navigator.userAgent
-  )
-    ? 'Mobile'
-    : 'Desktop'
-
-detectDeviceType() // 'Mobile' or 'Desktop'
-
-
-// --- / --- / --- / --- //
-/**
- * Рендеринг элемента
- */
-const renderEl = ({ type, props = {} }, container) => {
-  const isTextEl = !type
-  const el = isTextEl
-    ? document.createTextNode('')
-    : document.createElement(type)
-
-  const isListener = (p) => p.startsWith('on')
-  const isAttr = (p) => !isListener(p) && p !== 'children'
-
-  Object.keys(props).forEach((p) => {
-    if (isAttr(p)) el[p] = props[p]
-    if (!isTextEl && isListener(p))
-      el.addEventListener(p.toLowerCase().slice(2), props[p])
-  })
-
-  if (!isTextEl && props.children && props.children.length)
-    props.children.forEach((child) => renderEl(child, el))
-
-  container.append(el)
-}
-
-const el = {
-  type: 'button',
-  props: {
-    type: 'button',
-    className: 'btn',
-    onClick: () => alert('clicked'),
-    children: [{ props: { nodeValue: 'click me' } }]
-  }
-}
-
-renderEl(el, document.body)
 
 
 // --- / --- / --- / --- //
@@ -4005,4 +3899,82 @@ const demethodize =
     fn.bind(...args)()
 const upper = demethodize(String.prototype.toUpperCase)
 console.log(upper('hi'))
+```
+
+### Парсинг и подсветка синтаксиса JS или JSON-объекта
+
+```js
+const parseAndHighlightObj = (json) => {
+  const inner = (_json) =>
+    Object.entries(_json).map(([key, value]) => {
+      let type = typeof value
+
+      const isSimpleValue =
+        ['string', 'number', 'boolean'].includes(type) || !value
+
+      if (isSimpleValue && type === 'object') {
+        type = 'null'
+      }
+
+      return `
+        <div class="line">
+          <span class="key">${key}:</span>
+          ${
+            isSimpleValue
+              ? `<span class="${type}">${value}</span>`
+              : inner(value)
+          }
+        </div>
+      `
+    })
+
+  return `<div class="json">${inner(json).join('')}</div>`
+}
+
+const result = parseAndHighlightObj({
+  a: 1,
+  b: {
+    c: {
+      d: 'foo'
+    }
+  },
+  2: {
+    3: true
+  }
+})
+
+document.body.innerHTML = result
+```
+
+```css
+.json {
+  padding: 1rem;
+  background-color: #3c3c3c;
+  border-radius: 4px;
+  color: #f0f0f0;
+}
+
+.line {
+  margin-left: 1rem;
+}
+
+.line > .line {
+  margin-left: 1rem;
+}
+
+.key {
+  font-style: italic;
+}
+
+.number {
+  color: lightblue;
+}
+
+.string {
+  color: lightcoral;
+}
+
+.boolean {
+  color: lightgreen;
+}
 ```
