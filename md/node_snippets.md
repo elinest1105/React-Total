@@ -3,14 +3,15 @@
 ### Содержание
 
 - [Простой HTTP-сервер](#простой-http-сервер)
-- [Модуль `fs`](#модуль-fs)
-- [Безопасное создание, чтение и удаление файла](#безопасное-создание-чтение-и-удаление-файла)
 - [Ответ сервера в виде HTML-файла](#ответ-сервера-в-виде-html-файла)
 - [Ответ сервера в виде аудио-файла](#ответ-сервера-в-виде-аудио-файла)
+- [Модуль `fs`](#модуль-fs)
+- [Безопасное создание, чтение и удаление файла](#безопасное-создание-чтение-и-удаление-файла)
 - [Проверка среды выполнения кода](#проверка-среды-выполнения-кода)
 - [Создание хеша](#создание-хеша)
 - [Генерация UUID](#генерация-uuid)
-- [Преобразование строки в `base64`](#преобразование-строки-в-base64)
+- [Преобразование строки в `base64` и обратно](#преобразование-строки-в-base64-и-обратно)
+- [Промисификация](#промисификация)
 
 ## Простой HTTP-сервер
 
@@ -23,7 +24,7 @@ const server = http.createServer((req, res) => {
   // send plain text
   res.write('hi\n')
 
-  // some data in json
+  // some json
   const json = {
     message: 'bye'
   }
@@ -41,6 +42,60 @@ server.listen(
     console.log('🚀')
   }
 )
+```
+
+## Ответ сервера в виде HTML-файла
+
+```js
+const filePath = `${__dirname}/index.html`
+
+const server = http.createServer(async (req, res) => {
+  if (req.url === '/hi') {
+    res.writeHead(200, { 'Content-Type': 'text/html' })
+
+    try {
+      const content = await fs.readFile(filePath, 'utf-8')
+      return res.end(content)
+    } catch (e) {
+      console.error(e)
+    }
+  }
+  res.writeHead(200, { 'Content-Type': 'text/plain' })
+  res.write('bye')
+  res.end()
+})
+```
+
+## Ответ сервера в виде аудио-файла
+
+```js
+import { promises as fs, constants, createReadStream } from 'fs'
+
+// path to audio
+const filePath = `${__dirname}/audio.mp3`
+
+const server = http.createServer(async (req, res) => {
+  switch (req.url) {
+    case '/': {
+      res.writeHead(200, { 'Content-Type': 'text/plain' })
+      res.write('hi')
+      return res.end()
+    }
+    case '/audio': {
+      try {
+        res.writeHead(200, { 'Content-Type': 'audio/mp3' })
+        // check if file exists
+        await fs.access(filePath, constants.F_OK)
+        // create read stream
+        const stream = createReadStream(filePath)
+        // create pipe
+        return stream.pipe(res)
+      } catch (e) {
+        res.end('not found')
+      }
+    }
+  }
+})
 ```
 
 ## Модуль `fs`
@@ -104,19 +159,25 @@ try {
 ```js
 // root path
 const ROOT_PATH = `${__dirname}/files`
+// check if dir or file not exists
+const notExist = (e) => e.code === 'ENOENT'
+// truncate path
+const truncPath = (p) => p.split('/').slice(0, -1).join('/')
 
 // create
 async function createFile(fileData, filePath, fileExt = 'json') {
   const fileName = `${ROOT_PATH}/${filePath}.${fileExt}`
+
   try {
     // create file
     await fs.writeFile(fileName, JSON.stringify(fileData, null, 2))
   } catch (e) {
     if (notExist(e)) {
-      // create dir for file
+      // create dir
       await fs.mkdir(truncPath(`${ROOT_PATH}/${filePath}`), {
         recursive: true
       })
+      // create file after dir has been created
       return createFile(fileData, filePath, fileExt)
     }
     console.error(e)
@@ -124,26 +185,29 @@ async function createFile(fileData, filePath, fileExt = 'json') {
 }
 
 // read
-async function readFile (filePath, fileExt = 'json') {
+async function readFile(filePath, fileExt = 'json') {
   const fileName = `${ROOT_PATH}/${filePath}.${fileExt}`
-  // filehandler
-  let fh
+
+  let fileHandler = null
   try {
-    fh = await fs.open(fileName)
-    return await fh.readFile('utf-8')
+    // open file
+    fileHandler = await fs.open(fileName)
+    // read file
+    return await fileHandler.readFile('utf-8')
   } catch (e) {
     if (notExist(e)) {
       return console.error('not found')
     }
     console.error(e)
   } finally {
-    fh?.close()
+    fileHandler?.close()
   }
 }
 
 // remove
 async function removeFile(filePath, fileExt = 'json') {
   const fileName = `${ROOT_PATH}/${filePath}.${fileExt}`
+
   try {
     // remove file
     await fs.unlink(fileName)
@@ -160,11 +224,14 @@ async function removeFile(filePath, fileExt = 'json') {
 // remove dir
 async function removeDir(dirPath, rootPath = ROOT_PATH) {
   if (dirPath === rootPath) return
+
   const isEmpty = (await fs.readdir(dirPath)).length < 1
+
   if (isEmpty) {
+    // remove dir if its empty
     await fs.rmdir(dirPath)
-    const _dirPath = truncPath(dirPath)
-    removeDir(_dirPath)
+    // remove parent dir
+    removeDir(truncPath(dirPath))
   }
 }
 
@@ -173,19 +240,22 @@ async function getFileNames(path = ROOT_PATH) {
   let fileNames = []
 
   try {
-    const list = await fs.readdir(path)
+    const files = await fs.readdir(path)
 
-    if (list.length < 1) return fileNames
+    if (files.length < 1) return fileNames
 
-    for (let file of list) {
+    for (let file of files) {
       file = `${path}/${file}`
-      const dir = (await fs.stat(file)).isDirectory()
-      if (dir) {
+
+      const isDir = (await fs.stat(file)).isDirectory()
+
+      if (isDir) {
         fileNames = fileNames.concat(await getFileNames(file))
       } else {
         fileNames.push(file)
       }
     }
+
     return fileNames
   } catch (e) {
     if (notExist(e)) {
@@ -194,59 +264,6 @@ async function getFileNames(path = ROOT_PATH) {
     console.error(e)
   }
 }
-```
-
-## Ответ сервера в виде HTML-файла
-
-```js
-const filePath = `${__dirname}/index.html`
-
-const server = http.createServer(async (req, res) => {
-  if (req.url === '/hi') {
-    res.writeHead(200, { 'Content-Type': 'text/html' })
-    try {
-      const content = await fs.readFile(filePath, 'utf-8')
-      return res.end(content)
-    } catch (e) {
-      console.error(e)
-    }
-  }
-  res.writeHead(200, { 'Content-Type': 'text/plain' })
-  res.write('bye')
-  res.end()
-})
-```
-
-## Ответ сервера в виде аудио-файла
-
-```js
-import { promises as fs, constants, createReadStream } from 'fs'
-
-// path to audio
-const filePath = `${__dirname}/audio.mp3`
-
-const server = http.createServer(async (req, res) => {
-  switch (req.url) {
-    case '/': {
-      res.writeHead(200, { 'Content-Type': 'text/plain' })
-      res.write('hi')
-      return res.end()
-    }
-    case '/audio': {
-      try {
-        res.writeHead(200, { 'Content-Type': 'audio/mp3' })
-        // check if file exists
-        await fs.access(filePath, constants.F_OK)
-        // create read stream
-        const stream = createReadStream(filePath)
-        // create pipe
-        return stream.pipe(res)
-      } catch (e) {
-        res.end('not found')
-      }
-    }
-  }
-})
 ```
 
 ## Проверка среды выполнения кода
@@ -285,7 +302,7 @@ console.log(genUUID())
 // 3b472cc4-8370-4469-8c12-428e7da35063
 ```
 
-## Преобразование строки в `base64`
+## Преобразование строки в `base64` и обратно
 
 ```js
 const btoa = (str) => Buffer.from(str, 'binary').toString('base64')
