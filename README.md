@@ -58,8 +58,8 @@
 
 _Обратите внимание_: вопросы немного устарели, поскольку посвящены, преимущественно, "классовому" `React`
 
-- :page_with_curl: [Вопросы для подготовки к собеседованию. Версия 1](./md/questions.md)
-- :page_with_curl: [Вопросы для подготовки к собеседованию. Версия 2](./md/questions-v2.md)
+- :page_with_curl: [Вопросы для подготовки к собеседованию. Версия 1](./md/questions_react.md)
+- :page_with_curl: [Вопросы для подготовки к собеседованию. Версия 2](./md/questions_react-v2.md)
 - :memo: [Шпаргалки по `React`, `Jest`, `Redux` и лучшие практики по `React`](./md/cheatsheets-bestpractices.md)
 
 ---
