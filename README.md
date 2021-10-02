@@ -2,7 +2,7 @@
 
 ## Ресурс для изучения React.js и связанных с ним технологий на русском языке :ru
 
-> Последнее обновление: 15.09.2021 - добавил руководство по `Apollo Client`. Next -> руководство по `Apollo Server`
+> Последнее обновление: 02.10.2021 - добавил руководство по `Apollo Server`. Next -> руководство по `Next.js`
 
 ## Руководства
 
@@ -13,6 +13,7 @@
 - :page_with_curl: [Руководство по `React Transition Group`](./md/react-transition-group.md)
 - :page_with_curl: [Руководство по `React Spring`](./md/react-spring.md)
 - :page_with_curl: [Руководство по `Apollo Client`](./md/apollo/client.md)
+- :page_with_curl: [Руководство по `Apollo Server`](./md/apollo/server.md)
 
 ---
 
