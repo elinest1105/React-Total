@@ -675,7 +675,7 @@ _Общее правило_: используйте `interface` до тех по
 const myCanvas = document.getElementById('main_canvas') as HTMLCanvasElement
 ```
 
-Для утверждения типа можно использовать другой синтаксис (е в TSX-файлах):
+Для утверждения типа можно использовать другой синтаксис (не в TSX-файлах):
 
 ```ts
 const myCanvas = <HTMLCanvasElement>document.getElementById('main_canvas')
