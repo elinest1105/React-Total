@@ -1641,9 +1641,9 @@ function firstElement2<Type extends any[]>(arr: Type) {
 }
 
 // a: number (хорошо)
-const a = fisrtElement1([1, 2, 3])
+const a = firstElement1([1, 2, 3])
 // b: any (плохо)
-const b = fisrtElement2([1, 2, 3])
+const b = firstElement2([1, 2, 3])
 ```
 
 Предполагаемым типом значения, возвращаемого функцией `firstElement1` является `Type`, а значения, возвращаемого функцией `firstElement2` - `any`. Это объясняется тем, что `TS` разрешает (resolve) выражение `arr[0]` с помощью ограничения типа вместо того, чтобы ждать разрешения элемента после вызова функции.
