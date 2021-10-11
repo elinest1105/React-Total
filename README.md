@@ -1,8 +1,8 @@
-# Тотальный React :metal:
+# Тотальный `React` :metal:
 
-## Ресурс для изучения React.js и связанных с ним технологий на русском языке :ru
+## Ресурс для изучения `React.js` и связанных с ним технологий на русском языке :ru
 
-> Последнее обновление: 15.09.2021 - добавил руководство по `Apollo Client`. Next -> руководство по `Apollo Server`
+> Последнее обновление: 02.10.2021 - добавил руководство по `Apollo Server`. Далее -> руководство по `Next.js`
 
 ## Руководства
 
@@ -13,6 +13,7 @@
 - :page_with_curl: [Руководство по `React Transition Group`](./md/react-transition-group.md)
 - :page_with_curl: [Руководство по `React Spring`](./md/react-spring.md)
 - :page_with_curl: [Руководство по `Apollo Client`](./md/apollo/client.md)
+- :page_with_curl: [Руководство по `Apollo Server`](./md/apollo/server.md)
 
 ---
 
@@ -58,8 +59,8 @@
 
 _Обратите внимание_: вопросы немного устарели, поскольку посвящены, преимущественно, "классовому" `React`
 
-- :page_with_curl: [Вопросы для подготовки к собеседованию. Версия 1](./md/questions.md)
-- :page_with_curl: [Вопросы для подготовки к собеседованию. Версия 2](./md/questions-v2.md)
+- :page_with_curl: [Вопросы для подготовки к собеседованию. Версия 1](./md/questions_react.md)
+- :page_with_curl: [Вопросы для подготовки к собеседованию. Версия 2](./md/questions_react-v2.md)
 - :memo: [Шпаргалки по `React`, `Jest`, `Redux` и лучшие практики по `React`](./md/cheatsheets-bestpractices.md)
 
 ---

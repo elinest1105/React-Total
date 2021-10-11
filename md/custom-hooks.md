@@ -22,6 +22,7 @@
 - [useTimer](#use_timer)
 - [useWindowSize](#use_windowsize)
 - [useCopyToClipboard](#use_copytoclipboard)
+- [useMutationObserver](#use_mutationobserver)
 
 ## useBeforeUnload <a name="use_beforeunload"></a>
 
@@ -847,3 +848,57 @@ export const useCopyToClipboard = (resetTime) => {
   return [copied, copy]
 }
 ```
+
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
+
+## useMutationObserver <a name="use_mutationobserver"></a>
+
+```js
+import { useState, useEffect } from 'react'
+import { debounce } from 'lodash'
+
+const DEFAULT_OPTIONS = {
+  config: { attributes: true, childList: true, subtree: true },
+  debounceTime: 0
+}
+
+export const useMutationObserver = (
+  target,
+  callback,
+  options = DEFAULT_OPTIONS
+) => {
+  const [observer, setObserver] = useState(null)
+
+  useEffect(() => {
+    if (!callback || typeof callback !== 'function') {
+      return
+    }
+    const { debounceTime } = options
+    const observer = new MutationObserver(
+      debounceTime > 0 ? debounce(callback, debounceTime) : callback
+    )
+    setObserver(observer)
+  }, [callback, options, setObserver])
+
+  useEffect(() => {
+    if (!observer || !target) return
+    const { config } = options
+    try {
+      observer.observe(target, config)
+    } catch (e) {
+      console.error(e)
+    }
+    return () => {
+      if (observer) {
+        observer.disconnect()
+      }
+    }
+  }, [observer, target, options])
+}
+```
+
+<div align="right">
+  <b><a href="#">↥ Наверх</a></b>
+</div>
