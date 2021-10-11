@@ -75,7 +75,7 @@ _Обратите внимание_: вопросы немного устаре�
 - :link: [Блог, разработанный с помощью React, Apollo и GraphQL](https://github.com/harryheman/React-Apollo-GraphQL-Social-App)
 - :link: [Чат, разработанный с помощью React и Socket.io](https://github.com/harryheman/React-Socket.io-Chat-App)
 - :link: [Утилита, облегчающая работу с `Fetch API`](https://github.com/harryheman/simple-fetch)
-- :link: [Кастомный React-хук для работы с формами](https://github.com/harryheman/simple-form-react)
+- :link: [Кастомный хук для работы с формами](https://github.com/harryheman/simple-form-react)
 - :link: [Утилита, облегчающая работу с `Internationalization API`](https://github.com/harryheman/easy-intl)
 
 ## Кастомные компоненты
@@ -107,18 +107,15 @@ _Обратите внимание_: вопросы немного устаре�
 
 ## Свежие статьи, которые показались мне интересными
 
+- [[An Interactive Guide to Keyframe Animations](https://javascript.plainenglish.io/the-complete-guide-to-prop-types-in-react-9baa22e80ce4)](https://www.joshwcomeau.com/animation/keyframe-animations/) - краткое руководство по PropTypes
 - [An Interactive Guide to Keyframe Animations](https://www.joshwcomeau.com/animation/keyframe-animations/) - интерактивное руководство по CSS-анимации
 - [The World of CSS Transforms](https://www.joshwcomeau.com/css/transforms/) - статья про CSS-трансформации с наглядными примерами
 - [Using Forms in React](https://daveceddia.com/react-forms/) - статья про разные способы использования форм в `React`
 - [Demystifying styled-components](https://www.joshwcomeau.com/react/demystifying-styled-components/) - статья про то, как работают стилизованные компоненты (styled components)
 
-## Штуки, которые я часто использую при разработке приложений
-
-- [Sass](https://sass-lang.com/) - лучший инструмент для работы со стилями
-- [Lodash](https://lodash.com/) - набор очень полезных утилит
-
 ## Полезные ссылки
 
+- [react-philosophies](https://github.com/mithi/react-philosophies) - мысли опытного разработчика о том, как надо писать код на React
 - [Awesome React Hooks](https://github.com/rehooks/awesome-react-hooks) - большая коллекция кастомных хуков
 - [Curated List of React Components & Libraries](https://github.com/brillout/awesome-react-components) - большая коллекция компонентов и библиотек для `React`
 - [GitHowTo](https://githowto.com/ru) - интерактивный курс по основам работы с `Git`
