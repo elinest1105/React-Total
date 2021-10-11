@@ -78,6 +78,7 @@ _Обратите внимание_: вопросы немного устаре�
 - :link: [Утилита, облегчающая работу с `Fetch API`](https://github.com/harryheman/simple-fetch)
 - :link: [Кастомный хук для работы с формами](https://github.com/harryheman/simple-form-react)
 - :link: [Утилита, облегчающая работу с `Internationalization API`](https://github.com/harryheman/easy-intl)
+- :link: [Утилита, облегчающая работу с `Context API`](https://github.com/harryheman/react-simple-context)
 
 ## Кастомные компоненты
 
@@ -108,7 +109,7 @@ _Обратите внимание_: вопросы немного устаре�
 
 ## Свежие статьи, которые показались мне интересными
 
-- [[An Interactive Guide to Keyframe Animations](https://javascript.plainenglish.io/the-complete-guide-to-prop-types-in-react-9baa22e80ce4)](https://www.joshwcomeau.com/animation/keyframe-animations/) - краткое руководство по PropTypes
+- [The Complete Guide To Prop-Types In React](https://javascript.plainenglish.io/the-complete-guide-to-prop-types-in-react-9baa22e80ce4) - краткое руководство по PropTypes
 - [An Interactive Guide to Keyframe Animations](https://www.joshwcomeau.com/animation/keyframe-animations/) - интерактивное руководство по CSS-анимации
 - [The World of CSS Transforms](https://www.joshwcomeau.com/css/transforms/) - статья про CSS-трансформации с наглядными примерами
 - [Using Forms in React](https://daveceddia.com/react-forms/) - статья про разные способы использования форм в `React`
