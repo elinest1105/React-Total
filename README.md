@@ -76,7 +76,6 @@ _Обратите внимание_: вопросы немного устаре�
 
 ## Проекты
 
-- :link: [Исследования и эксперименты](https://github.com/harryheman/JavaScript-Projects)
 - :link: [Блог, разработанный с помощью React, Apollo и GraphQL](https://github.com/harryheman/React-Apollo-GraphQL-Social-App)
 - :link: [Чат, разработанный с помощью React и Socket.io](https://github.com/harryheman/React-Socket.io-Chat-App)
 - :link: [Утилита, облегчающая работу с `Fetch API`](https://github.com/harryheman/simple-fetch)
