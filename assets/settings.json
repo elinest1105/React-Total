@@ -6,7 +6,7 @@
     "editor.linkedEditing": true,
     "editor.fontSize": 15,
     "editor.tabSize": 2,
-    "editor.formatOnPaste": true,
+    "editor.formatOnPaste": false,
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
         "source.fixAll.markdownlint": true
@@ -37,9 +37,19 @@
     "[markdown]": {
         "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
     },
+    "[python]": {
+        "editor.defaultFormatter": null
+    },
+    "python.formatting.provider": "black",
+    "python.formatting.blackArgs": [
+        "--max-line-length",
+        "80"
+    ],
     "emmet.includeLanguages": {
         "javascript": "javascriptreact",
-        "vue-html": "html"
+        "vue-html": "html",
+        "python": "py",
+        "django-html": "html"
     },
     "explorer.confirmDragAndDrop": false,
     "explorer.confirmDelete": false,
@@ -76,5 +86,11 @@
         "plist"
     ],
     "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "cSpell.language": "en,ru",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "markdown.extension.toc.updateOnSave": false,
+    "files.exclude": {
+        "**/.git": false
+    }
 }

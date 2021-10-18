@@ -29,5 +29,4 @@
 - `Sass`
 - `TOML Language Support` - подсветка синтаксиса в файлах `.toml`
 - `Vetur` - инструменты для `Vue`
-- `vscode-styled-components` - подсветка синтаксиса в стилизованных компонентах
 - `Visual Studio IntelliCode`
