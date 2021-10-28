@@ -2,11 +2,13 @@
 
 ## Ресурс для изучения `React.js` и связанных с ним технологий на русском языке :ru
 
-> Последнее обновление: 16.10.2021 - добавил огромную коллекцию полезных JavaScript-сниппетов. В разработке -> руководство по `Next.js`
+> Последнее обновление: 28.10.2021. В разработке -> руководство по `Next.js`
 
 ## Новое
 
 - :memo: [Сниппеты `JavaScript`](./md/snippets_javascript.md)
+- :memo: [Сниппеты `CSS` и `SASS`](./md/snippets_csssass.md)
+- :memo: [Командная строка](./md/command_line.md)
 
 ## Руководства
 
@@ -34,7 +36,7 @@
 - :memo: [Шпаргалка по `Create React App`](./md/create-react-app.md)
 - :memo: [Шпаргалка по `Styled Components`](./md/styled-components.md)
 - :memo: [Шпаргалка `React` + `TypeScript`](./md/react-typescript.md)
-- :memo: [Выдержки из определений `TypeScript-типов` для `React`](./md/react-types.md)
+- :memo: [Выдержки из определений типов `TypeScript` для `React`](./md/react-types.md)
 - :memo: [Примеры кастомных хуков](./md/custom-hooks.md)
 - :memo: [Примеры кастомных компонентов](./md/custom-components.md)
 
@@ -43,7 +45,7 @@
 - :memo: [Шпаргалка по `Express API`](./md/express-api.md)
 - :memo: [Шпаргалка по `Webpack`](./md/webpack.md)
 - :memo: [Шпаргалка по `Security Headers`](./md/security/security.md)
-- :memo: [Шпаргалка по `HTML5-тегам`](./md/html5.md)
+- :memo: [Шпаргалка по тегам `HTML5`](./md/html5.md)
 - :memo: [Шпаргалка по методам для работы с `DOM`](./md/js-dom.md)
 - :memo: [Шпаргалка по `Web Accessibility`](./md/access/access.md)
 - :memo: [Туториал по `RegExp`](./md/regexp/regexp.md)
@@ -109,11 +111,12 @@ _Обратите внимание_: вопросы немного устаре�
 
 ## Свежие статьи, которые показались мне интересными
 
+- [A Visual Guide to React Rendering - Cheat Sheet](https://alexsidorenko.com/blog/react-render-cheat-sheet/) - визуальное руководство-шпаргалка по рендерингу компонентов `React`
 - [The Complete Guide To Prop-Types In React](https://javascript.plainenglish.io/the-complete-guide-to-prop-types-in-react-9baa22e80ce4) - краткое руководство по `PropTypes`
-- [An Interactive Guide to Keyframe Animations](https://www.joshwcomeau.com/animation/keyframe-animations/) - интерактивное руководство по CSS-анимации
-- [The World of CSS Transforms](https://www.joshwcomeau.com/css/transforms/) - статья про CSS-трансформации с наглядными примерами
-- [Using Forms in React](https://daveceddia.com/react-forms/) - статья про разные способы использования форм в `React`
-- [Demystifying styled-components](https://www.joshwcomeau.com/react/demystifying-styled-components/) - статья про то, как работают стилизованные компоненты (styled components)
+- [An Interactive Guide to Keyframe Animations](https://www.joshwcomeau.com/animation/keyframe-animations/) - интерактивное руководство по анимации `CSS`
+- [The World of CSS Transforms](https://www.joshwcomeau.com/css/transforms/) - статья про трансформации `CSS`
+- [Using Forms in React](https://daveceddia.com/react-forms/) - статья про работу с формами в `React`
+- [Demystifying styled-components](https://www.joshwcomeau.com/react/demystifying-styled-components/) - статья работу стилизованных компонентов (styled components)
 
 ## Полезные ссылки
 
