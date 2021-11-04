@@ -218,7 +218,7 @@ tsc --noEmitOnError hello.ts
 
 ```ts
 function greet(person: string, date: Date) {
-  console.log(`Hello, ${person}! Today is ${date.toDateString().}`)
+  console.log(`Hello, ${person}! Today is ${date.toDateString()}.`)
 }
 ```
 
