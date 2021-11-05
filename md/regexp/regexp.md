@@ -1,4 +1,4 @@
-# RegExp Tutorial :metal:
+# `RegExp` Tutorial :metal:
 
 [На главную](../../README.md)
 

@@ -1,8 +1,8 @@
 # `JavaScript DOM` Cheatsheet :metal:
 
-- [На главную](../README.md)
+[На главную](../README.md)
 
-## Содержание
+### Содержание
 
 - [Основные источники](#resources)
 - [Введение](#intro)

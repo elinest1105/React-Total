@@ -7,7 +7,6 @@
 - [`bash`](#bash)
 - [`ssh`](#ssh)
 - [`curl`](#curl)
-- [`tree`](#tree)
 - [`git`](#git)
 - [`npm`](#npm)
 - [`yarn`](#yarn)
@@ -225,21 +224,6 @@ curl -u username:password -T my_file.png ftp://ftp.example.com
 
 # Отправка email
 curl --mail-from from@mail.com --mail-rcpt to@mail.com smtp://example.com
-```
-
-## `tree`
-
-__Дерево директорий и файлов__
-
-```bash
-# -L уровень
-# -C цветной вывод
-# -I за исключением
-tree -L 2 -C -I node_modules
-
-
-# tree-cli
-tree -l 2 --ignore node_modules
 ```
 
 ## `git`

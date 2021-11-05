@@ -2,6 +2,8 @@
 
 [На главную](../README.md)
 
+> [Примеры](https://v5.reactrouter.com/web/example/basic)&nbsp;&nbsp;👀
+
 ## Содержание
 
 - [Примеры](#examples)

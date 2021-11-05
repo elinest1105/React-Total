@@ -1,10 +1,10 @@
-# `Type definitions for React` Excerpts :metal:
+# `Type Definitions for React` Excerpts :metal:
 
 [На главную](../README.md)
 
-[Источник](https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/react/index.d.ts)
+> [Источник](https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/react/index.d.ts)&nbsp;&nbsp;👀&
 
-## Содержание
+### Содержание
 
 - [Хуки](#hooks)
 - [Система событий](#event_system)

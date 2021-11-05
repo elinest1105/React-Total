@@ -2,9 +2,9 @@
 
 [На главную](../../README.md)
 
-> #### <a href="https://github.com/typicode/json-server">`json-server`</a> - это библиотека, позволяющая "получить полный фейковый REST API без предварительной настройки менее чем за 30 секунд (серьезно)". Библиотека реализована с помощью <a href="https://github.com/typicode/lowdb">`lowdb`</a> и <a href="https://expressjs.com/">`express`</a>. Также имеется возможность создания полноценного сервера. Наиболее известным примером использования библиотеки является <a href="https://jsonplaceholder.typicode.com/">`JSON Placeholder`</a>.
+#### <a href="https://github.com/typicode/json-server">`json-server`</a> - это библиотека, позволяющая "получить полный фейковый REST API без предварительной настройки менее чем за 30 секунд (серьезно)". Библиотека реализована с помощью <a href="https://github.com/typicode/lowdb">`lowdb`</a> и <a href="https://expressjs.com/">`express`</a>. Также имеется возможность создания полноценного сервера. Наиболее известным примером использования библиотеки является <a href="https://jsonplaceholder.typicode.com/">`JSON Placeholder`</a>.
 
-## Оглавление
+### Содержание
 
 - [Установка](#install)
 - [Использование](#usage)

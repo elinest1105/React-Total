@@ -1,10 +1,10 @@
-# Шпаргалки по React, Jest, Redux и лучшие практики
+# Шпаргалки по `React`, `Jest`, `Redux` и лучшие практики :metal:
 
 [На главную](../README.md)
 
-[Источник](https://github.com/learning-zone/react-interview-questions)
+> [Источник](https://github.com/learning-zone/react-interview-questions)&nbsp;&nbsp;👀
 
-## Содержание
+### Содержание
 
 - [Шпаргалка по React](#react)
 - [Шпаргалка по Jest](#jest)

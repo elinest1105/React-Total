@@ -2,9 +2,9 @@
 
 [На главную](../README.md)
 
-[Источник](https://github.com/typescript-cheatsheets/react)
+> [Источник](https://github.com/typescript-cheatsheets/react)&nbsp;&nbsp;👀
 
-## Содержание
+### Содержание
 
 - [Импорт React](#react_import)
 - [Функциональные компоненты](#fn_components)

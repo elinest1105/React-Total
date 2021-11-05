@@ -2,7 +2,7 @@
 
 [На главную](../README.md)
 
-<a href="https://www.npmjs.com/package/cors">`Cors`</a> - это посредник (промежуточное программное обеспечение, middleware) для Express-приложений, предназначенное для настройки <a href="https://developer.mozilla.org/ru/docs/Web/HTTP/CORS">`CORS`</a>.
+#### <a href="https://www.npmjs.com/package/cors">`Cors`</a> - это посредник (промежуточное программный слой, middleware) для `Express-приложений`, предназначенный для настройки HTTP-заголовков, связанных с <a href="https://developer.mozilla.org/ru/docs/Web/HTTP/CORS">`CORS`</a>.
 
 _Установка_
 

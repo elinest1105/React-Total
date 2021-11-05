@@ -2,7 +2,7 @@
 
 [На главную](../README.md)
 
-- [Сниппеты](./javascript_snippets.md)
+> [Сниппеты](./javascript_snippets.md)&nbsp;&nbsp;👀
 
 ### Содержание
 

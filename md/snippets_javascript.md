@@ -2,7 +2,7 @@
 
 [На главную](../README.md)
 
-- [Еще](./beautiful_mind.md)
+> [Еще](./beautiful_mind.md)&nbsp;&nbsp;👀
 
 ### Содержание
 

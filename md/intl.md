@@ -2,6 +2,8 @@
 
 [На главную](../README.md)
 
+> [Песочница](https://codepen.io/harryheman/pen/QWgKGry)&nbsp;&nbsp;👀
+
 ### Содержание
 
 - [`Locale`](#locale)

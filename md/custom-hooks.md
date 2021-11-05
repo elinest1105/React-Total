@@ -2,7 +2,7 @@
 
 [На главную](../README.md)
 
-## Содержание
+### Содержание
 
 - [useBeforeUnload](#use_beforeunload)
 - [useClick](#use_click)

@@ -2,9 +2,9 @@
 
 [На главную](../README.md)
 
-<a href="https://sequelize.org/master/">`Sequelize`</a> - это <a href="https://ru.wikipedia.org/wiki/ORM">`ORM`</a> (Object-Relational Mapping - объектно-реляционное отображение или преобразование) для работы с такими <a href="https://ru.wikipedia.org/wiki/%D0%A1%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0_%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F_%D0%B1%D0%B0%D0%B7%D0%B0%D0%BC%D0%B8_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85">СУБД</a> (системами управления (реляционными) базами данных, Relational Database Management System, RDBMS), как `Postgres`, `MySQL`, `MariaDB`, `SQLite` и `MSSQL`. Это далеко не единственная `ORM` для работы с названными базами данных (далее - БД), но, на мой взгляд, одна из самых продвинутых и, что называется, "battle tested" (проверенных временем).
+#### <a href="https://sequelize.org/master/">`Sequelize`</a> - это <a href="https://ru.wikipedia.org/wiki/ORM">`ORM`</a> (Object-Relational Mapping - объектно-реляционное отображение или преобразование) для работы с такими <a href="https://ru.wikipedia.org/wiki/%D0%A1%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0_%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F_%D0%B1%D0%B0%D0%B7%D0%B0%D0%BC%D0%B8_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85">СУБД</a> (системами управления (реляционными) базами данных, Relational Database Management System, RDBMS), как `Postgres`, `MySQL`, `MariaDB`, `SQLite` и `MSSQL`. Это далеко не единственная `ORM` для работы с названными базами данных (далее - БД), но, на мой взгляд, одна из самых продвинутых и, что называется, "battle tested" (проверенных временем).
 
-## Содержание
+### Содержание
 
 - [Начало работы](#начало-работы)
 - [Модели](#модели)

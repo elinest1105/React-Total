@@ -2,7 +2,7 @@
 
 [На главную](../README.md)
 
-## Содержание
+### Содержание
 
 - [Accordion](#accordion)
 - [Carousel](#carousel)
