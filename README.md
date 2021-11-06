@@ -8,6 +8,7 @@
 
 - :page_with_curl: [Руководство по `Next.js`](./md/next.md)
 - :memo: [Размышления о `React`](./md/react-philosophies.md)
+- :memo: [Шпаргалка по `TypeScript`](./md/ts_cheatsheet.md)
 
 ## Руководства
 
