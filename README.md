@@ -113,15 +113,6 @@ _Обратите внимание_: вопросы немного устаре�
 - [react-window](https://react-window.vercel.app/#/examples/list/fixed-size) - рендеринг только видимых элементов списка
 - [resharts](https://recharts.org/en-US) - компоненты для визуализации данных
 
-## Свежие статьи, которые показались мне интересными
-
-- [A Visual Guide to React Rendering - Cheat Sheet](https://alexsidorenko.com/blog/react-render-cheat-sheet/) - визуальное руководство-шпаргалка по рендерингу компонентов `React`
-- [The Complete Guide To Prop-Types In React](https://javascript.plainenglish.io/the-complete-guide-to-prop-types-in-react-9baa22e80ce4) - краткое руководство по `PropTypes`
-- [An Interactive Guide to Keyframe Animations](https://www.joshwcomeau.com/animation/keyframe-animations/) - интерактивное руководство по анимации `CSS`
-- [The World of CSS Transforms](https://www.joshwcomeau.com/css/transforms/) - статья про трансформации `CSS`
-- [Using Forms in React](https://daveceddia.com/react-forms/) - статья про работу с формами в `React`
-- [Demystifying styled-components](https://www.joshwcomeau.com/react/demystifying-styled-components/) - статья работу стилизованных компонентов (styled components)
-
 ## Полезные ссылки
 
 ### `React`
