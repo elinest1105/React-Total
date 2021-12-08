@@ -336,7 +336,7 @@ import { GetStaticProps } from 'next'
 export const getStaticProps: GetStaticProps = async (context) => {}
 ```
 
-Для получения предполагаемых типов дял пропов следует использовать `InferGetStaticPropsType<typeof getStaticProps>`:
+Для получения предполагаемых типов для пропов следует использовать `InferGetStaticPropsType<typeof getStaticProps>`:
 
 ```ts
 import { InferGetStaticPropsType } from 'next'
