@@ -97,7 +97,7 @@ _Обратите внимание_: вопросы немного устаре�
 - ["Современный учебник JavaScript". Илья Кантор](https://learn.javascript.ru/)
 - [MDN Web Docs](https://developer.mozilla.org/ru/)
 - ["Вы не знаете JS". Кайл Симпсон](https://github.com/azat-io/you-dont-know-js-ru)
-- <a href="assets/books/definitive_guide.pdf" target="_blank">"JavaScript. Подробное руководство". Дэвид Флэнаган</a>
+- ["JavaScript. Подробное руководство". Дэвид Флэнаган](./assets/books/definitive_guide.pdf)
 
 __Паттерны проектирования__
 
@@ -108,9 +108,8 @@ __Паттерны проектирования__
 __Вопросы и задачи__
 
 - [JavaScript Interview Questions & Answers](https://github.com/sudheerj/javascript-interview-questions)
-- [Frontend Interview Handbook](https://github.com/yangshun/front-end-interview-handbook/blob/master/contents/en/javascript-questions.md)
+- [Frontend Interview Handbook](https://github.com/yangshun/front-end-interview-handbook/)
 - [JavaScript Questions](https://github.com/lydiahallie/javascript-questions)
-- [JavaScript Modern Interview Code Challenges](https://github.com/sadanandpai/javascript-code-challenges)
 - [In JavaScript We Trust](https://github.com/yeungon/In-JavaScript-we-trust)
 - [Coding Practice Challenges](https://edabit.com/challenges)
 
