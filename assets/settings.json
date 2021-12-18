@@ -1,22 +1,11 @@
 {
-    "debug.onTaskErrors": "debugAnyway",
-    "editor.minimap.enabled": false,
-    "editor.multiCursorModifier": "ctrlCmd",
-    "editor.wordWrap": "on",
-    "editor.linkedEditing": true,
-    "editor.fontSize": 15,
-    "editor.tabSize": 2,
-    "editor.formatOnPaste": false,
-    "editor.formatOnSave": true,
-    "editor.codeActionsOnSave": {
-        "source.fixAll.markdownlint": true
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "editor.formatOnType": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "[html]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "[css]": {
+    "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[json]": {
@@ -25,8 +14,14 @@
     "[jsonc]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "[markdown]": {
+        "editor.defaultFormatter": "vscode.markdown-language-features"
+    },
+    "[prisma]": {
+        "editor.defaultFormatter": "Prisma.prisma"
+    },
+    "[python]": {
+        "editor.defaultFormatter": null
     },
     "[typescript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -34,36 +29,6 @@
     "[typescriptreact]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "[markdown]": {
-        "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
-    },
-    "[python]": {
-        "editor.defaultFormatter": null
-    },
-    "python.formatting.provider": "black",
-    "python.formatting.blackArgs": [
-        "--max-line-length",
-        "80"
-    ],
-    "emmet.includeLanguages": {
-        "javascript": "javascriptreact",
-        "vue-html": "html",
-        "python": "py",
-        "django-html": "html"
-    },
-    "explorer.confirmDragAndDrop": false,
-    "explorer.confirmDelete": false,
-    "files.trimTrailingWhitespace": true,
-    "git.ignoreMissingGitWarning": true,
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "liveServer.settings.donotShowInfoMsg": true,
-    "prettier.jsxSingleQuote": true,
-    "prettier.singleQuote": true,
-    "prettier.semi": false,
-    "prettier.trailingComma": "none",
-    "workbench.startupEditor": "newUntitledFile",
-    "security.workspace.trust.untrustedFiles": "open",
-    "prettier.useEditorConfig": true,
     "auto-close-tag.activationOnLanguage": [
         "xml",
         "php",
@@ -85,12 +50,51 @@
         "HTML (Eex)",
         "plist"
     ],
-    "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "cSpell.customDictionaries": {
+        "custom-dictionary-user": {
+            "addWords": true,
+            "name": "custom-dictionary-user",
+            "path": "~/.cspell/custom-dictionary-user.txt",
+            "scope": "user"
+        }
+    },
     "cSpell.language": "en,ru",
+    "debug.onTaskErrors": "debugAnyway",
     "diffEditor.ignoreTrimWhitespace": false,
-    "markdown.extension.toc.updateOnSave": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.fontSize": 15,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.linkedEditing": true,
+    "editor.minimap.enabled": false,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.suggestSelection": "first",
+    "editor.tabSize": 2,
+    "editor.wordWrap": "on",
+    "emmet.includeLanguages": {
+        "django-html": "html",
+        "javascript": "javascriptreact",
+        "python": "py",
+        "vue-html": "html"
+    },
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
     "files.exclude": {
         "**/.git": false
-    }
+    },
+    "files.trimTrailingWhitespace": true,
+    "git.ignoreMissingGitWarning": true,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "markdown.extension.toc.updateOnSave": false,
+    "prettier.jsxSingleQuote": true,
+    "prettier.semi": false,
+    "prettier.singleQuote": true,
+    "prettier.trailingComma": "none",
+    "prettier.useEditorConfig": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "workbench.startupEditor": "none"
 }
