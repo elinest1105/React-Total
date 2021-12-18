@@ -29,6 +29,8 @@
 - :page_with_curl: [Руководство по `Mongoose`](./md/mongoose.md)
 - :page_with_curl: [Руководство по `Sequelize`](./md/sequelize.md)
 - :page_with_curl: [Руководство по `Socket.IO`](./md/socket/README.md)
+- :page_with_curl: [Практические вопросы по `JavaScript`](./md/js_questions.md)
+- :page_with_curl: [Алгоритмы и структуры данных `JavaScript`](./md/js_algorithms.md)
 
 ## Шпаргалки
 
@@ -82,40 +84,39 @@ _Обратите внимание_: вопросы немного устаре�
 
 ## Проекты
 
+- :link: [Статьи и туториалы из моего блога на Хабре](https://github.com/harryheman/Blog-Posts)
 - :link: [Блог, разработанный с помощью React, Apollo и GraphQL](https://github.com/harryheman/React-Apollo-GraphQL-Social-App)
 - :link: [Чат, разработанный с помощью React и Socket.io](https://github.com/harryheman/React-Socket.io-Chat-App)
 - :link: [Утилита, облегчающая работу с `Fetch API`](https://github.com/harryheman/simple-fetch)
 - :link: [Утилита, облегчающая работу с `Internationalization API`](https://github.com/harryheman/easy-intl)
 
-## Кастомные компоненты
-
-- [emoji-mart](https://github.com/missive/emoji-mart) - компонент с эмоджи
-- [react-beautiful-dnd](https://github.com/vtereshyn/react-beautiful-dnd-ru) - компоненты для реализации перетаскивания и бросания
-- [react-burger-menu](https://www.npmjs.com/package/react-burger-menu) - меню, навбар
-- [react-circular-progressbar](https://www.npmjs.com/package/react-circular-progressbar) - компонент для создания индикаторов прогресса в виде круга
-- [react-error-boundary](https://www.npmjs.com/package/react-error-boundary) - предохранитель
-- [react-filepond](https://github.com/pqina/react-filepond) - компонент для отправки файлов
-- [react-hook-form](https://react-hook-form.com/ru/) - хуки для работы с формами
-- [react-icons](https://react-icons.github.io/react-icons/) - компоненты-иконки
-- [react-intl](https://formatjs.io/) - компоненты для интернационализации
-- [react-github-login](https://github.com/checkr/react-github-login) - компонент для авторизации с помощью GitHub-аккаунта
-- [react-google-login](https://www.npmjs.com/package/react-google-login) - компонент для авторизации с помощью Google-аккаунта
-- [react-google-recaptcha](https://www.npmjs.com/package/react-google-recaptcha) - капча
-- [react-lazyload](https://www.npmjs.com/package/react-lazyload) - ленивая загрузка компонентов
-- [react-leaflet](https://react-leaflet.js.org/) - компоненты для работы с картами
-- [react-loader-spinner](https://www.npmjs.com/package/react-loader-spinner) - индикатор загрузки
-- [react-search-input](https://www.npmjs.com/package/react-search-input) - инпут для поиска
-- [react-table](https://react-table.tanstack.com/) - компоненты для работы с таблицами
-- [react-timeago](https://www.npmjs.com/package/react-timeago) - компонент для форматирования даты и времени с поддержкой русского языка
-- [react-toastify](https://github.com/fkhadra/react-toastify) - компонент для создания уведомлений
-- [react-window](https://react-window.vercel.app/#/examples/list/fixed-size) - рендеринг только видимых элементов списка
-- [resharts](https://recharts.org/en-US) - компоненты для визуализации данных
-
 ## Полезные ссылки
+
+### `JavaScript`
+
+- ["Современный учебник JavaScript". Илья Кантор](https://learn.javascript.ru/)
+- [MDN Web Docs](https://developer.mozilla.org/ru/)
+- ["Вы не знаете JS". Кайл Симпсон](https://github.com/azat-io/you-dont-know-js-ru)
+- <a href="assets/books/definitive_guide.pdf" target="_blank">"JavaScript. Подробное руководство". Дэвид Флэнаган</a>
+
+__Паттерны проектирования__
+
+- ["Паттерны объектно-ориентированного проектирования". Банда четырех](./assets/books/design_patterns.pdf)
+- ["Паттерны проектирования". Refactoring Guru](https://refactoring.guru/ru/design-patterns)
+- ["Learning JavaScript Design Patterns". Addy Osmani](https://addyosmani.com/resources/essentialjsdesignpatterns/book/)
+
+__Вопросы и задачи__
+
+- [JavaScript Interview Questions & Answers](https://github.com/sudheerj/javascript-interview-questions)
+- [Frontend Interview Handbook](https://github.com/yangshun/front-end-interview-handbook/blob/master/contents/en/javascript-questions.md)
+- [JavaScript Questions](https://github.com/lydiahallie/javascript-questions)
+- [JavaScript Modern Interview Code Challenges](https://github.com/sadanandpai/javascript-code-challenges)
+- [In JavaScript We Trust](https://github.com/yeungon/In-JavaScript-we-trust)
+- [Coding Practice Challenges](https://edabit.com/challenges)
 
 ### `React`
 
-- [react-philosophies](https://github.com/mithi/react-philosophies) - мысли опытного разработчика о том, как надо писать код на React
+- [react-philosophies](https://github.com/mithi/react-philosophies) - размышления о том, как надо писать код на `React`
 - [Awesome React Hooks](https://github.com/rehooks/awesome-react-hooks) - большая коллекция кастомных хуков
 - [Curated List of React Components & Libraries](https://github.com/brillout/awesome-react-components) - большая коллекция компонентов и библиотек для `React`
 - [`React` и `TypeScript`](https://reactdev.ru/types/)
@@ -148,25 +149,6 @@ _Обратите внимание_: вопросы немного устаре�
 - [Google Fonts](https://fonts.google.com/)
 - [FlatIcon](https://www.flaticon.com/)
 - [HTML-эмодзи](https://www.w3schools.com/charsets/ref_emoji.asp)
-
-### NPM-пакеты
-
-- [axios](https://github.com/axios/axios) - библиотека для выполнения HTTP-запросов
-- [argon2](https://www.npmjs.com/package/argon2) - утилита для хеширования и проверки паролей
-- [bcrypt](https://www.npmjs.com/package/bcrypt) - альтернатива `argon2`
-- [concurrently](https://www.npmjs.com/package/concurrently) - утилита для одновременного выполнения нескольких команд (скриптов)
-- [express-validator](https://express-validator.github.io/docs/) - утилита для проверки входящих данных
-- [generate-password](https://www.npmjs.com/package/generate-password) - утилита для генерации паролей
-- [google-spreadsheet](https://theoephraim.github.io/node-google-spreadsheet/#/) - библиотека для работы с Google таблицами
-- [json-server](https://github.com/typicode/json-server) - библиотека для создания `fake REST API`
-- [jsonwebtoken](https://github.com/auth0/node-jsonwebtoken) - библиотека для создание и подтверждения токенов
-- [multer](https://github.com/expressjs/multer/blob/master/doc/README-ru.md) - утилита для обработки `multipart/form-data`
-- [nanoid](https://www.npmjs.com/package/nanoid) - утилита для генерации уникальных идентификаторов
-- [nodemailer](https://nodemailer.com/) - утилита для отправки email
-- [nodemon](https://www.npmjs.com/package/nodemon) - утилита для запуска сервера для разработки
-- [open-cli](https://www.npmjs.com/package/open-cli) - утилита для автоматического открытия вкладки браузера по указанному адресу
-- [serve](https://www.npmjs.com/package/serve) - утилита для обслуживания статических файлов
-- [validator.js](https://github.com/validatorjs/validator.js) - библиотека, лежащая в основе `express-validator`
 
 ## Участие
 
