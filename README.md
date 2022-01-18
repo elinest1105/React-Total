@@ -141,7 +141,6 @@ __Вопросы и задачи__
 - [Developer Roadmap](https://github.com/kamranahmedse/developer-roadmap) - "дорожная карта" веб-разработчика
 - [The Art of Command Line](https://github.com/jlevy/the-art-of-command-line) - искусство командной строки
 - [Учебник. Начало работы с `Docker`](https://docs.microsoft.com/ru-ru/visualstudio/docker/tutorials/docker-tutorial)
-- [Faker.js](https://fakerjsdocs.netlify.app/#browser-demo) - инструмент для генерации фиктивных данных
 - [Mockaroo](https://www.mockaroo.com/) - сервис для генерации фиктивных данных, в том числе, в формате `SQL`
 - [Команды SQL (PostreSQL)](https://postgrespro.ru/docs/postgresql/13/sql-commands)
 - [Команды psql (PostreSQL)](https://postgrespro.ru/docs/postgresql/13/app-psql)
