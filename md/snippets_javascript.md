@@ -2185,11 +2185,11 @@ const getImgUrl = (el, dedupe = false) => {
 ### Получение элементов по селектору
 
 ```js
-const getOne = (selector, parent = document) => el.querySelector(selector)
+const getOne = (selector, parent = document) => parent.querySelector(selector)
 
-const getAll = (selector, parent = document) => [...el.querySelectorAll(selector)]
+const getAll = (selector, parent = document) => [...parent.querySelectorAll(selector)]
 
-const getEl = (selector, parent = document, all = false) => all ? [...parent.querySelectorAll(selector)] : el.querySelector(selector)
+const getEl = (selector, parent = document, all = false) => all ? [...parent.querySelectorAll(selector)] : parent.querySelector(selector)
 ```
 
 ### Скрытие/отображение элементов
