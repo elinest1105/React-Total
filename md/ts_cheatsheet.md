@@ -6,7 +6,7 @@
 
 > [Карманная книга по `TypeScript`](https://typescript-handbook.ru)&nbsp;&nbsp;👀
 
-**Использование**
+__Использование__
 
 _Установка_
 
@@ -28,7 +28,7 @@ _Запуск с определенными настройками_
 tsc --project configs/my_tsconfig.json
 ```
 
-**Директивы `///`**
+__Директивы `///`__
 
 _Ссылка на встроенные типы_
 
@@ -43,7 +43,7 @@ _Ссылка на другие типы_
 /// <reference types="node" />
 ```
 
-**Комментарии для компилятора**
+__Комментарии для компилятора__
 
 _Отключение проверки файла_
 
@@ -69,17 +69,17 @@ _Ожидание ошибки на следующей строке_
 // @ts-expect-error
 ```
 
-**Операторы**
+__Операторы__
 
 - `??` - оператор проверки на `null`
 
 ```ts
-function getValue(n: number): number | 'nill' {
+function getValue(n: number): number | 'nil' {
   // 'nill' возвращается, если `n` - это любое ложное значение (включая `0`)
   // return n || 'nill'
 
   // 'nill' возвращается, только если `n` имеет значение `null` или `undefined`
-  return n ?? 'nill';
+  return n ?? 'nill'
 }
 ```
 
@@ -90,55 +90,55 @@ function countCaps(value?: string) {
   // приведенное ниже выражение будет иметь значение `undefined`,
   // если `value` имеет значение `null` или `undefined`
   // или `match` не нашел совпадений
-  return value?.match(/[A-Z]/g)?.length ?? 0;
+  return value?.match(/[A-Z]/g)?.length ?? 0
 }
 ```
 
 - `!` - оператора утверждения ненулевого значения
 
 ```ts
-let value: string | undefined;
+let value: string | undefined
 
 // код, инициализирующий переменную `value` (присваивающий ей какое-либо значение)
 
 // утверждаем, что `value` имеет значение (определена)
-console.log(`Значение переменной 'value' состоит из ${value!.length} символов`);
+console.log(`Значение переменной 'value' состоит из ${value!.length} символов`)
 ```
 
 - `&&=`
 
 ```ts
-let x;
-let y = 1;
+let x
+let y = 1
 
 // присваиваем значение, только если текущее значение является истинным
-x &&= 'default'; // `x` по-прежнему имеет значение `undefined`
-y &&= 3; // `y` теперь имеет значение `3`
+x &&= 'default' // `x` по-прежнему имеет значение `undefined`
+y &&= 3 // `y` теперь имеет значение `3`
 ```
 
 - `||=`
 
 ```ts
-let x;
-let y = 1;
+let x
+let y = 1
 
 // присваиваем значение, только если текущее значение является ложным
-x ||= 'default'; // `x` теперь имеет значение `default`
-y ||= 3; // `y` по-прежнему имеет значение `1`
+x ||= 'default' // `x` теперь имеет значение `default`
+y ||= 3 // `y` по-прежнему имеет значение `1`
 ```
 
 - `??=`
 
 ```ts
-let x;
-let y = 0;
+let x
+let y = 0
 
 // присваиваем значение, только если текущим значением является `null` или `undefined`
-x ??= 'default'; // `x` теперь имеет значение `default`
-y ??= 2; // `y` по-прежнему имеет значение `0`
+x ??= 'default' // `x` теперь имеет значение `default`
+y ??= 2 // `y` по-прежнему имеет значение `0`
 ```
 
-**Основные типы**
+__Основные типы__
 
 - `any` - отсутствие типа
 - `string` - строка
@@ -151,7 +151,7 @@ y ??= 2; // `y` по-прежнему имеет значение `0`
 - `never` - значение, которое не может возникнуть (например, когда выбрасывается исключение)
 - `unknown` - значение неизвестного на момент определения типа
 
-**Объектные типы**
+__Объектные типы__
 
 _Объект_
 
@@ -172,12 +172,12 @@ _Объект с произвольным количеством свойств 
 { [key: `data-${string}`]: Type }
 ```
 
-**Литеральные типы**
+__Литеральные типы__
 
 - строковый - `let direction: 'left' | 'right'`
 - числовой - `let roll: 1 | 2 | 3 | 4 | 5 | 6`
 
-**Массивы и кортежи**
+__Массивы и кортежи__
 
 _Массив строк_
 
@@ -200,37 +200,37 @@ Array<() => string>
 _Кортеж_
 
 ```ts
-let myTuple: [string, number, boolean?];
+let myTuple: [string, number, boolean?]
 
-myTuple = ['test', 42];
+myTuple = ['test', 42]
 ```
 
 _Произвольный кортеж_
 
 ```ts
-type Numbers = [number, number];
-type Strings = [string, string];
+type Numbers = [number, number]
+type Strings = [string, string]
 
-type NumAndStr = [...Numbers, ...Strings];
+type NumAndStr = [...Numbers, ...Strings]
 // [number, number, string, string]
 
-type NumberAndRest = [number, ...string[]];
+type NumberAndRest = [number, ...string[]]
 // [number, любое количество строк]
 
-type RestAndBool = [...any[], boolean];
+type RestAndBool = [...any[], boolean]
 // [любое количество любых типов, boolean]
 ```
 
 _Именованный кортеж_
 
 ```ts
-type Vector2D = [x: number, y: number];
+type Vector2D = [x: number, y: number]
 
 function createVector(...args: Vector2D) {}
 // const createVector = (x: number, y: number) => {}
 ```
 
-**Функции**
+__Функции__
 
 _Функциональный тип_
 
@@ -251,13 +251,13 @@ new () => ConstructedType
 _Функциональный тип с опциональным параметром_
 
 ```ts
-(arg1: Type, optional?: Type) => ReturnType;
+(arg1: Type, optional?: Type) => ReturnType
 ```
 
 _Функциональный тип с оставшимися параметрами_
 
 ```ts
-(arg1: Type, ...args: Type[]) => ReturnType;
+(arg1: Type, ...args: Type[]) => ReturnType
 ```
 
 _Функциональный тип со статическим свойством_
@@ -275,9 +275,9 @@ function fn(arg = 'default'): ReturnType {}
 _Стрелочная функция_
 
 ```ts
-(arg: Type): ReturnType => {};
+(arg: Type): ReturnType => {}
 // or
-(arg: Type): ReturnType => someValue;
+(arg: Type): ReturnType => someValue
 ```
 
 _Типизация `this`_
@@ -289,84 +289,87 @@ function fn(this: Type, arg: string) {}
 _Перегрузка_
 
 ```ts
-function fn(x: string): number;
-function fn(x: number): string;
+function fn(x: string): number
+function fn(x: number): string
 function fn(x: string | number): string | number {}
 ```
 
-**Объединение и пересечения**
+__Объединение и пересечения__
 
 _Объединение_
 
 ```ts
-let myUnion: number | string;
+let myUnion: number | string
 ```
 
 _Пересечение_
 
 ```ts
-let myIntersection: Foo & Bar;
+let myIntersection: Foo & Bar
 ```
 
-**Именованные типы**
+__Именованные типы__
 
 _Интерфейс_
 
 ```ts
 interface Child extends Parent, SomeClass {
-  requiredProp: Type;
-  optionalProp: Type;
-  optionalMethod?(arg: Type): ReturnType;
+  requiredProp: Type
+  optionalProp: Type
+  optionalMethod?(arg: Type): ReturnType
 }
 
 // example
 interface TodoItem {
-  id: string;
-  text: string;
-  done: boolean;
+  id: string
+  text: string
+  done: boolean
 }
 interface TodoList {
-  todos: TodoItem[];
+  todos: TodoItem[]
 }
 interface TodoActions {
-  addTodo: (todo: TodoItem) => void;
-  updateTodo: (id: string) => void;
-  removeTodo: (id: string) => void;
+  addTodo: (todo: TodoItem) => void
+  updateTodo: (id: string) => void
+  removeTodo: (id: string) => void
 }
 ```
 
 _Класс_
 
 ```ts
-class Child extends Parent implements Child, OtherChild {
-  prop: Type;
-  defaultProp = 'default value';
-  private _privateProp: Type;
-  private readonly _privateReadonlyProp: Type;
-  static staticProp: Type;
+class Child
+extends Parent
 
-  static {
-    try {
-      Child.staticProp = computeStaticProp();
-    } catch {
-      Child.staticProp = defaultValue;
+implements Child, OtherChild {
+    prop: Type
+    defaultProp = 'default value'
+    private _privateProp: Type
+    private readonly _privateReadonlyProp: Type
+    static staticProp: Type
+
+    static {
+        try {
+            Child.staticProp = computeStaticProp()
+        } catch {
+            Child.staticProp = defaultValue
+        }
     }
-  }
 
-  constructor(arg: Type) {
-    super(arg);
-  }
+    constructor(arg: Type) {
+        super(arg)
+    }
 
-  private _privateMethod(): Type {}
+    private _privateMethod(): Type {}
 
-  methodProp: (arg: Type) => ReturnType;
-  overloadedMethod(arg: Type): ReturnType;
-  overloadedMethod(arg: OtherType): ReturnType;
-  overloadedMethod(arg: CommonType): CommonReturnType {}
-  static staticMethod(): ReturnType {}
-  subMethod(arg: Type): ReturnType {
-    super.subMethod(arg);
-  }
+    methodProp: (arg: Type) => ReturnType
+    overloadedMethod(arg: Type): ReturnType
+    overloadedMethod(arg: OtherType): ReturnType
+    overloadedMethod(arg: CommonType): CommonReturnType {}
+    static staticMethod(): ReturnType {}
+    subMethod(arg: Type): ReturnType {
+        super.subMethod(arg)
+    }
 }
 ```
 
@@ -377,13 +380,13 @@ enum Options {
   FIRST,
   EXPLICIT = 1,
   BOOLEAN = Options.FIRST | Options.EXPLICIT,
-  COMPUTED = getValue(),
+  COMPUTED = getValue()
 }
 
 enum Colors {
-  Red = '#FF0000',
-  Green = '#00FF00',
-  Blue = '#0000FF',
+  Red = "#FF0000",
+  Green = "#00FF00",
+  Blue = "#0000FF"
 }
 ```
 
@@ -391,38 +394,38 @@ _Синонимы типов_
 
 ```ts
 type FullName = {
-  firstName: string;
-  lastName: string;
-  middleName?: string;
-};
+  firstName: string
+  lastName: string
+  middleName?: string
+}
 
-type Direction = 'left' | 'right';
+type Direction = 'left' | 'right'
 
-type ElementCreator = (type: string) => Element;
+type ElementCreator = (type: string) => Element
 
-type Point = { x: number; y: number };
+type Point = { x: number, y: number }
 
-type Point3D = Point & { z: number };
+type Point3D = Point & { z: number }
 
-type PointProp = keyof Point; // 'x' | 'y'
+type PointProp = keyof Point // 'x' | 'y'
 
-const point: Point = { x: 1, y: 2 };
+const point: Point = { x: 1, y: 2 }
 
-type PtValProp = keyof typeof prop; // 'x' | 'y'
+type PtValProp = keyof typeof prop // 'x' | 'y'
 
 type TodoItem = {
-  id: string;
-  text: string;
-  done: string;
-};
+  id: string
+  text: string
+  done: string
+}
 type TodoItemComponentProps = {
-  todo: TodoItem;
-  updateTodo: (id: string) => void;
-  removeTodo: (id: string) => void;
-};
+  todo: TodoItem
+  updateTodo: (id: string) => void
+  removeTodo: (id: string) => void
+}
 ```
 
-**Дженерики (общие типы)**
+__Дженерики (общие типы)__
 
 _Функция с типом параметров_
 
@@ -434,8 +437,8 @@ _Интерфейс с несколькими типами_
 
 ```ts
 interface Pair<T1, T2> {
-  first: T1;
-  second: T2;
+  first: T1
+  second: T2
 }
 ```
 
@@ -473,23 +476,26 @@ const relaxedResult = concat([1, 2], ['3', '4'])
 // type -> Array<string | number>
 ```
 
-**Индексные, связанные (mapped) и условные типы**
+__Индексные, связанные (mapped) и условные типы__
 
 _Типы индексов (`keyof`)_
 
 ```ts
-type Point = { x: number; y: number };
-let pointProps: keyof Point = 'x';
+type Point = { x: number, y: number }
+let pointProps: keyof Point = 'x'
 
-function getProp<T, K extends keyof T>(val: T, propKey: K): T[K] {}
+function getProp<T, K extends keyof T>(
+  val: T,
+  propKey: K
+): T[K] {}
 ```
 
 _Связанные типы_
 
 ```ts
-type Stringify<T> = { [P in keyof T]: string };
+type Stringify<T> = { [P in keyof T]: string }
 
-type Partial<T> = { [P in keyof T]?: T[P] };
+type Partial<T> = { [P in keyof T]?: T[P] }
 ```
 
 _Условные типы_
@@ -507,20 +513,20 @@ _Условные связанные типы_
 
 ```ts
 interface User {
-  handle: string;
-  email: string;
-  age: number;
+  handle: string
+  email: string
+  age: number
 }
 
 type StringProps<T> = {
-  [K in keyof T]: T[K] extends string ? K : never;
-};
+  [K in keyof T]: T[K] extends string ? K : never
+}
 
-type UserStrings = StringProps<User>;
+type UserStrings = StringProps<User>
 // 'handle' | 'email'
 ```
 
-**Вспомогательные типы**
+__Вспомогательные типы__
 
 _`Partial`_
 
@@ -561,45 +567,45 @@ Record<'x' | 'y' | 'z', number>
 _`Exclude`_
 
 ```ts
-type Excluded = Exclude<string | number, string>;
+type Excluded = Exclude<string | number, string>
 // ===
-number;
+number
 ```
 
 _`Extract`_
 
 ```ts
-type Extracted = Extract<string | number, string>;
+type Extracted = Extract<string | number, string>
 // ===
-string;
+string
 ```
 
 _`NonNullable`_
 
 ```ts
-type NotNull = NonNullable<string | number | void>;
+type NotNull = NonNullable<string | number | void>
 // ===
-string | number;
+string | number
 ```
 
 _`ReturnType`_
 
 ```ts
-type ReturnType = ReturnType<() => string>;
+type ReturnType = ReturnType<() => string>
 // ===
-string;
+string
 ```
 
 _`InstanceType`_
 
 ```ts
 class Renderer {}
-type Instance = InstanceType<typeof Renderer>;
+type Instance = InstanceType<typeof Renderer>
 // ===
-Renderer;
+Renderer
 ```
 
-**Предохранители**
+__Предохранители__
 
 _Предикаты типа_
 
@@ -616,9 +622,8 @@ if (isType(val)) {
 _`typeof`_
 
 ```ts
-declare;
-value: string | number | boolean;
-const isBoolean = typeof value === 'boolean';
+declare value: string | number | boolean
+const isBoolean = typeof value === 'boolean'
 
 if (typeof value === 'number') {
   // значением `value` является число
@@ -632,9 +637,8 @@ if (typeof value === 'number') {
 _`instanceof`_
 
 ```ts
-declare;
-value: Date | Error | MyClass;
-const isMyClass = value instanceof MyClass;
+declare value: Date | Error | MyClass
+const isMyClass = value instanceof MyClass
 
 if (value instanceof Date) {
   // значением `value` является экземпляр `Date`
@@ -648,56 +652,52 @@ if (value instanceof Date) {
 _`in`_
 
 ```ts
-interface Dog {
-  woof(): void;
-}
-interface Cat {
-  meow(): void;
-}
+interface Dog { woof(): void }
+interface Cat { meow(): void }
 
 function speak(pet: Dog | Cat) {
   if ('woof' in pet) {
-    pet.woof();
+    pet.woof()
   } else {
-    pet.meow();
+    pet.meow()
   }
 }
 ```
 
-**Утверждения (присвоения)**
+__Утверждения (присвоения)__
 
 _Утверждение типа_
 
 ```ts
-let myVar = someVal as string;
+let myVar = someVal as string
 // or
-let myVar = <string>someVal;
+let myVar = <string>someVal
 ```
 
 _Константа (иммутабельное значение)_
 
 ```ts
-let point = { x: 24, y: 42 } as const;
+let point = { x: 24, y: 42 } as const
 // or
-let point = <const>{ x: 24, y: 42 };
+let point = <const>{ x: 24, y: 42 }
 ```
 
-**Декларации**
+__Декларации__
 
 _Глобальные_
 
 ```ts
-declare const foo: number;
+declare const foo: number
 
-declare function greet(greeting: string): void;
+declare function greet(greeting: string): void
 ```
 
 _Пространства имен_
 
 ```ts
 declare namespace myLib {
-  function createGreeting(s: string): string;
-  let numberOfGreetings: number;
+  function createGreeting(s: string): string
+  let numberOfGreetings: number
 }
 
 declare namespace GreetingLib {
