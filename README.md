@@ -7,7 +7,7 @@
 ## Новое
 
 - :memo: [Шпагралка по `Temporal` и `Dayjs`](./md/temporal.md)
-- :memo: [Шпагралка по `Zustand`](./md/temporal.md)
+- :memo: [Шпагралка по `Zustand`](./md/zustand.md)
 - :page_with_curl: [Руководство по `Next.js`](./md/next.md)
 
 ## Руководства
