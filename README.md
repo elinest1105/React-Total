@@ -84,7 +84,6 @@ _Обратите внимание_: вопросы немного устаре�
 - :floppy_disk: [Пример файла `.gitconfig`](./assets/.gitconfig)
 - :floppy_disk: [Пример файла `.gitignore`](./assets/.gitignore)
 - :floppy_disk: [Пример файла `settings.json`](./assets/settings.json)
-- :memo: [Расширения для `VSCode`](./md/vscode_extensions.md)
 
 ## Проекты
 

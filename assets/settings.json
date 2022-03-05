@@ -20,9 +20,6 @@
     "[prisma]": {
         "editor.defaultFormatter": "Prisma.prisma"
     },
-    "[python]": {
-        "editor.defaultFormatter": null
-    },
     "[typescript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
@@ -31,24 +28,14 @@
     },
     "auto-close-tag.activationOnLanguage": [
         "xml",
-        "php",
-        "blade",
         "ejs",
-        "jinja",
         "javascript",
         "javascriptreact",
         "typescript",
         "typescriptreact",
         "plaintext",
         "markdown",
-        "vue",
-        "liquid",
-        "erb",
-        "lang-cfml",
-        "cfml",
-        "HTML (EEx)",
-        "HTML (Eex)",
-        "plist"
+        "vue"
     ],
     "cSpell.customDictionaries": {
         "custom-dictionary-user": {
@@ -63,9 +50,9 @@
     "diffEditor.ignoreTrimWhitespace": false,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.fontSize": 15,
-    "editor.formatOnPaste": true,
+    "editor.formatOnPaste": false,
     "editor.formatOnSave": true,
-    "editor.formatOnType": true,
+    "editor.formatOnType": false,
     "editor.linkedEditing": true,
     "editor.minimap.enabled": false,
     "editor.multiCursorModifier": "ctrlCmd",
@@ -73,9 +60,7 @@
     "editor.tabSize": 2,
     "editor.wordWrap": "on",
     "emmet.includeLanguages": {
-        "django-html": "html",
         "javascript": "javascriptreact",
-        "python": "py",
         "vue-html": "html"
     },
     "explorer.confirmDelete": false,
