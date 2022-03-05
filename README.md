@@ -4,12 +4,13 @@
 
 ## Ресурс для изучения `React.js` и связанных с ним технологий на русском языке :ru
 
-> Последнее обновление: ✅&nbsp;&nbsp;05.11.2021 Руководство по `Next.js`. 🔬&nbsp;&nbsp;В разработке руководство по `Docker`
+> Последнее обновление: ✅&nbsp;&nbsp;30.01.2021 Шпагралки по `Temporal` и `Zustand`. 🔬&nbsp;&nbsp;В разработке руководство по `Docker`
 
 ## Новое
 
+- :memo: [Шпаргалка по `Temporal` и `Dayjs`](./md/temporal.md)
+- :memo: [Шпаргалка по `Zustand`](./md/zustand.md)
 - :page_with_curl: [Руководство по `Next.js`](./md/next.md)
-- :memo: [Шпаргалка по `TypeScript`](./md/ts_cheatsheet.md)
 
 ## Руководства
 
@@ -42,6 +43,7 @@
 - :memo: [Выдержки из определений типов `TypeScript` для `React`](./md/react-types.md)
 - :memo: [Примеры кастомных хуков](./md/custom-hooks.md)
 - :memo: [Примеры кастомных компонентов](./md/custom-components.md)
+- :memo: [Шпаргалка по `TypeScript`](./md/ts_cheatsheet.md)
 
 ---
 
@@ -67,7 +69,6 @@
 - :memo: [Сниппеты `Node.js`](./md/snippets_node.md)
 - :memo: [Сниппеты `CSS` и `SASS`](./md/snippets_csssass.md)
 - :memo: [Командная строка](./md/command_line.md)
-- :memo: [Размышления о `React`](./md/react-philosophies.md)
 
 ## Вопросы по React
 
@@ -76,6 +77,7 @@ _Обратите внимание_: вопросы немного устаре�
 - :page_with_curl: [Вопросы для подготовки к собеседованию. Версия 1](./md/questions_react.md)
 - :page_with_curl: [Вопросы для подготовки к собеседованию. Версия 2](./md/questions_react-v2.md)
 - :memo: [Шпаргалки по `React`, `Jest`, `Redux` и лучшие практики по `React`](./md/cheatsheets-bestpractices.md)
+- :memo: [Размышления о `React`](./md/react-philosophies.md)
 
 ## Другое
 
@@ -87,7 +89,7 @@ _Обратите внимание_: вопросы немного устаре�
 ## Проекты
 
 - :link: [Статьи и туториалы из моего блога на Хабре](https://github.com/harryheman/Blog-Posts)
-- :link: [Блог, разработанный с помощью React, Apollo и GraphQL](https://github.com/harryheman/react-apollo-graphQL-social-app)
+- :link: [Блог, разработанный с помощью React, Apollo и GraphQL](https://github.com/harryheman/react-apollo-graphql-social-app)
 - :link: [Чат, разработанный с помощью React, Express и Socket.io](https://github.com/harryheman/react-express-socket.io-chat-app)
 - :link: [Утилита, облегчающая работу с `Fetch API`](https://github.com/harryheman/simple-fetch)
 - :link: [Утилита, облегчающая работу с `Internationalization API`](https://github.com/harryheman/easy-intl)

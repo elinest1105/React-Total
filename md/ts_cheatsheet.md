@@ -74,7 +74,7 @@ __Операторы__
 - `??` - оператор проверки на `null`
 
 ```ts
-function getValue(n: number): number | 'nil' {
+function getValue(n: number): number | 'nill' {
   // 'nill' возвращается, если `n` - это любое ложное значение (включая `0`)
   // return n || 'nill'
 
