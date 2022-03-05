@@ -1,13 +1,14 @@
 # Тотальный `React` :metal:
 
+# Нет войне!
+
 ## Ресурс для изучения `React.js` и связанных с ним технологий на русском языке :ru
 
-> Последнее обновление: 05.11.2021 ✅&nbsp;&nbsp;Руководство по `Next.js`. В разработке 🔬&nbsp;&nbsp;руководство по `Docker`
+> Последнее обновление: ✅&nbsp;&nbsp;05.11.2021 Руководство по `Next.js`. 🔬&nbsp;&nbsp;В разработке руководство по `Docker`
 
 ## Новое
 
 - :page_with_curl: [Руководство по `Next.js`](./md/next.md)
-- :memo: [Размышления о `React`](./md/react-philosophies.md)
 - :memo: [Шпаргалка по `TypeScript`](./md/ts_cheatsheet.md)
 
 ## Руководства
@@ -66,8 +67,9 @@
 - :memo: [Сниппеты `Node.js`](./md/snippets_node.md)
 - :memo: [Сниппеты `CSS` и `SASS`](./md/snippets_csssass.md)
 - :memo: [Командная строка](./md/command_line.md)
+- :memo: [Размышления о `React`](./md/react-philosophies.md)
 
----
+## Вопросы по React
 
 _Обратите внимание_: вопросы немного устарели, поскольку посвящены, преимущественно, "классовому" `React`
 
@@ -75,7 +77,7 @@ _Обратите внимание_: вопросы немного устаре�
 - :page_with_curl: [Вопросы для подготовки к собеседованию. Версия 2](./md/questions_react-v2.md)
 - :memo: [Шпаргалки по `React`, `Jest`, `Redux` и лучшие практики по `React`](./md/cheatsheets-bestpractices.md)
 
----
+## Другое
 
 - :floppy_disk: [Пример файла `.gitconfig`](./assets/.gitconfig)
 - :floppy_disk: [Пример файла `.gitignore`](./assets/.gitignore)
@@ -85,8 +87,8 @@ _Обратите внимание_: вопросы немного устаре�
 ## Проекты
 
 - :link: [Статьи и туториалы из моего блога на Хабре](https://github.com/harryheman/Blog-Posts)
-- :link: [Блог, разработанный с помощью React, Apollo и GraphQL](https://github.com/harryheman/React-Apollo-GraphQL-Social-App)
-- :link: [Чат, разработанный с помощью React и Socket.io](https://github.com/harryheman/React-Socket.io-Chat-App)
+- :link: [Блог, разработанный с помощью React, Apollo и GraphQL](https://github.com/harryheman/react-apollo-graphQL-social-app)
+- :link: [Чат, разработанный с помощью React, Express и Socket.io](https://github.com/harryheman/react-express-socket.io-chat-app)
 - :link: [Утилита, облегчающая работу с `Fetch API`](https://github.com/harryheman/simple-fetch)
 - :link: [Утилита, облегчающая работу с `Internationalization API`](https://github.com/harryheman/easy-intl)
 
