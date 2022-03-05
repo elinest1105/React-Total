@@ -1,6 +1,6 @@
 # Тотальный `React` :metal:
 
-# Нет войне!
+# :x: Нет войне:heavy_exclamation_mark: No war:heavy_exclamation_mark:
 
 ## Ресурс для изучения `React.js` и связанных с ним технологий на русском языке :ru
 
