@@ -4,16 +4,17 @@
 
 ## Ресурс для изучения `React.js` и связанных с ним технологий на русском языке :ru
 
-> Последнее обновление: ✅&nbsp;&nbsp;30.01.2021 Шпагралки по `Temporal` и `Zustand`. 🔬&nbsp;&nbsp;В разработке руководство по `Docker`
+> Последнее обновление: ✅&nbsp;&nbsp;07.03.2022 Руководства по `Prisma` и `Supabase`, а также небольшая шпаргалка по `Vite`. 🔬&nbsp;&nbsp;В разработке руководство по `Docker`
 
 ## Новое
 
-- :memo: [Шпаргалка по `Temporal` и `Dayjs`](./md/temporal.md)
-- :memo: [Шпаргалка по `Zustand`](./md/zustand.md)
-- :page_with_curl: [Руководство по `Next.js`](./md/next.md)
+- :page_with_curl: [Руководство по `Prisma`](./md/prisma.md)
+- :page_with_curl: [Руководство по `Supabase`](./md/supabase.md)
+- :memo: [Шпаргалка по `Vite`](./md/vite.md)
 
 ## Руководства
 
+- :page_with_curl: [Руководство по `Next.js`](./md/next.md)
 - :page_with_curl: [Руководство по `Redux Toolkit`](./md/redux-toolkit.md)
 - :page_with_curl: [Руководство по `Recoil`](./md/recoil.md)
 - :page_with_curl: [Руководство по `React Query`](./md/react-query.md)
@@ -44,6 +45,7 @@
 - :memo: [Примеры кастомных хуков](./md/custom-hooks.md)
 - :memo: [Примеры кастомных компонентов](./md/custom-components.md)
 - :memo: [Шпаргалка по `TypeScript`](./md/ts_cheatsheet.md)
+- :memo: [Шпаргалка по `Zustand`](./md/zustand.md)
 
 ---
 
@@ -61,6 +63,7 @@
 - :memo: [Шпаргалка по `JSON Web Token`](./md/jsonwebtoken.md)
 - :memo: [Шпаргалка по `Helmet`](./md/helmet.md)
 - :memo: [Шпаргалка по `Cors`](./md/cors.md)
+- :memo: [Шпаргалка по `Temporal` и `Dayjs`](./md/temporal.md)
 - :memo: [Шпаргалка по `SQL`](./md/sql.md)
 - :memo: [Шпаргалка по `Netlify`](./md/netlify.md)
 - :memo: [Шпаргалка по `Markdown`](./md/markdown.md)
