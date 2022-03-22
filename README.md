@@ -56,7 +56,7 @@
 - :memo: [Шпаргалка по методам для работы с `DOM`](./md/js-dom.md)
 - :memo: [Шпаргалка по `Web Accessibility`](./md/access/access.md)
 - :memo: [Туториал по `RegExp`](./md/regexp/regexp.md)
-- :memo: [Туториал по `Web Speech API`](./md/regexp/regexp.md)
+- :memo: [Туториал по `Web Speech API`](./md/speech.md)
 - :memo: [Шпаргалка по `Internationalization API`](./md/intl.md)
 - :memo: [Шпаргалка по `Axios`](./md/axios.md)
 - :memo: [Шпаргалка по `JSON Server`](./md/json-server/README.md)
