@@ -53,7 +53,7 @@
 - :memo: [Шпаргалка по `Webpack`](./md/webpack.md)
 - :memo: [Шпаргалка по `Security Headers`](./md/security/security.md)
 - :memo: [Шпаргалка по тегам `HTML5`](./md/html5.md)
-- :memo: [Шпаргалка по методам для работы с `DOM`](./md/js-dom.md)
+- :memo: [Шпаргалка по методам `JavaScript` для работы с `DOM`](./md/js-dom.md)
 - :memo: [Шпаргалка по `Web Accessibility`](./md/access/access.md)
 - :memo: [Туториал по `RegExp`](./md/regexp/regexp.md)
 - :memo: [Туториал по `Web Speech API`](./md/speech.md)
@@ -65,13 +65,11 @@
 - :memo: [Шпаргалка по `Cors`](./md/cors.md)
 - :memo: [Шпаргалка по `Temporal` и `Dayjs`](./md/temporal.md)
 - :memo: [Шпаргалка по `SQL`](./md/sql.md)
-- :memo: [Шпаргалка по `Netlify`](./md/netlify.md)
 - :memo: [Шпаргалка по `Markdown`](./md/markdown.md)
 - :memo: [Шпаргалка по `Google Spreadsheet`](./md/google-spreadsheet.md)
 - :memo: [Сниппеты `JavaScript`](./md/snippets_javascript.md)
 - :memo: [Сниппеты `Node.js`](./md/snippets_node.md)
 - :memo: [Сниппеты `CSS` и `SASS`](./md/snippets_csssass.md)
-- :memo: [Командная строка](./md/command_line.md)
 
 ## Вопросы по React
 
@@ -90,9 +88,7 @@ _Обратите внимание_: вопросы немного устаре�
 
 ## Проекты
 
-- :link: [Статьи и туториалы из моего блога на Хабре](https://github.com/harryheman/Blog-Posts)
-- :link: [Блог, разработанный с помощью React, Apollo и GraphQL](https://github.com/harryheman/react-apollo-graphql-social-app)
-- :link: [Чат, разработанный с помощью React, Express и Socket.io](https://github.com/harryheman/react-express-socket.io-chat-app)
+- :link: [Статьи и туториалы из моего блога на `Habr`](https://github.com/harryheman/Blog-Posts)
 - :link: [Утилита, облегчающая работу с `Fetch API`](https://github.com/harryheman/simple-fetch)
 - :link: [Утилита, облегчающая работу с `Internationalization API`](https://github.com/harryheman/easy-intl)
 
