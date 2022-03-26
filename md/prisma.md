@@ -1,5 +1,7 @@
 # Prisma Guide :metal:
 
+[На главную](../README.md)
+
 > `Prisma` - это современное (продвинутое) [объектно-реляционное отображение](https://ru.wikipedia.org/wiki/ORM) (Object-Relational Mapping, ORM) для `Node.js` и `TypeScript`. Проще говоря, `Prisma` - это инструмент, позволяющий работать с реляционными (`PostgreSQL`, `MySQL`, `SQL Server`, `SQLite`) и нереляционной (`MongoDB`) базами данных с помощью `JavaScript` или `TypeScript` без использования [`SQL`](https://ru.wikipedia.org/wiki/SQL) (хотя такая возможность имеется).
 
 ## Содержание

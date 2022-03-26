@@ -1,5 +1,7 @@
 # Vite Cheatsheet :metal:
 
+[На главную](../README.md)
+
 > [Vite](https://vitejs.dev/) - это продвинутый сборщик модулей ("бандлер", bundler) для `JavaScript`.
 
 __Создание шаблона__
