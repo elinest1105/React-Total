@@ -92,7 +92,7 @@ _Обратите внимание_: вопросы немного устаре�
 - :link: [Утилита, облегчающая работу с `Fetch API`](https://github.com/harryheman/simple-fetch)
 - :link: [Утилита, облегчающая работу с `Internationalization API`](https://github.com/harryheman/easy-intl)
 
-## Полезные ссылки
+## Смотри, что я нашел в Сети (и мне это понравилось) или просто Полезные ссылки
 
 ### `JavaScript`
 
@@ -121,34 +121,37 @@ __Вопросы и задачи__
 - [Awesome React Hooks](https://github.com/rehooks/awesome-react-hooks) - большая коллекция кастомных хуков
 - [Curated List of React Components & Libraries](https://github.com/brillout/awesome-react-components) - большая коллекция компонентов и библиотек для `React`
 - [`React` и `TypeScript`](https://reactdev.ru/types/)
+
+### `TypeScript`
+
 - [Рекомендуемый `tsconfig.json`](https://www.npmjs.com/package/@tsconfig/recommended)
-- [Настройки `Prettier`](https://prettier.io/docs/en/options.html)
-- [Список правил `ESLint`](https://eslint.org/docs/rules/)
+- [Type Challenges](https://github.com/type-challenges/type-challenges) - изучение `TypeScript` на практике
 
 ### `Node.js`
 
-- [Документация `Node.js` с примерами кода](https://nodejsdev.ru/doc/)
+- [Документация `Node.js` с примерами](https://nodejsdev.ru/doc/)
 - [`Node.js`: лучшие практики](https://github.com/goldbergyoni/nodebestpractices/blob/master/README.russian.md)
-- [Список статус-кодов HTTP](https://httpstatuses.com/)
-- [Postman](https://www.postman.com/) - сервис для тестирования API
+- [Insomnia](https://insomnia.rest/download) - сервис для тестирования `API`
 - [Mailtrap](https://mailtrap.io/) - сервис для тестирования отправки электронных писем
 
 ### `Git`
 
 - [GitHowTo](https://githowto.com/ru) - интерактивный курс по основам работы с `Git`
-- [GitZip](http://kinolien.github.io/gitzip/) - инструмент для скачивания определенной части репозитория по URL
+- [GitZip](http://kinolien.github.io/gitzip/) - инструмент для скачивания определенной части репозитория по `URL`
 
 ### Другое
 
 - [Developer Roadmap](https://github.com/kamranahmedse/developer-roadmap) - "дорожная карта" веб-разработчика
 - [The Art of Command Line](https://github.com/jlevy/the-art-of-command-line) - искусство командной строки
-- [Учебник. Начало работы с `Docker`](https://docs.microsoft.com/ru-ru/visualstudio/docker/tutorials/docker-tutorial)
+- [Bash Guide](https://github.com/Idnan/bash-guide) - руководство по `Bash`
+- [Начало работы с `Docker`](https://docs.microsoft.com/ru-ru/visualstudio/docker/tutorials/docker-tutorial)
 - [Mockaroo](https://www.mockaroo.com/) - сервис для генерации фиктивных данных, в том числе, в формате `SQL`
 - [Команды SQL (PostreSQL)](https://postgrespro.ru/docs/postgresql/13/sql-commands)
 - [Команды psql (PostreSQL)](https://postgrespro.ru/docs/postgresql/13/app-psql)
 - [Google Fonts](https://fonts.google.com/)
 - [FlatIcon](https://www.flaticon.com/)
-- [HTML-эмодзи](https://www.w3schools.com/charsets/ref_emoji.asp)
+- [Настройки `Prettier`](https://prettier.io/docs/en/options.html)
+- [Список правил `ESLint`](https://eslint.org/docs/rules/)
 
 ## Участие
 
