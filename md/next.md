@@ -1,4 +1,4 @@
-# `Next.js` Guide :metal:
+# Next.js Guide :metal:
 
 [На главную](../README.md)
 
