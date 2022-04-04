@@ -1,5 +1,7 @@
 # JavaScript: разрабатываем простой компилятор кода
 
+[На главную](../README.md)
+
 Привет, друзья!
 
 Представляю вашему вниманию перевод [этой замечательной статьи](https://github.com/jamiebuilds/the-super-tiny-compiler).
@@ -810,7 +812,8 @@ function compile(input) {
 }
 ```
 
-<spoiler title="Полный код компилятора без комментариев:">
+<details>
+<summary>Полный код компилятора без комментариев</summary>
 
 ```javascript
 const WHITESPACE = /\s/
@@ -1101,7 +1104,9 @@ const c3 = compile(lisp3)
 console.log([c1, c2, c3].join('\n'))
 ```
 
-</spoiler>
+</details>
+
+<br />
 
 Посмотрим, как работает наш компилятор (и работает ли?).
 
