@@ -2148,7 +2148,7 @@ const v3 = f3()
 
 ```ts
 const src = [1, 2, 3]
-const dst = [0]
+const dist = [0]
 
 src.forEach((el) => dist.push(el))
 ```
