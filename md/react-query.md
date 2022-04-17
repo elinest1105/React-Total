@@ -1297,6 +1297,30 @@ mutate(todo, {
 })
 ```
 
+В некоторых случаях требуется сделать мутацию, но использовать хук `useMutation` нельзя, например, когда надо динамически подставлять `mutationKey`. Для этого может помочь метод `executeMutation`:
+
+```js
+const queryClient = new QueryClient();
+queryClient.executeMutation({
+  mutationKey: ['product', {id: 12}],
+  mutationFn: () => axios.put('/product-update', product),
+  onSuccess: (product) => {
+    // Мутация выполнена успешно
+  },
+  onMutate: (vars) => {
+    // Произошла мутация
+    // Опционально, можно вернуть контекст с данными, которые могут использоваться при отмене изменений, например
+    return { id: 12 }
+  },
+  onError: (error, vars, context) => {
+    // Возникла ошибка
+  },
+  onSettled: (data, error, vars, context) => {
+    // Ошибка или успех... неважно
+  }
+}); 
+```
+
 <div align="right">
   <b><a href="#mutations">↥ Наверх</a></b>
 </div>
