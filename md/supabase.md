@@ -150,7 +150,7 @@ __Авторизация__
 ```javascript
 async function loginUser({ email, password }) {
  try {
-   const { user, session, error } = await supabase.auth.singIn({
+   const { user, session, error } = await supabase.auth.signIn({
      // обязательно
      email,
      password
